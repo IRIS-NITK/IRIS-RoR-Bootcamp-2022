@@ -101,6 +101,59 @@ The `<span>` tag is an inline container used to mark up a part of a text, or a p
 ```
 *Try out both div and span to see the difference between the two!*
 
+#### `Form tag`
+
+The `<form>` tag is used to create an HTML form. Forms are used to collect user input, such as text field values, radio button selections, and checkbox selections.
+
+The `<form>` tag can contain a variety of form elements, such as text fields, radio buttons, checkboxes, and more. The name attribute is used to give each form element a unique name, which is used to identify the element when the form is submitted.
+
+Here are some of the form elements:
+
+- `<input>`: This element is used to create a variety of input fields, including text fields, checkboxes, radio buttons, and more. The type attribute is used to specify the type of input field, such as text for a text field or checkbox for a checkbox.
+- `<textarea>`: This element is used to create a multi-line text input field.
+- `<select>`: This element is used to create a drop-down list of options. The `<option>` element is used to specify the options that are available in the drop-down list.
+- `<button>`: This element is used to create a button that can be clicked to submit a form or perform some other action.
+- `<label>`: This element is used to associate a label with a form element. This is useful for providing a user-friendly name for an input field or button.
+
+```
+<form>
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email"><br>
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="5" cols="30"></textarea><br>
+  <button type="submit">Submit</button>
+</form> 
+
+```
+
+#### `Header tag`
+
+The `<header>` tag is used to define a header section of a web page. It typically contains site branding, navigation links, and other information that is useful at the top of the page.
+```
+<header>
+    <h1>My Website</h1>
+</header>
+```
+#### `Footer tag`
+
+The `<footer>` tag is used to define a footer section of a web page. It typically contains information such as copyright notices, contact information, and links to additional resources.
+
+```
+<footer>
+    <p>Copyright 2021 My Website</p>
+</footer>
+```
+
+#### `Nav tag`
+
+The `<nav>` tag is used to define a navigation section of a web page. It typically contains a list of links that allow the user to navigate to different sections of the site.
+```
+<nav>
+    I am a Navbar
+</nav>
+```
 
 ### Classes and IDs
 
@@ -154,6 +207,9 @@ So far, we have covered a few HTML tags, lets just write a simple web page with 
 </body>
 </html>
 ```
+#### Preview
+
+![HTML](https://user-images.githubusercontent.com/75667393/208149478-ed47ecf0-c671-41bd-8bed-a334dac4b070.png)
 
 ### Resources
 
