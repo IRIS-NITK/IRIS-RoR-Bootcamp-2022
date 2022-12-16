@@ -1,4 +1,3 @@
-
 ## CSS
 
 Is writing just HTML enough for a web page though? All the popoular websites around you look so attractive, and they do so using *css*. 
@@ -14,8 +13,26 @@ There are 3 ways to write styles for your HTML:
     2. Internal - by using a <style> element in the <head> section.
     3. External - by using a <link> element to link to an external CSS file
 
+#### Inline
+```
+<h1 style="color:pink;">
+    A Pink Heading
+</h1>
+```
 
-The preferred way to write this is to use the third method, the external method.
+#### Internal
+```
+<head>
+    <style>
+        body {
+            background-color: powderblue;
+        }
+    </style>
+</head>
+```
+
+#### External
+The preferred way to write this is to use this method.
 
 ```
 <head>
