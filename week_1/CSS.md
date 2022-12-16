@@ -91,6 +91,55 @@ The dot is called a selector. In CSS, selectors are used to select the elements 
 
 These are just a few examples of the many attributes available in CSS. There are many other features and techniques in CSS, including the ability to apply styles based on the state of an element, the use of media queries to apply different styles for different screen sizes and devices, and the use of CSS preprocessors to write more concise and powerful stylesheets. For more information on these and other topics, you can refer to the resources.
 
+## A final preview
+Now that we have finished learning CSS, let us try adding some style to the HTML that we had prepared earlier
+
+HTML file with class names added:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>First Webpage</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1 class="HeadingOne">Welcome to my first webpage!</h1>
+    <p class = "ParaOne">This is a paragraph</p>
+    <p class = "paraTwo">This is the <a href="https://www.iris.nitk.ac.in">link</a> to IRIS NITK.</p>
+    <div class="city">
+        The college is situated in Mangalore.
+    </div>
+</body>
+</html>
+```
+*This css file must be named styles.css in the same directory as the HTML file*
+
+CSS file:
+
+```
+.HeadingOne{
+    color: aqua;
+    font-size: 40px;
+}
+
+.ParaOne{
+    background-color: yellow;
+}
+
+.paraTwo{
+    font-size: 20px;
+}
+
+.city{
+    border: black;
+    border-style: solid;
+}
+```
+
+Preview:
+![CSS](https://user-images.githubusercontent.com/75667393/208151193-9f29a2df-0de4-4bc4-b0d1-6e76ac48592a.png)
+
+Looks decent? Try out different styling to make it even better!
 ### Resources
 
 - [Introduction to CSS by w3schools](https://www.w3schools.com/css/css_intro.asp)
