@@ -8,16 +8,11 @@
 
 ## Assignment 1 - HTML and CSS Basics
 
-> Create a basic introduction page about yourself, with your name, city you are from and the hobbies you like the most. 
+> Try to recreate the web page design given below:
 
-### Expected Contents and Design Principles
+![Assignment-1](https://user-images.githubusercontent.com/75667393/208155483-5a40c785-749c-49da-988e-3636b8a5718c.png)
 
-* The page title must be relevent to the assignment. 
-* The page must have a heading with your name and age.
-* The page must have a section with a list of your favorite hobbies.
-* The page must have a footer with a copyright message.
-
-You are allowed to be as creative as you can with this assignment! :) 
+Try to give more styling to the web page (bonus). Best of luck! :)
 
 ### Submission Instructions
 
