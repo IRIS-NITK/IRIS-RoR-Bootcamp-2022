@@ -146,12 +146,45 @@ The `<footer>` tag is used to define a footer section of a web page. It typicall
 </footer>
 ```
 
+#### `List`
+
+
+In HTML, there are two types of lists: 
+- Ordered lists
+- Unordered lists.
+
+An ordered list is created using the `<ol>` element, and each list item is represented by an `<li>` element. The list items are automatically numbered in the order they appear in the list.
+
+Here is an example of an ordered list:
+
+```
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+```
+
+An unordered list is created using the `<ul>` element, and each list item is again represented by an `<li>` element. The list items are not automatically numbered and are typically displayed with bullet points.
+
+Here is an example  of an unordered list:
+```
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
 #### `Nav tag`
 
 The `<nav>` tag is used to define a navigation section of a web page. It typically contains a list of links that allow the user to navigate to different sections of the site.
 ```
 <nav>
-    I am a Navbar
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
 </nav>
 ```
 
