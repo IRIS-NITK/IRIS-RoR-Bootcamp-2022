@@ -1,4 +1,8 @@
-# Assignments - Week 1
+# Week 1
+* [HTML](./HTML.md)
+* [CSS](./CSS.md)
+
+# Assignments
 
 * Fork this repository and use the `week1_<your_name>` branch for your work.
 * Once you have completed the assignment, submit a Pull Request with your work to the branch `week1_assignment` **(not `main`)**.
