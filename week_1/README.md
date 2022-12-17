@@ -6,6 +6,19 @@
 
 ---
 
+## Installing a code editor
+
+To do these assignments, and follow the bootcamp along in the subsequent weeks, you will definitely need a code editor. Notepad is decent, but won't do the trick for the upcoming sessions.
+
+There are many free code editors to download, such as VS Code, Sublime text, etc. We will be giving instructions to download and setup VS Code:
+
+- Open a web browser and go to the VS Code website (https://code.visualstudio.com/).
+- Click the "Download" button.
+- Select the appropriate version for your operating system (Windows, macOS, or Linux).
+- Follow the prompts to complete the installation.
+
+You can also use online HTML editors like [Programiz](https://www.programiz.com/html/online-compiler/) to complete the assignment.
+
 ## Assignment 1 - HTML and CSS Basics
 
 > Try to recreate the web page design given below:
