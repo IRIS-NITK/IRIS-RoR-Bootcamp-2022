@@ -16,3 +16,58 @@ label{
     float:left;
     height:75px;
 }
+
+#c
+{
+    color: rgb(89, 12, 12);
+    background-color: rgb(247, 203, 149);
+    width: 50%;
+}
+
+#h
+{
+    background-color: rgb(100, 232, 236);
+    font-size: 40;
+    font-weight: bold;
+    font-family: 'Engravers MT';
+}
+
+#img1
+{
+    position: relative;
+    float:right;
+    right: 270px;
+    width: 400px;
+    height: auto;
+    border-style: solid;
+    border-color: rgb(16, 16, 145) ;
+    border-width: 10px;
+}
+
+#img2
+{
+    position: absolute;
+    float:right;
+    right: 277px;
+    top: 400px;
+    width: 400px;
+    height: auto;
+    border-style: solid;
+    border-color: rgb(88, 21, 150);
+    border-width: 10px;
+    
+}
+
+#tnx
+{
+   background-color: aquamarine;
+    font-family:'Forte' ;
+    font-size: 100;
+    width: fit-content;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    top: 300px;
+    
+}
