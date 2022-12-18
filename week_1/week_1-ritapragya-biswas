@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top-align {
+            height: 125px;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>My Guest Book </h2>
+    Please sign my guest book. Thanks!
+    <table>
+        <tr>
+            <td>
+                <form>
+                    <label for="name">
+                        <h4>What is your name?</h4>
+                    </label>
+            </td>
+            <td>
+                <input type="text" id="name" name="name"><br>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    <label for="email">
+                        <h4>What is your email?</h4>
+                    </label>
+            </td>
+            <td>
+                <input type="text" id="email" name="email"><br>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td class="top-align">
+                <form>
+                    <label for="feedback">
+                        <h4>Please check all that apply:</h4>
+                    </label>
+            </td>
+            <td>
+                <input type="checkbox" id="feedback1" name="feedback1">
+                <label for="feedback1"> I really like your website</label><br>
+                <input type="checkbox" id="feedback2" name="feedback2">
+                <label for="feedback2"> One of the best sites I've seen</label><br>
+                <input type="checkbox" id="feedback3" name="feedback3">
+                <label for="feedback3"> I sure wish my site looked as good as yours</label><br>
+                <input type="checkbox" id="feedback4" name="feedback4">
+                <label for="feedback4"> I have no taste and I'm pretty dense so I don't like your site</label><br>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td class="top-align">
+                <form>
+                    <label for="like">
+                        <h4>Choose the one thing you like about my website:</h4>
+                    </label>
+            </td>
+            <td>
+                <input type="radio" id="like1" name="like1">
+                <label for="like1">That gorgeous picture of you</label><br>
+                <input type="radio" id="like1" name="like1">
+                <label for="like2">All the beautiful pictures of your cat</label><br>
+                <input type="radio" id="like1" name="like1">
+                <label for="like3">The inspiring recap of your suburb childhood</label><br>
+                <input type="radio" id="like1" name="like4">
+                <label for="like4">The detailed list of Elvis memorabilia's</label><br>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td class="top-align">
+                <form>
+                    <label for="longtext">
+                        <h4>If my website were a book, how many copies would it sell?</h4>
+                    </label>
+            </td>
+            <td>
+                <textarea id="longtext" name="longtext" rows="5" cols="30"></textarea><br>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form>
+                    <label for="dropdown">
+                        <h4>How can I improve about my website:</h4>
+                    </label>
+            </td>
+            <td>
+                <select name="dropwdown" id="dropwdown">
+                    <option value="nothing">Nothing. Simply perfect.</option>
+                    <option value="everything">Literally evrything. I hate this.</option>
+                    <option value="style">Better styling. The site looks like it belongs to the 90s</option>
+                    <option value="colour">Better colour scheme. I actually value my eyes unlike you.</option>
+                </select>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td class="top-align">
+                <form>
+                    <label for="longtext">
+                        <h4>Feel free to type more praise, gift offers etc:</h4>
+                    </label>
+            </td>
+            <td>
+                <textarea id="longtext" name="longtext" rows="7" cols="50"></textarea><br>
+                </form>
+            </td>
+        </tr>
+
+    </table>
+    <br>
+    <form>
+        <input type="submit" value="Click here to submit">
+        <input type="submit" value="Erase and start over">
+    </form>
+</body>
+
+</html>
