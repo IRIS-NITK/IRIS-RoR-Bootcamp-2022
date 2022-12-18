@@ -1,0 +1,11 @@
+.p1{
+    border-color: black;
+    border: 10cm;
+}
+.p2{
+    text-align: center;
+    color: bisque;
+}
+body{
+    background-color: rgb(19, 230, 43);
+}
