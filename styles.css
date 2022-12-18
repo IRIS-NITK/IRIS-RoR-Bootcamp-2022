@@ -62,12 +62,18 @@ label{
 {
    background-color: aquamarine;
     font-family:'Forte' ;
-    font-size: 100;
+    font-size: 150;
     width: fit-content;
     display: block;
     margin-right: auto;
     margin-left: auto;
     position: relative;
-    top: 300px;
+    top: 250px;
+    border-style: solid;
+    border-color: rgb(102, 24, 180) rgb(27, 27, 181) rgb(102, 24, 180) rgb(27, 27, 181);
+    border-width: 10px;
     
 }
+
+
+    
