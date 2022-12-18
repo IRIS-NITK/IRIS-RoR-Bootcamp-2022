@@ -1,0 +1,19 @@
+{
+  "name": "week_1",
+  "version": "1.0.0",
+  "description": "* [HTML](./HTML.md)\r * [CSS](./CSS.md)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4",
+    "vite": "^4.0.1"
+  }
+}
