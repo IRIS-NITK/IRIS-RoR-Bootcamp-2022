@@ -8,9 +8,44 @@
     <title>Document</title>
     <style>
         .top-align {
-            height: 125px;
-            vertical-align: top;
-        }
+    height: 125px;
+    vertical-align: top;
+}
+
+
+body {
+    background-color: rgb(198, 255, 255);
+}
+
+h2 {
+    color: rgb(255, 145, 71);
+}
+
+h4 {
+    color: brown;
+}
+
+textarea {
+    background-color: rgb(255, 255, 205);
+}
+
+textarea:hover {
+    background-color: rgb(161, 255, 210);
+}
+
+input[type=text] {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(255, 255, 205);
+}
+
+input[type=text]:hover {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(161, 255, 210);
+}
+
+input[type=checkbox]:hover {
+    box-shadow: 0px 0px 10px #1300ff;
+}
     </style>
 </head>
 
