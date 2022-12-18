@@ -1,0 +1,18 @@
+body
+{
+    background-color: rgb(173, 201, 243);
+}
+
+
+label{
+    display: block;
+    float: left;
+    width : 250px;    
+  }
+
+.b
+{
+    display:block;
+    float:left;
+    height:75px;
+}
