@@ -8,26 +8,37 @@
 
     <title>Guest Book Login</title>
 </head>
-<body class="text-white  bg-gradient-to-r from-gray-800 to-black">	
-	<h1 class="text-5xl font-serif font-extrabold flex items-left justify-center py-4 mt-10 text-white">My Guest Book</h1>
-	<p class="text-3xl  font-serif font-bold text-orange-400  flex items-left justify-center py-2">Please sign my Guest Book. Thank you for visiting!</p>
-	<div class="flex items-center justify-center border-2 border-yellow-300 mx-auto my-4 w-fit p-4 bg-black text-white rounded-lg">
+<body class="text-white  bg-gradient-to-r from-gray-800 to-gray-900">	
+	<div class="flex items-center justify-center ml-36">
+		<div class="left">
+			<h1 class="text-5xl font-serif font-extrabold flex items-left justify-center py-4 mt-10 text-white">My Guest Book</h1>
+	
+			<p class="text-3xl  font-serif font-bold text-orange-400  flex items-left justify-center py-2">Please sign my Guest Book. Thank you for visiting!</p>
+		</div>
+		<div class="right">
+			<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+			<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_x1qjr2ix.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+		</div>
+	</div>
+	
+	
+	<div class="flex items-center justify-center border-2 border-yellow-300 mx-auto my-4 w-fit p-4 bg-black text-white rounded-3xl">
 		 
-		<form action="" name="myForm" class="">
+		<form action="" name="myForm" class="p-4">
 			
 
 			<table class="py-5 px-5">
 				<tr>
 					<td>What is your name ? </td>
 					<td>
-						<input type="text" placeholder="Name" class="px-4 h-12 my-2 border outline-blue-500 rounded-lg border-1 border-gray-400 w-96 text-black"  autocomplete="off" required>
+						<input type="text" placeholder="Eg: Abhinav" class="px-4 h-12 my-2 border outline-blue-500 rounded-lg border-1 border-gray-400 w-96 text-black"  autocomplete="off" required>
 					</td>
 				</tr>
 				
 				<tr class="">
 					<td class="description">What is your email address ? </td>
 					<td class="description"> 
-						<input type="email" placeholder="Email" class="px-4 h-12 my-2 border outline-blue-500 rounded-lg border-1 border-gray-400 w-96 text-black"   required>
+						<input type="email" placeholder="Eg: abhinav@email.com" class="px-4 h-12 my-2 border outline-blue-500 rounded-lg border-1 border-gray-400 w-96 text-black" required>
 					</td>
 				</tr>
 				
@@ -86,18 +97,23 @@
 				</tr>
 			</table>
 
-			<button type="submit" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-                Submit Feedback
-              </button>
-			  <button type="reset" class="mx-10 bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 border border-1 border-b-4 border-white hover:border-yellow-300 rounded">
-                Reset and Start Over
-              </button>
+			 <div>
+				<button type="submit" id="btn" class="text-lg bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+					Submit Feedback
+				  </button>
+
+				  
+
+				  <button type="reset" class="text-lg mx-10 bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 border border-1 border-b-4 border-white hover:border-yellow-300 rounded">
+					Reset and Start Over
+				  </button>
+			</div>
+			
 		
 			
 
 		</form>	
 	</div>
-
 	
         
 </body>
