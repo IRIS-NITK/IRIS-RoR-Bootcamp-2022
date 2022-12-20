@@ -2,16 +2,73 @@
 <html lang="en">
 
 <head>
-    <title>First Webpage</title>
+    <title>My Guest Book</title>
+    <link rel="stylesheet" href="assignment1.css">
 </head>
 
 <body>
-    <h1>Welcome to my first webpage!</h1>
-    <p>This is a paragraph</p>
-    <p>This is the <a href="https://www.iris.nitk.ac.in">link</a> to IRIS NITK.</p>
-    <div class="city">
-        The college is situated in Mangalore.
-    </div>
+    <h1>My Guest Book</h1>
+    
+
+    <p>Please sign my guest book.Thanks!</p>
+    <form>
+    <label for="name"><b>What is your name?</b></label>
+    <input type="text" id="name" name="name"><br>
+    <br>
+    <label for="email"><b>What is your email address?</b></label>
+    <input type="text" id="email" name="email">
+    </form>
+    <br>
+    <label for="m"><div class="d"><b>Please check all that apply: </b></div></label>
+    <input type="checkbox" id="a">I really like your website<br>
+    
+    <input type="checkbox" id="a">One of the best websites <br>
+    
+    <input type="checkbox" id="a">I sure wish my site looked as good as yours
+     <br>
+    
+    <input type="checkbox" id="a">have no taste and I'm pretty dense,so your site didn't do much for me<br>
+    <br>
+    <label for="n"><div class="d"><b>Choose the one thing that you love best about my website </b></div>l</label>
+    <input type="radio" id="h">That gorgoeus picture of you 
+    <br>
+    
+    <input type="radio" id="h">All the beautiful pictures of your cats
+    <br>
+    
+    <input type="radio" id="h ">The inspiring recap of your suburban childhood
+    <br>
+    
+    <input type="radio" id="h " >The detailed list of all your Elvis memorabilia's
+    <br>
+    <br>
+    <label for="kl"><div class="d"><b>If my website were a book,how many copies would it sell?</b></div></label><br>
+    <select name="Number of copies" size="5" multiple="multiple">  
+    <option value="Million for sure"> Million for sure </option>  
+    <option value="100,00+(would be an Orphan's favourite"> 100,00+(would be an Orphan's favourite </option>  
+    <option value="Thousands(an under appreciated classic"> Thousands(an under appreciated classic </option>  
+    </select>  
+    <br>
+    <br>
+    <br>
+    <label for="g"><div class="e"><b>How can I improve my website?</b></div></label>
+    <select>
+        <option value="Couldn't be better">Couldn't be better</option>
+        <option value="It's amazing">It's amazing</option>
+        <option value="Awesome">Awesome</option>
+    </select>
+    <br>
+    <br>
+    <form>
+    <label for="text"><div class="bnm"><b>Feel free to type more praise,<br>gift offers etc below :</b></div></label>
+        <textarea id="text" rows="5" cols="50"></textarea>
+
+    </form>
+    <br>
+    <br>
+    
+    <button type="submit">Click here to submit</button>
+    <button type="reset">Erase and Start over</button>
 </body>
 
 </html>

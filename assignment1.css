@@ -1,0 +1,22 @@
+body{
+    background-color: gold;
+}
+
+label{
+    display: block;
+    float: left;
+    width: 250px;
+}
+
+.d{
+    display: block;
+    float: left;
+    height: 80px;
+}
+
+
+
+
+
+
+
