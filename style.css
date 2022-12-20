@@ -1,0 +1,20 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: bisque;
+}
+h1{
+    padding: 5px;
+}
+.greeting{
+    padding: 10px;
+}
+#details{
+    padding-top: 10px;
+}
+b{
+    padding-right:250px;
+    padding-bottom:10px;
+}
+#suggest{
+    display:inline-flex;
+}
