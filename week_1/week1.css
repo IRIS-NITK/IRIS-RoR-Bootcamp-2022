@@ -1,0 +1,34 @@
+.week7:active {
+    background-color: #ffffff;
+    box-shadow: 0 5px rgb(118, 111, 111);
+    transform: translateY(3px);
+}
+div
+{
+  display: block;
+  margin-left: 300px;
+}
+
+label{
+  float: left;
+  width: 250px;
+}
+.week2
+{
+  display: block;
+  margin-left: 300px;
+}
+body
+{
+  background-image: url("");
+}
+#v
+{
+  overflow-y: scroll;
+  height: 50px;
+  resize:none;
+}
+body
+{
+  background-color:rgb(0, 242, 255);
+}
