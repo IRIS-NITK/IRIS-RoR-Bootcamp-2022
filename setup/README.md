@@ -1,6 +1,6 @@
 # Installation
 
-One of the following ways can used to install a Ruby and RoR
+One of the following ways can used to install Ruby and RoR
 - [Dev Container](./dev_container.md)
 - [GitHub codespaces](./github_codespaces.md)
 
