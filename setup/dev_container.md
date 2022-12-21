@@ -36,3 +36,9 @@ code .
 * After the build completes, VS Code will automatically connect to the container.
 
 -------------------------------------------------
+
+The folder will be reopened inside a Debian container.
+The container has `rvm`, `node` and `yarn` preinstalled so you can get started off working with rails.
+
+![image](https://user-images.githubusercontent.com/66632353/208944762-9279ad6f-7408-480c-9c10-fd0296137f8a.png)
+
