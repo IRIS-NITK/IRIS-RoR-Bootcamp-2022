@@ -2,7 +2,7 @@
 The [Visual Studio Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers)
 extension lets you use a Docker container as a full-featured development environment.
 
-Steps to use [install](https://code.visualstudio.com/docs/devcontainers/containers#_installation)
+Steps to [install](https://code.visualstudio.com/docs/devcontainers/containers#_installation)
 and use dev Containers - 
 
 ## 1. Install docker
