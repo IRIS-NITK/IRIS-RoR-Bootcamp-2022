@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>week01</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h1>My Guest Book</h1>
+<p>Please sign my guest book. Thanks!</p>
+<br>
+<form>
+  <p>
+    <label for="a"><b>What is your name?</b></label>
+    <input id="a" type="text">
+  </p>
+  <br>
+  <p>
+    <label for="b"><b>What is your email address?</b></label>
+    <input id="b" type="email">
+  </p>
+  <br>
+  <p>
+    <label for="check"><b>Please check all that apply:</b></label>
+    <input type="checkbox"  value="I really like your website">I really like your website
+    <br>
+    <input type="checkbox"  value="One of the best sites I've seen">One of the best sites I've seen
+    <br>
+    <input type="checkbox" value="I sure wish my site looked as good as yours">I sure wish my site looked as good as yours
+    <br>
+    <input type="checkbox" value="I've no taste and I'm pretty dense, so your site didn't do much for me
+    ">I've no taste and I'm pretty dense, so your site didn't do much for me
+
+ 
+  </p>
+  <br>
+  
+
+  <p>
+    <label for="best"><b>Choose the one thing that you love best about my website?</b></label>
+    <input type="radio" name="love" value="The gorgeous picture of you">The gorgeous picture of you
+    <br>
+    <input type="radio" name="love" value="All the beautiful pictures of your cats">All the beautiful pictures of your cats
+    <br>
+    <input type="radio" name="love" value="The inspiring recap of your suburban childhood">The inspiring recap of your suburban childhood
+    <br>
+    <input type="radio" name="love" value="The detailed list of all your Elvis memorabilia's">The detailed list of all your Elvis memorabilia's
+
+ 
+  </p>
+  <br>
+  <p>
+    <label for="book"><b>If my website were a book, how many copies would it sell?</b></label>
+    <br>
+    <select id="book" name="book" size="3" multiple>
+    <option value="Millions, for sure">Millions, for sure</option>
+    <option value="100,00+ (would be Orphan's favorite">100,00+ (would be Orphan's favorite)</option>
+    <option value="Thousands (an under appreciated classic)">Thousands (an under appreciated classic)</option>
+    
+    </select>
+  </p>
+  <br>
+  <p>
+    <label for="website"><b>How can I improve my website?</b></label>
+    <select id="website" name="website">
+    <option value="couldn't be better">couldn't be better</option>
+    <option value="could have used more styles">could have used more styles</option>
+    <option value="could have used bootstrap">could have used bootstrap</option>
+    
+    </select>
+  </p>
+  <br>
+
+  <p>
+    <label for="text"><b>Feel free to type more praise, gift offers, etc, below:</b></label>
+    <br>
+    <textarea id="text" name="text" rows="5" cols="50"></textarea>
+  </p>
+  <br>
+  <input type="submit" value="Click Here to Submit">
+  <input type="reset"  value="Erase and start over">
+</form>
+
+</body>
+</html>
