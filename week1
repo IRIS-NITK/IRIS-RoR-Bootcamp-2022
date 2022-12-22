@@ -1,1 +1,38 @@
-
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <head>
+    <center><h1><b>My Guest Book</b></h1></center>
+    </head>
+    <marquee direction="right"><h3>please sign my guest book. Thanks!</h3></marquee>
+    <body>
+    <form>
+     <p class="name"><label for="Name"><b>What is your name?</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+     <input type="text" id="name" name="Name"></p><br><br>
+     <p class="email"><label for="Email"><b>What is your email address</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+     <input type="text" id="email" email="Email"></p><br><br>
+     <p class="options1"><label for="opinion"><b>Please check all that apply:</b></label><br>
+     <input type="checkbox" value="yes">I really like your website<br>
+     <input type="checkbox" value="yes">One of the best sites I have ever seen<br>
+     <input type="checkbox" value="yes">I sure wish my site looked as good as yours<br>
+     <input type="checkbox" value="yes">I have no taste and i`m pretty dense,so your site didn`t do much for me</p><br><br>
+     <p class="options2"><label for="Opinion"><b>Choose the one thing that you love best about my web site</b></label><br>
+     <input type="radio" name="r">That gorgeous picture of you<br>
+     <input type="radio" name="r">All the beautiful pitcture of cats<br>
+     <input type="radio" name="r">The inspiring recap of your suburban childhood<br>
+     <input type="radio" name="r">The detailed list of all your Elvis memororablia`s</p><br><br>
+     <p class="box"><label for="question"><b>If my website were a book, how many copies wold it sell?</b></label><br>
+     <textarea rows="8" cols="50" name="description"></textarea></p><br><br><br>
+     <p class="options3"><b>How can I improve my Website?</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <select>
+        <option>Coundn`t be better</option>
+        <option>can improve website layout</option>
+        <option>can improve website design</option>
+     </select></p><br><br>
+     <p class="feedback"><b>Feel free to type more praise, gift offer, etc below:</b><br>
+     <textarea rows="5" cols="50" name="description"></textarea></p><br><br>
+     <button type="submit">Click here to submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <button type="clear">Clear and start over</button>
+    </form>
+    </body> 
+</html>
