@@ -1,0 +1,88 @@
+ body
+{
+    background-color: rgba(197, 243, 168, 0.734);
+}
+
+.p{
+    font-size: 20px;
+}
+
+.img{
+    position: absolute;
+    float:right;
+    right: 420px;
+    top: 100px;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#name
+{
+    display: inline-block;
+    position: relative;
+    left:420px;
+    top:-20px;
+    width : 180px;
+    height: 17px;
+}
+
+#email
+{
+    display: inline-block;
+    position: relative;
+    left:420px;
+    top:-20px;
+    width : 180px;
+    height: 17px;
+}
+
+.impression{
+    margin-left: 420px;
+    position: relative;
+    top:-30px;
+}
+
+.opinion{
+    margin-left: 416px;
+    position: relative;
+    top:-52px;
+}
+
+.feedback{
+    margin-left: 420px;
+    position: relative;
+    top:-20px;
+}
+
+.sell{
+    margin-left: 420px;
+    position: relative;
+    top:-20px;
+}
+
+.extra-info{
+    margin-left: 420px;
+    position: relative;
+    top:-20px;
+}
+
+.tq{
+    text-align: center;
+}
+
+.bh{
+    text-align: center;
+}
+
+a:link{
+    text-align: center;
+}
+
+a:visited{
+    color:blue;
+}
+
+a:hover{
+    color:green;
+}
