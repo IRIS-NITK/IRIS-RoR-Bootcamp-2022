@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&family=Ubuntu:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+.body{
+   /* background-color:#80ced6; */
+   background-color: #557a95;
+   overflow-x: hidden;
+   padding-left: 50px;
+   padding-right: 50px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+  
+    
+
+}
+#nav1{
+    background-color:black;
+}
+.ul1{
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    /* background-color: inherit; */
+    color: white;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.brand img{
+    width:80px;
+    padding: 0 8px;
+    
+    
+}
+.brand{
+    align-items: center;
+    display: flex;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+#header{
+    background-color: mediumslateblue;
+}
+#jump2
+{
+    background-color:#557a95;
+    color:black;
+}
+.h12{
+    background-color:#557a95;
+    font-weight:200;
+    font-family: 'Anton', sans-serif;
+    color: aquamarine;
+    font-size:medium;
+    padding-bottom: 10px;
+}
+.h12:hover{
+    color: aqua;
+}
+#p1{
+    font-family: 'Anton', sans-serif;
+    /* color: #d5f4e6; */
+    background-color:#557a95 ;
+    color:#b1a296;
+    padding-top: 20px;
+}
+.label{
+    color: slateblue;
+}
+#inputEmail3, #inputName3{
+    display: block;
+    width: auto;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: black;
+    background-color:#d5f4e6;
+    background-image: none;
+    border: 3px solid #ccc;
+    border-radius: 9px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 8px 4px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+#inputEmail3:hover, #inputName3:hover{
+    background-color:#b1a296;
+}
+.card{
+    --bs-card-border-width: 0px;
+    --bs-card-border-color: violet;
+   --bs-card-background-color:indigo;
+   --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 2rem;
+}
+#text3, #text4, #text5, #text6, #text7, #text8{
+    color:black;
+    font-size: large;
+    font-weight:900;
+    font-family: 'Mukta', sans-serif;
+}
+#text3:hover,#text4:hover,#text5:hover,#text6:hover,#text7:hover,#text8:hover,#example1:hover,.custom-select:hover{
+    color:aqua;
+}
+.card-body{
+background-color:#d5f4e6;
+}
+/* .card-body:hover{
+    color:white;
+} */
+.custom-select{
+    background-color: #d5f4e6;
+}
+.custom-select:hover{
+    color: black;
+}
+#example{
+    text-align: center;
+}
+textarea.form-control {
+    height: auto;
+    width: 40%;
+    background-color: #d5f4e6;
+    padding-top: 30px;
+    padding-left: 70px;
+}
+#example1 {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 30px;
+}
+#button1:hover{
+color: blue;
+background-color:aqua;
+}
+#iris1{
+    width: 30px;
+    border-radius: 50%;
+}
+#jump1{
+    background-color:#557a95;
+    color:black; 
+}
+.fa-envelope:before{
+    content: "\f0e0";
+    color: black;
+}
+.fa-github:before {
+    content: "\f09b";
+    color: black;
+}
+.fa-linkedin:before {
+    content: "\f08c";
+    color: black;
+}
+.fa-instagram-square:before, .fa-square-instagram:before {
+    content: "\e055";
+    color: black;
+}
+
+    /* .img2{
+        align-self: center;
+        width: 30%;
+      } */
+      img {
+        vertical-align: middle;
+        width: 35%;
+    }
