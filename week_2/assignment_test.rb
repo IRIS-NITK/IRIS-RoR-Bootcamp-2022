@@ -1,9 +1,9 @@
 require_relative 'assignment'
 require 'minitest/autorun'
 
-class ArmstrongTest < Minitest::Test
+class AssignmentTest < Minitest::Test
 
-  def test_armstrong_number
+  def test_assignment
     test_cases = [
       {
         n: 000111,
