@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guest Book</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+    <form>
+        <fieldset>
+        <legend><h1> My Guest Book </h1></legend>
+        
+        <p>
+        Please sign in my guest book. Thanks !<br><br>
+
+        <label for="Name" ><b>What is your name?</b><br>
+            <input type="text" id="Name" name="Name" placeholder="Enter your name." class="textbox"><br><br>
+        </label>
+
+        <label for="E-mail"><b>What is your e-mail address?</b><br>
+            <input type="text" id="E-mail" name="E-mail" placeholder="Enter your e-mail address." class="textbox"><br><br>
+        </label>
+
+        <label><b> Please check all that apply:</b><br>
+            <input type="checkbox" id="Liking1" name="Liking">
+            <label for="Liking1"> I really like your website. <br></label>
+        
+            <input type="checkbox" id="Liking2" name="Liking">
+            <label for="Liking2"> One of the best sites I've seen. <br></label>
+
+            <input type="checkbox" id="Liking3" name="Liking">
+            <label for="Liking3"> I sure wish my site looked as good as yours. <br></label>
+
+            <input type="checkbox" id="Liking4" name="Liking">
+            <label for="Liking4"> I have no taste and I'm pretty dense, so your site didn't do much for me. <br><br></label>
+        </label>
+
+        <label fo="Fav"><b> Choose the one thing that you love best about my website:</b><br>
+            <input type="radio" id="Fav1" name="Fav">
+            <label for="Fav1"> That gorgeous picture of you. <br></label>
+
+            <input type="radio" id="Fav2" name="Fav">
+            <label for="Fav2"> All the beautiful pictures of your cats. <br></label>
+
+            <input type="radio" id="Fav3" name="Fav">
+            <label for="Fav3"> The inspiring recap of your suburban childhood. <br></label>
+
+            <input type="radio" id="Fav4" name="Fav">
+            <label for="Fav4"> The detailed list of all your Elvis memorabilia's. <br><br></label>
+        </label>
+
+
+        <label><b> If my website were a book, how many copies would it sell?</b>
+            <div id="value" class="books">
+                <div>Millions, for sure</div>
+                <div>100,000+ (would be Orphan's favourite)</div>
+                <div>Thousands (an under appreciated classic)</div>
+                <div id="log"></div>
+            </div>
+            <br><br>
+        </label>
+
+        <label><b> How can I improve my website? </b>
+            <select name="Improv" id="language">
+                <option value="Very High">Take it down immediately!</option>
+                <option value="Low">Hire someone else to help you.</option>
+                <option value="Mid">Pretty nice for usage, just debug it.</option>
+                <option value="High" selected>Couldn't be better</option>
+            </select>
+            <br><br>
+        </label>
+
+
+        <label for="comments"> <b> Feel free to type more praise, gift offers, etc, below: </b> <br></label>
+        <input type="textarea" id="comments" name="comments" class="textarea">
+        <br><br>
+
+        <label for="submit">
+        <input type="submit" value="Click here to Submit">
+        </label>
+
+        <label for="reset">
+        <input type="reset" value="Erase and Start Over">
+        </label>
+
+        </p>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
