@@ -1,0 +1,9 @@
+body{
+    background-color: powderblue;
+}
+#details{
+    padding-top:15px;
+}
+#subdetails{
+    display:inline-flex;
+}
