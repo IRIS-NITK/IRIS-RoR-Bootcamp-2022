@@ -6,4 +6,4 @@ One of the following ways can used to install Ruby and RoR
 
 
 **Note** - If you are unable to install Ruby due to some reason, you can still
-participate in bootcamp with the help of [GitHub codespaces](./github_codespaces).
+participate in bootcamp with the help of [GitHub codespaces](./github_codespaces.md).
