@@ -1,0 +1,13 @@
+body{
+	color: black;
+	font-family: Arial;
+}
+
+.margin{
+	margin-left:10px;
+}
+
+span{
+	color:red;
+	font-family: Cursive;
+}
