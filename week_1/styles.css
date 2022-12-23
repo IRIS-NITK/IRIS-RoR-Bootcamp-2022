@@ -14,3 +14,16 @@ input
     { 
         display: table-cell; 
     }
+html, body
+    {
+        height:100%;
+        margin:0;
+        padding:0%;
+        background: #fcde67 ;
+
+    }
+* {
+        margin: 0;
+        color: #030e12;
+    }
+    
