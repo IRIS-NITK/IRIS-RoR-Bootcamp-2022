@@ -1,0 +1,79 @@
+
+        
+.GG {
+    position: absolute;
+    left: 30.5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 3px double black;
+    width: 200px;
+    height: 75px;
+    margin-top: -2.5vh;
+}
+
+.run {
+    margin: 0px -1.6vh 0px 0px;
+}
+.dido{
+    position: relative;
+    left: 30.5%;
+    margin-top:-4.5vh ;
+} 
+.duir{
+    position: relative;
+    left: 30.5%;
+    margin-top:-4.5vh ;
+}
+.ru{
+    position: relative;
+    left: 30.5%;
+    margin: top 1.5vh; ;
+}
+.me{
+    position: relative;
+    left: 21%;
+    margin: top 1.5vh; ;
+}
+.name{
+    margin:top 3.5vh;
+    margin-bottom: 20px;
+}
+.ll{
+    position: absolute;
+    left: 30.5%;
+    margin-top: 50px;
+}
+
+.email{
+    margin-top: 20px;
+    margin-bottom: 75px;
+}
+
+#email{
+    
+    position: absolute;
+
+}
+
+.ru{
+    position:absolute;
+    top: 160px;
+    left: 30.6%;
+}
+.if{
+    margin-bottom:90px;
+}
+.Amith{
+    position:absolute;
+    left:30.6%;
+    padding-bottom:30px;
+}
+
+#ri{
+    position: absolute;;
+}
+
+.rado{
+    margin-bottom: 200px;
+}
+
