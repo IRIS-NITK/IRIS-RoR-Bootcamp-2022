@@ -1,4 +1,4 @@
-require_relative 'imp'
+require_relative 'pet'
 require 'minitest/autorun'
 
 class PetTest < Minitest::Test
