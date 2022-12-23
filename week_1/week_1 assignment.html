@@ -10,23 +10,25 @@
   <body>
     <form action="thanks.html">
       <div class="heading">
-        <h2>My Guest Book</h2>
-        <h4>Please sign my guest book, Thanks</h4>
+        <h2>Welcome to My Guest Book</h2>
+        <h3>Please sign my guest book, Thanks</h3>
       </div>
+      <div class="cont">
       <label for="name">
         <div class="question">
-          <b>What is your name?</b>
+          <b>What is your name? *</b>
         </div>
         <div class="inputs">
-          <input type="text" id="name" name="name" /><br /><br />
+          <input type="text"  name="name" required />
         </div>
       </label>
+    </div>
       <label for="email">
         <div class="question">
-          <b>What is your email address?</b>
+          <b>What is your email address? *</b>
         </div>
         <div class="inputs">
-          <input type="email" id="email" name="email" /><br /><br />
+          <input type="email"  name="email" required />
         </div>
       </label>
       <label for="op">
@@ -34,50 +36,61 @@
           <b>Please check all that apply:</b>
         </div>
         <div class="inputs">
-          <input type="checkbox" id="op" />I really like your website<br />
-          <input type="checkbox" id="op" />One of the best sites I've seen<br />
-          <input type="checkbox" id="op" />I sure wished my site looked as good
-          as yours.<br />
-          <input type="checkbox" id="op" />I have no taste and I'm pretty dense,
-          so your site didnt do much for me<br /><br />
+          <input type="checkbox" id="op" />I really like your website<br/>
+          <input type="checkbox" id="op" />One of the best sites I've seen<br/>
+          <input type="checkbox" id="op" />I sure wished my site looked as good as yours.<br />
+          <input type="checkbox" id="op" />I have no taste and I'm pretty dense,so your site didnt do much for me<br />
         </div>
       </label>
-      <label for="a">
+      <label for="que1">
         <div class="question">
           <b>Choose the one thing that you love best about my website:</b>
         </div>
         <div class="inputs">
-          <input type="radio" name="a" id="a" />That gorgeous picture of you<br />
-          <input type="radio" name="a" id="a" />All the beautiful pictures of
-          your cats<br />
-          <input type="radio" name="a" id="a" />The inspiring recap of your
-          suburban childhood<br />
-          <input type="radio" name="a" id="a" />The detailed list of all your
-          Elvis memorabilias<br /><br />
+          <input type="radio"  id="a" />That gorgeous picture of you<br/>
+          <input type="radio"  id="a" />All the beautiful pictures of your cats<br/>
+          <input type="radio"  id="a" />The inspiring recap of your suburban childhood<br/>
+          <input type="radio"  id="a" />The detailed list of all your Elvis memorabilias<br/>
         </div>
       </label>
-      <label for="sell"
-        ><b>If my website were a book, how many copies would it sell?</b>
+      <label for="que2">
+        <div class="question">
+          <b>If my website were a book, how many copies would it sell?</b>
+        </div>
+        <div class="inputs">
+          <select name="copies" >
+            <option value="">--select your choice--</option>
+            <option value="1">Millions, for sure</option>
+            <option value="2">100,000+ ( Would be Orphan's favourite)</option>
+            <option value="3">Thousands (an under appreciated classic)</option>
+          </select>
+        </div>
       </label>
-      <select name="copies" multiple id="sell">
-        <option>Millions, for sure</option>
-        <option>100,000+ ( Would be Orphan's favourite)</option>
-        <option>Thousands (an under appreciated classic)</option></select
-      ><br /><br />
-      <label for="fb"><b>How can I improve my website?</b></label>
-      <select name="fb" id="fb">
-        <option>Couldn't be better</option>
-        <option>Could be a little better</option>
-        <option>Could be way better</option></select
-      ><br /><br />
-      <label for="text"
-        ><b>Feel free to type more praise,gift offers,etc below:</b></label
-      >
-      <textarea id="text" rows="5" cols="35"></textarea><br /><br />
-
-      <button type="submit">Click here to submit</button>
-
-      <button type="reset">Erase and start over</button>
+      <label for="fb">
+        <div class="question">
+          <b>How can I improve my website?</b>
+        </div>
+        <div class="inputs" >
+          <select  id="fb">
+            <option value="">--select your choice--</option>
+            <option value="1">Couldn't be better</option>
+            <option value="2">Could be a little better</option>
+            <option value="3">Could be way better</option>
+          </select>
+        </div>
+      </label>
+      <label for="text">
+        <div class="question">  
+          <b>Feel free to type more praise,gift offers,etc below:</b>
+        </div>
+        <div class="inputs">  
+          <textarea id="text" rows="10" cols="50"></textarea>
+        </div>
+      </label>
+      <div class="button">
+        <button type="submit">Click here to submit</button>
+        <button type="reset">Erase and start over</button>
+      </div>
     </form>
   </body>
 </html>
