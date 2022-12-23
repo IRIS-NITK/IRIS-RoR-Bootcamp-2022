@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head> 
+        <title>My Guest Book</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header id="header">
+            <div class="container"> 
+                <h1>My Guest Book</h1>
+            </div>
+        </header>
+        <section >
+            <div id="sub_heading">
+                <p>Please sign my guest book. Thanks!</p>
+            </div>
+    
+        </section>
+        <!--form-->
+        <form id="form"> 
+            <!--name-->
+            <div class="container" >
+                <label><b>What is your name?</b></label>
+                <input type="text"  id="name" name="name" placeholder="Enter full name" class="basic-styling" >
+            </div>
+            <br>
+            <!--email-->
+            <div class="input_email">
+            <label><b>What is your email address?</b></label>
+            <input type="email" id="email" name="email" placeholder="ex: name@gmail.com" class="basic-styling">
+            </div>
+             <br>
+             <!--input checkbox-->
+             <div class="input_checkbox">
+                <label><b>Please check all that apply:</b></label>
+                <input type="checkbox" id="op1" name="op1" value="op1">
+                <label for="op1"> I really like your website</label><br>
+                <div class="move_left">
+                <input type="checkbox" id="op2" name="op2" value="op2">
+                <label for="op2"> One of the best sites I've seen</label><br>
+                <input type="checkbox" id="op3" name="op3" value="op3">
+                <label for="op3"> I sure wish my site looked as good as yours.</label><br>
+                <input type="checkbox" id="op4" name="op4" value="op4">
+                <label for="op4" class="expand">I have no taste and I'm pretty dense, so your site didn't do much for me</label><br>
+                </div>
+            </div>
+            <br>
+            <!--radio buttons-->
+            <div class="radio_input">
+                <label><b>Choose the one thing that you love best about my website</b></label>
+                
+                <input type="radio" id="op1" name="best_feature" value="op1">
+                <label for="op1">That gorgeous picture of you</label><br>
+                <div class="move_left">
+                <input type="radio" id="op2" name="best_feature" value="op2">
+                <label for="op2">All the beautiful picture of your cats</label><br>
+                <input type="radio" id="op3" name="best_feature" value="op3">
+                <label for="op3" class="expand">The inspiring recap of your suburban childhood</label><br>
+                <input type="radio" id="op4" name="best_feature" value="op4">
+                <label for="op4" class="expand">The detailed list of all your Elvis memorabilia's</label>
+                </div>
+            </div>
+            <br>
+            <!--multiple select-->
+            <div class="multiple_select"> 
+                <label for="copies"><b>If my website were a book, how many copies would it sell?</b></label>
+                <select name="copies" id="copies" multiple>
+                  <option value="opt1">Millions, for sure</option>  
+                  <option value="opt1">100,000+ (would be Orphan's favourite)</option>
+                  <option value="opt1">Thousands (an under appreciated classic)</option>
+                </select>
+            </div>
+            <br>
+            <!--select options-->
+            <div class="select">
+                <label for="improve"><b>How can I improve my website?</b></label>
+
+                    <select id="improve">
+                    <option value="o1">Couldn't be better</option>
+                    <option value="o2">It's good but some scope for improvement</option>
+                    <option value="o3">Managable, needs a lot of improvement</option>
+                    <option value="o4">Worst website, needs to be completely changed</option>
+                    </select>
+            </div>
+            <br>
+            <div class="text_review">
+                <label><b>Feel free to type more praise, gift offers, etc, below:</b></label>
+               <input type="text" id="review" name="review">
+            </div>
+            <div class="button_div">
+                <button type="submit" class="button">Click Here to Submit</button>
+                <button type="reset" class="button">Erase and start over</button>
+            </div>
+            
+
+        </form>
+    </body>
+</html>
