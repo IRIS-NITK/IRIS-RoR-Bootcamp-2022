@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Project </title>
+</head>
+<body>
+    <b> My Guest Book </b>
+    <br>
+    <p>Please sign my guest book. Thanks!</p>
+    <br>
+    <form action="/action.php">
+        <pre>
+<b>What is your name?</b>                                               <input type="text" placeholder="Type name">
+
+<b>What is your email address?</b>                                      <input type="text" placeholder="Type email">
+
+<b>Please check all that apply:</b>                              <label for="I really like your website.">
+                                                                <input type="checkbox" value="I really like your website." name="opinion" id="100">I really like your website.
+                                                                </label>
+                                                                <label for="One of the best site I've seen.">
+                                                                <input type="checkbox" value="One of the best site I've seen." name="opinion" id="101">One of the best site I've seen.
+                                                                </label>
+                                                                <label for="I sure wish my site looked as good as yours.">
+                                                                <input type="checkbox" value="I sure wish my site looked as good as yours." name="opinion" id="102">I sure wish my site looked as good as yours.
+                                                                </label>
+                                                                <label for="I have no taste and I'm pretty dense, so your site didnt do much for me.">
+                                                                <input type="checkbox" value="I really like your website" name="opinion" id="103">I have no taste and I'm pretty dense, so your site didnt do much for me.
+                                                                </label>
+                                                                        <label for="100">   
+<b>Choose the one thing that you love best about my website</b>        <input type="radio" value="That gorgeous picture of you." name="opinion"   id="100">That gorgeous picture of you.
+                                                                        </label>
+                                                                        <label for="101">   
+                                                                <input type="radio" value="All the beautiful pictures of your cat." name="opinion"   id="101">All the beautiful pictures of your cat.
+                                                                        </label>   
+                                                                        <label for="102">   
+                                                                <input type="radio" value="The inspiring recap of your suburban childhood." name="opinion"   id="102">The inspiring recap of your suburban childhood.
+                                                                        </label>
+                                                                        <label for="103">   
+                                                                <input type="radio" value="The detailed list of all your Elvis memorabilia's." name="opinion"   id="103">The detailed list of all your Elvis memorabilia's.
+                                                                                    </label>  
+
+<b>If my website were a book, how many copies would it sell?</b>
+                                                                <textarea name="feedback" id="100" placeholder="Type your opinion here"></textarea>
+
+
+<b>How can I improve my website?</b>                            
+                                                                <select name="feedback">
+                                                                <option value="Couldn't be better">Couldn't be better</option>
+                                                                <option value="Need better designing">Need better designing</option>
+                                                                <option value="Need to improve user interface">Need to improve user interface</option>
+                                                                </select>   
+                                                                
+<b>Feel free to type more praise, gift offers, etc, below:</b> 
+                                                                <textarea name="Text" id="100" placeholder="Type here"></textarea>
+
+<input type="submit" value="Click here to submit">      <input type="submit" value="Erase and start over">
+
+
+        </pre>
+    </form>
+</body>
+</html>
