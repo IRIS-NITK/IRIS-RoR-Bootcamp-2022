@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guest Book</title>
+    
+    <link href="style.css" rel="stylesheet" type="text/css"> 
+    
+  </head>
+  <body>
+    <p id="title">My Guest Book</p>
+    <p id="subtitle">Please sign my guest book. Thanks!</p>
+
+    <form>
+      <div class="name">
+        <label for="name" id="askname">What is your name? </label>
+        <input type="text" id="name">
+      </div>
+
+      <div class="email">
+        <label for="emailid" id="askmail">What is your email address?</label>
+        <input type="email" id="emailid">
+      </div>
+
+
+      <div class="applications">
+        <p id="application">
+          <label id="applyques">Please check all that apply:</label>  
+          <div class="app_choices">
+            <p id="appchoice"><input type="checkbox" />I really like your webiste</p>
+            <p id="appchoice"><input type="checkbox" />One of the best sites I've ever seen</p>
+            <p id="appchoice"><input type="checkbox" />I sure wish my site looked as good as yours.</p>
+            <p id="appchoice"><input type="checkbox" />I have no taste and I'm pretty dense, so your site didn't do much for me</p>
+          </div>  
+        </p>
+      </div>
+
+      <div class="favorites">
+        <p id="favourite">
+          <label id="favques">Choose the one thing that you love best about my web site</label>
+          <div class="fav_choices">   
+            <p id="favchoice"><input type="radio" name="fav">That gorgeous picture of you</p>
+            <p id="favchoice"><input type="radio" name="fav">All the beautiful pictures of your cats</p>
+            <p id="favchoice"><input type="radio" name="fav">The inspiring recap of your suburban childhood</p>
+            <p id="favchoice"><input type="radio" name="fav">The detailed list of all your Elvis memorabilia's</p>
+          </div> 
+        </p>
+      </div>
+
+      <div class="flex">
+        <label for="copies" id="askcopies">If my website were a book how many copies would it sell?</label>
+        <div class="overflow">
+          <p class="marg">Millions for sure</p>
+          <p class="marg">100,000+ for sure (would be Orphan's favorite)</p>
+          <p class="marg">Thousands (an under appreciated classic)</p>
+        </div>  
+      </div>
+      
+      <div class="improvements">
+        <label for="improve_menu" id="askimprove">How can I improve my website?</label>
+        <select id="improve_menu">
+          <option value="first" selected>Couldn't be better</option>
+          <option value="second">Could use better styling</option>
+        </select>
+      </div>
+
+      <div class="inputs">
+        <label for="textinput" id="askpraise" >Feel free to type more praise, gift offers, etc, below:</label>
+        <span id="askinput"><textarea id="textinput"></textarea></span>
+      </div>
+      
+      <div class="subres">
+        <input type="submit" id="submission" value="Click Here to Submit">
+        <input type="reset" id="reset" value="Erase and start over">
+      </div>
+
+      
+    </form>
+  </body>
+</html>

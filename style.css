@@ -1,0 +1,136 @@
+body {
+    padding-left: 15px;
+}
+
+p#title {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 10px;
+
+}
+
+#name {
+    position: absolute;
+    left: 45%;
+}
+
+#emailid {
+    position: absolute;
+    left: 45%;
+}
+
+
+.name {
+
+    margin-bottom: 15px;
+    font-weight: bold;
+
+}
+
+.email {
+
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#applyques {
+    font-weight: bold;
+}
+
+#favques {
+    font-weight: bold;
+}
+
+.improvements {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+#improve_menu {
+    position: absolute;
+    left: 45%;
+
+}
+
+#askinput {
+    position: absolute;
+    left: 45%;
+}
+
+#askpraise {
+    font-weight: bold;
+}
+
+#textinput {
+    padding-bottom: 40%;
+    padding-right: 60%;
+}
+
+.inputs {
+    margin-bottom: 110px;
+
+}
+
+.applications {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.app_choices {
+
+    position: absolute;
+    left: 45%;
+    margin-top: 10px;
+
+}
+
+#appchoice {
+    margin: 0px;
+}
+
+.favorites {
+    display: flex;
+    margin-bottom: 75px;
+
+
+
+}
+
+.fav_choices {
+
+    position: absolute;
+    left: 45%;
+    margin-top: 16px;
+}
+
+#favchoice {
+    margin: 0px;
+}
+
+.flex {
+    display: flex;
+    margin-bottom: 90px;
+}
+
+.overflow {
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+
+    border: 1px solid black;
+    margin-left: 0px;
+    position: absolute;
+    left: 45%;
+}
+
+#askcopies {
+    font-weight: bold;
+}
+
+.marg {
+    margin: 0px;
+}
