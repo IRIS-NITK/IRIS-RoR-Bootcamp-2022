@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form in HTML CSS</title>
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="style.css" />
+
+    
+  </head>
+  <body>
+    <section class="container">
+      <header>My Guest Book</header>
+      <form action="#" class="form">
+
+        <div>
+          <label>
+            Please sign my guest book. Thanks!
+          </label>
+        </div>
+        <div class="input-box1">
+          <label>What is your name?</label>
+          <input type="text" placeholder="Enter full name" required />
+        </div>
+
+        <div class="input-box2">
+          <label>What is your Email Adress</label>
+          <input type="text" placeholder="Enter email address" required />
+        </div>
+
+        
+        <div class="box-1">
+          <label>Please check all that apply</label>
+          <div class="options_options">
+            <div class="options">
+              <input type="radio" id="check-1" name="options" checked />
+              <label for="check-1">I really like your website</label>
+            </div>
+            <div class="options">
+              <input type="radio" id="check-2" name="options" />
+              <label for="check-2">One of the best sites I've seen</label>
+            </div>
+            <div class="options">
+              <input type="radio" id="check-3" name="options" />
+              <label for="check-3">I sure wish my site looked as good as yours</label>
+            </div>
+            <div class="options">
+              <input type="radio" id="check-4" name="options" />
+              <label for="check-4">I have no taste and I'm pretty dense, so your site didn't do much for me</label>
+            </div>
+          </div>
+
+          <div class="box-2">
+            <label>Choose the one thing that you love best about my
+              web site</label>
+            <div class="options_options">
+              <div class="options">
+                <input type="radio" id="check-1" name="options" checked />
+                <label for="check-1">That gorgeous picture of you</label>
+              </div>
+              <div class="options">
+                <input type="radio" id="check-2" name="options" />
+                <label for="check-2">All the beautiful pictures of your cats</label>
+              </div>
+              <div class="options">
+                <input type="radio" id="check-3" name="options" />
+                <label for="check-3">The inspiring recap of your suburban childhood</label>
+              </div>
+              <div class="options">
+                <input type="radio" id="check-4" name="options" />
+                <label for="check-4">The detailed list of all vour Elvis memorabilia's</label>
+              </div>
+            </div>
+        </div>
+        <div class="input-box">
+          <label>If my website were a book, how many copies would it sell?</label>
+          <input type="text" placeholder="Millions, for sure 100,000+ (would be Orphan's favorite)
+          Thousands (an under appreciated classic)" required />
+
+        </div>
+        
+        
+          
+          <div class="column">
+            <label>
+              How can I improve my website? </label>
+            
+            <div class="select-box">
+              <select>
+                <option hidden>Couldn't be better</option>
+                <option>Couldn't be better</option>
+                <option>Would be more modern</option>
+              </select>
+            </div>
+          
+          
+          </div>
+
+          <div>
+            <button type="submit">Click here to submit</button>
+            <button type="reset">Erase and start over</button>
+          </div>
