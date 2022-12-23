@@ -1,0 +1,58 @@
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-image: linear-gradient(to bottom right, rgb(93, 137, 240),rgb(131, 222, 252),rgb(247, 243, 243));
+}
+
+.name {
+    text-align: center;
+}
+.text-field,.feedbacks,.likeness,.infer,.suggests,.gifts{
+    display: grid;
+    grid-template-columns: 40vw auto;
+    grid-template-rows: auto;
+    justify-items: start;
+    align-items: top;
+    border-radius: 10px;
+}
+.text-field:hover,.feedbacks:hover,.likeness:hover,.infer:hover,.suggests:hover,.gifts:hover{
+    background-color: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+}
+label{
+    width: 30vw;
+}
+.main_labels{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+#submit{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(51, 206, 51);
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 0px 5px;
+}
+#submit:hover{
+    border: 3px solid black;
+    background-color: rgb(30, 122, 30);
+}
+#reset{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(226, 6, 6);
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 0px 5px;
+}
+#reset:hover{
+    border: 3px solid black;
+    background-color: rgb(175, 52, 52);
+}
+.buttons{
+    display:flex;
+    justify-content: center;
+}
+

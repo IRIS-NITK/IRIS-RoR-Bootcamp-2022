@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>
+        My Guest Book
+    </title>
+    <header style = "display: flex; justify-content: center">
+        <span>
+            <h1>My Guest Book</h1>
+        </span>
+    </header>
+
+<body>
+    Please sign my guest book.Thanks!
+    <form>
+        <div class="user-details">
+            <div class="text-field">
+                <label for="name" class="main_labels">What is your name?</label>
+                <input type="text" id="name" name="name"><br>
+            </div>
+            <div class="text-field">
+                <label for="email" class="main_labels">What is your email address?</label>
+                <input type="text" id="email" name="email"><br>
+            </div>
+        </div>
+        <br>
+        <div class="feedbacks">
+            <label class="main_labels">Please check all that apply:</label>
+            <div>
+                <input type="checkbox" id="feedback1" value="posneg">
+                <label for="feedback1">I really like your website</label><br>
+
+                <input type="checkbox" id="feedback2" value="posneg">
+                <label for="feedback2"> One of the best sites I've seen</label><br>
+
+                <input type="checkbox" id="feedback3" value="posneg">
+                <label for="feedback3"> Sure wish my site looked as good as yours</label> <br>
+
+                <input type="checkbox" id="feedback4" value="posneg">
+                <label for="feedback4"> Have no taste and I'm pretty dense, so your site didn't do much for me</label>
+                <br>
+            </div>
+        </div>
+        <br>
+        <div class="likeness">
+            <label class="main_labels">Choose the one thing that you love best about my website:</label>
+            <div>
+                <input type="radio" id="likeness1" name="like">
+                <label for="likeness1"> That gorgeous picture of you</label><br>
+                <input type="radio" id="likeness2" name="like">
+                <label for="likeness2"> All the beautiful picture of your cats</label><br>
+                <input type="radio" id="likeness3" name="like">
+                <label for="likeness3"> The inspiring recap of your suburban childhood</label><br>
+                <input type="radio" id="likeness4" name="like">
+                <label for="likeness4"> The detailed list of all your Elvis memorabilla's</label><br>
+            </div>
+        </div>
+        <br>
+        <div class="infer">
+            <label for="inference" class="main_labels">If my website were a book, how many copies would it sell?</label>
+            <textarea id="inference" name="inference" rows="10" cols="50"></textarea>
+        </div>
+        <br>
+
+        <div class="suggests">
+            <label for="suggestions" class="main_labels">How can I improve my website?</label>
+            <select>
+                <option value="blank">Couldn't be better</option>
+                <option value="blank"> Needs changes</option>
+            </select>
+        </div>
+        <br>
+
+        <div class="gifts">
+            <label for="gifts" class="main_labels">Feel free to type more praise, gift offers, etc: </label>
+            <textarea id="gifts" name="gifts" rows="10" cols="50"></textarea><br>
+        </div>
+        <br>
+
+        <div class="buttons">
+            <button type="button" id="submit">Click Here to Submit</button>
+            <button type="button" id="reset">Erase and start over</button>
+        </div>
+    </form>
+</body>
+</head>
+
+</html>
