@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Guest Book</title>
+    <style>
+        textarea{
+            resize: none;
+        }
+        table, th, td {
+  border: 2px solid orange;
+}
+    </style>
+</head>
+<body style = "background-color: orange;">
+   <form action="">
+    <h1>My Guest Book</h1>
+
+    <p>Please sign my guest book. Thanks!</p>
+
+    <table>
+    <tr><td><b>What is your name? </b></td>
+    <td><input type="text" name="name"></td></tr>
+    <tr><td></td></tr>
+
+    <tr><td><b>What is your email address: </b></td>
+    <td><input type="email" name="email" id="email"></td></tr>
+    <tr><td></td></tr>
+
+    <tr><td style = "vertical-align:top"><b>Please check all that apply: </b></td>
+            <td><input type ="checkbox" id="check1"></option>I really like your website<br>
+            <input type ="checkbox"id="check2">One of the best sites I've seen.</option> <br>
+            <input type ="checkbox"id="check3">I sure wish my site looked as good as yours.</option> <br>
+            <input type ="checkbox"id="check4">I have no taste and I'm pretty dense, so your site didn't do much for me</option> <br></td></tr>
+    
+    <tr><td style = "vertical-align:top"><b>Choose one thing that you love best about my web site </b></td>
+            <td><input type="radio" name="one best quality" id="1">That gorgeous picture of you  <br>
+            <input type="radio" name="one best quality" id="2">All the beautiful pictures of your cats  <br>
+            <input type="radio" name="one best quality" id="3">The inspiring recap of your suburban childhood  <br>
+            <input type="radio" name="one best quality" id="4">The detailed list of all your Elvis memorabilia's </td></tr>
+        
+    <tr><td style = "vertical-align:top"><b>If my website were a book, how many copies would it sell?</b></td>
+        <td><textarea name="If_book" id="If_book" cols="40" rows="4" style="overflow-y:scroll;">Millions, for sure 
+100,000+ (would be Orphan's favorite)
+Thousands (an underappreciated classic)
+</textarea></td></tr>
+
+    <tr><td><b>How can I improve my website?</b></td>
+        <td><select name="card_type" id="card_type">
+            <option value="1">Couldn't be better</option> <br>
+            <option value="2">Just good enough</option> <br>
+            <option value="3">Could look a little more interesting</option> <br>
+            <option value="4">Needs a lot of improvement</option> <br>
+        </select></td></tr>
+    
+    <tr><td style = "vertical-align:top"><b>Feel free to type more praise, gift offers, etc, below:</b></td>
+        <td><textarea name="more_praise" id="extras" cols="90" rows="8"></textarea></td></tr>
+    </table>   
+    <input type="submit" value="Click Here to Submit">
+    <input type="reset" value="Erase and start over">
+   </form>
+</body>
+</html>
