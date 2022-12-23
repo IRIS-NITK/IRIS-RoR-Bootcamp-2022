@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stlye.css">
+    <link rel="stylesheet" href="style.css">
     <title>GUEST BOOK | VAIBHAV </title>
 </head>
 <body>
+    
     <h1>My Guest Book</h1>
     Please sign my guest book. Thanks!
     <p>
+    <form>
     <table>
         <tr>
-            <td>What is your name?</td>
+            <td><b>What is your name?</b></td>
             <td><input type="text" class="text"></td>
         </tr>
         <tr>
-            <td>What is your email address?</td>
+            <td><b>What is your email address?</b></td>
             <td><input type="text" class="text"></td>
         </tr>
         <tr>
-            <td>Please check all that apply:</td>
+            <td><b>Please check all that apply:</b></td>
             <td> <input type="checkbox" class="checkbox">I really like your website</td>
         </tr>
         <tr>
@@ -37,24 +39,41 @@
             <td><td><input type="checkbox" name="" id="">I have no taste and I'm pretty dense, so your site didn't do much for me</td></td>
         </tr>
         <tr>
-            <td>Choose one thing that you love best about my website</td>
-            <td><input type="checkbox" name="" id="">That gorgeous picture of you</td>
+            <td><b>Choose one thing that you love best about my website</b></td>
+            <td><input type="radio" class="custom-checkbox">That gorgeous picture of you</td>
+            </tr>
+        <tr>
+            <td><td><input type="radio" class="custom-checkbox">All the beautiful picutres of your cat</td></td>
+        </tr>
+        <tr>
+            <td><td><input type="radio" class="custom-checkbox">The inspiring recap of your suburban childhood</td></td>
+        </tr>
+        <tr>
+            <td><td><input type="radio" class="custom-checkbox" >The detailed list of all your Elvis memorbilia's</td></td>
+        </tr>
+        <tr>
+            <td> <b>If my website were a book, how many copies it would sell?</b></td>
+            <td><textarea class="text1">Millions for sure 100,00+ (would be orpahans favourite) Thousands (an under appreciated classic) </textarea></td>
+        </tr>
+        <tr>
+            <td><b>How can I improve my website?</b></td>
+            <td><select name="" id="" class="text" ><option> Couldn't be better</option>
+                                        <option value="">Get good</option>
+                                        <option value="">Amogus</option>
+            </select></td>
             
         </tr>
         <tr>
-            
-            <td><td><input type="checkbox" name="" id="">All the beautiful picutres of your cat</td></td>
+            <td><b> Feel free to type more praise, gift offers, etc below</b></td>
+            <td> <textarea class="text2"> </textarea></td>
         </tr>
         <tr>
-            <td><td><input type="checkbox" name="" id="">The inspiring recap of your suburban childhood</td></td>
-        </tr>
-        <tr>
-            <td><td><input type="checkbox" name="" id="">The detailed list of all your Elvis memorbilia's</td></td>
-        </tr>
-        <tr>
-            <td> If my website were a book, how many copies it would sell?</td>
-            <td><input type="text" value="Millions for sure,100,00+ would be orpahans favourite" maxlength="40" size="50" ></td>
+            <td>
+                <input type="submit" class="button" value="Click Here to Submit"> 
+                <input type="reset" class="button" value="Erase and start over">
+            </td>
         </tr>
     </table>
+    </form>
 </body>
 </html>
