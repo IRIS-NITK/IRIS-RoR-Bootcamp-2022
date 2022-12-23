@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.heading{
+  background-color: rgb(0, 211, 211);
+  font-weight: 900;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-left: 10px;
+}
+
+form{
+  background-color: burlywood;
+ padding-left: 10px;
+ padding-right: 10px;
+ display: flex;
+ flex-direction: column;
+ justify-items: center;
+
+}
+
+label{
+    display: flex;
+    background-color:dodgerblue;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.inputs{
+    background-color:rgb(219, 28, 184);
+    align-items: center;
+    flex:2;
+}
+
+
+.question{
+    flex:1;
+    font-size: large;
+}
+
+
+
