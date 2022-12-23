@@ -110,7 +110,8 @@ class PetTest < Minitest::Test
       "No extra animal type ids should be present"
     
     expected.each do |k, pet_names|
-      assert_equal answer[k], pet_names, "Group of animal_type_id = #{k}, doesn't match"
+      assert_equal Set.new(answer[k]), Set.new(pet_names),
+        "Group of animal_type_id = #{k}, doesn't match"
     end
   end
 end
