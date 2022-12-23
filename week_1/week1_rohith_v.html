@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title> Assignment1 !!! </title>
+        <link rel="stylesheet" type="text/css" href="week1_rohith_v.css">
+    </head>
+    <body class="GuestBody">
+        <h1 class="GuestBook"> My Guest Book </h1>
+        <p> Please sign my guest book. Thanks! </p>
+        <form>
+            <label for="name"><b> What is your name? </b></label>
+            <input type="text" id="name" name="name" ><br><br>
+            <label for="email"><b> What is your email address? </b></label>
+            <input type="text" id="email" name="email"><br><br>
+            <label for="checkboxes"><b> Please check all that apply: </b></label><br>
+            <div class="MultiSelect">
+                <input type="checkbox" id="box1" name="box1">
+                <label for="box1"> I really like your website </label><br>
+                <input type="checkbox" id="box2" name="box2">
+                <label for="box2"> One of the best sites I've seen. </label><br>
+                <input type="checkbox" id="box3" name="box3">
+                <label for="box3"> I sure wish my site looked as good as yours. </label><br>
+                <input type="checkbox" id="box4" name="box4">
+                <label for="box4"> I have no taste and I'm pretty dense, so your site didn't do much for me </label><br><br>
+            </div>
+            <label for="checkboxes2"><b> Choose the one thing that you love best about my website: </b></label><br>
+            <div class="SingleSelect">
+                <input type="radio" id="box5" name="box5">
+                <label for="box5"> That gorgeuos picture of you </label><br>
+                <input type="radio" id="box6" name="box6">
+                <label for="box6"> All the beautiful pictures of your cats </label><br>
+                <input type="radio" id="box7" name="box7">
+                <label for="box7"> The inspiring recap of your suburban childhood</label><br>
+                <input type="radio" id="box8" name="box8">
+                <label for="box8"> The detailed list of all your Elvis memorablia's </label><br><br>
+            </div>
+            <label for="scrollbox1"><b> If my website were a book, how many copies would it sell? </b></label><br>
+            <select name="scrollbox1" id="scrollbox1" size = "4" multiple = "multiple">
+                <option value="line1"> Millions, for sure </option>
+                <option value="line2"> 100,000+ (would be Orphan's favorite)</option>
+                <option value="line3"> Thousands (an under appreciated classic)</option>
+            </select><br><br>
+            <label for="dropdown1"><b> How can I improve my website? </b></label>
+            <select name="dropdown1" id="dropdown1">
+                <option value="best"> Couldn't be better </option>
+                <option value="color"> Add more colors </option>
+                <option value="space"> More Spacing would be good </option>
+                <option value="font"> Choose a better font </option>
+            </select><br><br>
+            <label for="textarea1"><b> Feel free to type more praise, gift offers, etc, below: </b></label><br><br>
+            <textarea id="textarea1" name="textarea1" rows="5" cols="30"></textarea><br><br>
+            <button type="submit"> Click Here to Submit </button>
+            <button type="reset"> Erase and start over </button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+.GuestBody{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: bisque;
+}
+
+.GuestBook{
+    color: blue;
+    text-underline-position: below;
+    text-decoration: underline;
+}
+
+#name {
+    margin-left: 400;
+}
+#email{
+    margin-left: 340;
+}
+.MultiSelect{
+    margin-left: 545;
+    margin-top: -15;
+}
+.SingleSelect{
+    margin-left: 545;
+    margin-top: -15;
+}
+#scrollbox1{
+    margin-left: 550;
+    margin-top: -15;
+}
+#dropdown1{
+    margin-left: 318;
+}
+#textarea1{
+    margin-left: 550;
+    margin-top: -35;
+}
+
