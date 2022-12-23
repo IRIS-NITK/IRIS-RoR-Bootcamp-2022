@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<style>
+		body {
+			background-color: yellow;
+		}
+
+		.one {
+			background-color: aquamarine;
+		}
+
+		.two {
+			background-color: cornflowerblue;
+		}
+
+		.three,
+		textarea {
+			resize: none;
+			overflow-y: scroll;
+		}
+	</style>
+	<h2>My Guest book</h2>
+	<p>Please sign my guest book. Thanks!</p>
+	<p><b>What is your name?</b> &emsp;<input type="text" /></p>
+	<p><b>What is your email address?</b>&emsp;<input type="text" </p>
+	<div class="one">
+		<p><b>Please check all that apply:</b></p>
+		<input type="checkbox" />I really like your website<br />
+		<input type="checkbox" />One of the best sites I've ever seen.<br />
+		<input type="checkbox" />I sure wish my site looked as good as yours.<br />
+		<input type="checkbox" />I have no taste and I'm pretty dense, so your
+		site didn't do much for me<br />
+	</div>
+	<div class="two">
+		<p><b>Choose the one thing that you love best about my website</b></p>
+		<input type="radio" />That gorgeous picture of you<br />
+		<input type="radio" />All the beautiful pictures of your cats<br />
+		<input type="radio" />The inspiring recap of your suburban childhood<br />
+		<input type="radio" />The detailed list of all your Elvis memorabilia's<br />
+	</div>
+	<div class="three">
+		<p>
+			<b>If my website were a book, how many copies would it sell?</b>
+			<br /><br />
+			<textarea rows="4" cols="30" style="overflow: scroll"
+				placeholder="Millions for sure, 100,000+ (would be Orphan's favourite) Thousands (an under appreciated classic"></textarea>
+		</p>
+	</div>
+	<p><b>How can I improve my website</b></p>
+	<select>
+		<option>Couldn't be better</option>
+		<option>The design can be improved</option>
+		<option>Different colors can be used</option>
+	</select>
+	<p><b>Feel free to type more praise, gift offers, etc., below:</b></p>
+	<textarea rows="4" cols="50"> </textarea><br /><br />
+	<input type="submit" value="Click here to submit" />
+	<input type="submit" value="Erase and start over" />
+</body>
+
+</html>
