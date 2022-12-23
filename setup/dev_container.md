@@ -42,3 +42,6 @@ The container has `rvm`, `node` and `yarn` preinstalled so you can get started o
 
 ![image](https://user-images.githubusercontent.com/66632353/208944762-9279ad6f-7408-480c-9c10-fd0296137f8a.png)
 
+--------------------------------------------------
+
+Once done head over [here](./README.md#rvm), to learn about RVM and gemsets.
