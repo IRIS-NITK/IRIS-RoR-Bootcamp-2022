@@ -6,6 +6,7 @@
 name: Mark stale pull requests
 
 on:
+  workflow_dispatch:
   schedule:
   - cron: '38 3 * * *'
 
