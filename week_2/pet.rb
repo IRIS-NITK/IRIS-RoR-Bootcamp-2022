@@ -9,7 +9,7 @@ class Pet
   }
 
   # Each animal type requires a diffrent type of food
-  # The cost food per 1 kg is is stored in the `FOOD_COST_PER_KG` Hash
+  # The food cost per 1 kg is is stored in the `FOOD_COST_PER_KG` Hash
   # where the `key` is the animal id and `value` is the cost
   #
   # Eg- The food of reptiles(animal_type id = 4) costs 300/kg.
@@ -61,7 +61,7 @@ class Pet
   #
   # Eg - if the pet requires 0.5 kg of food per day
   # (i.e, food_consumed_per_day = 0.5), then
-  # pet.food_required(5) with return 2.5 as the answer
+  # pet.food_required(5) will return 2.5 as the answer
   #
   # cat = Pet.new(name: 'cat', animal_type_id: 6, food_consumed_per_day: 0.4)
   # cat.food_required(28) = 11.2 (0.4 * 28)
@@ -88,7 +88,7 @@ class Pet
   # dog = Pet.new(name: 'dog', animal_type_id: 6, food_consumed_per_day: 0.7)
   # fish = Pet.new(name: 'clownfish', animal_type_id: 2, food_consumed_per_day: 0.1)
   # snake = Pet.new(name: 'python', animal_type_id: 4, food_consumed_per_day: 0.3)
-  # Pet.cost_to_feed([cat, dog, fish, snake], 6) will
+  # Pet.cost_to_feed([cat, dog, fish, snake], 6) will return 6180.0
   def self.cost_to_feed(pets, days)
     raise NotImplementedError # TODO
   end
