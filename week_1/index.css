@@ -1,0 +1,13 @@
+* {
+    font-family: sans-serif;
+}
+
+.field {
+    display: flex;
+    padding: 15px 0px;
+}
+
+.field>label {
+    font-weight: bold;
+    width: 40%;
+}

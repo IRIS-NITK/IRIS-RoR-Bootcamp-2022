@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Guest Book</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>My Guest Book</h1>
+    <p>Please sign my guest book. Thanks!</p>
+
+    <div id="form">
+        <div class="field">
+            <label for="name">What is your name?</label>
+            <input type="text" id="name">
+        </div>
+        <div class="field">
+            <label for="email">What is your email address?</label>
+            <input type="text" id="email">
+        </div>
+        <div class="field">
+            <label for="feedback">Please check all that apply:</label>
+            <div class="inputs">
+                <input type="checkbox" id="like" >
+                <label for="like">I really like your website</label><br>
+                <input type="checkbox" id="best">
+                <label for="best">One of the best sites I've seen</label><br>
+                <input type="checkbox" id="good">
+                <label for="good">I sure wish my site looked as good as yours</label><br>
+                <input type="checkbox" id="taste">
+                <label for="taste">I have no taste and I'm pretty dense, so your site didn't do much for me</label><br>
+            </div>
+        </div>
+        <div class="field">
+            <label for="love">Choose the one thing that you love best about my web site</label>
+            <div class="inputs">
+                <input type="radio" id="gorgeous" name="love">
+                <label for="gorgeous" >That gorgeous picture of you</label><br>
+                <input type="radio" id="beautiful" name="love">
+                <label for="beautiful" >All the beautiful pictures of your cats</label><br>
+                <input type="radio" id="childhood" name="love">
+                <label for="childhood" >The inspiring recap of yoru suburban childhood</label><br>
+                <input type="radio" id="elvis" name="love">
+                <label for="elvis" >The detailed list of all yoru Elvis memorabilia's</label><br>
+            </div>
+        </div>
+        <div class="field">
+            <label for="copies">If my website were a book, how many copies would it sell?</label>
+            <textarea name="copies" id="copies" cols="30" rows="10">Millions for sure
+100,000+ (would be Orphan's favorite)
+Thousands (an under appreciated classic)</textarea>
+        </div>
+        <div class="field">
+            <label for="improve">How can I improve my website?</label>
+            <select name="improve" id="improve">
+                <option value="a">Couldn't be better</option>
+                <option value="b">Can't think of anything</option>
+            </select>
+        </div>
+        <div class="field">
+            <label for="praise">Feel free to type more praise, gift offers, etc, below:</label>
+            <textarea name="praise" id="praise" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+    <button>Click Here to Submit</button>
+    <button>Erase and start over</button>
+</body>
+</html>
