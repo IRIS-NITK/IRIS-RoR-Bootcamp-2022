@@ -1,0 +1,103 @@
+body{
+    padding-left: 10px;
+    
+}
+
+.getname{
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#namebox{
+    
+    position: absolute;
+    left: 55%;
+}
+
+.getmail{
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#emailbox{
+    position: absolute;
+    left: 55%;
+}
+
+.apply{
+    display: flex;
+    margin-bottom: 75px;
+    font-weight: bold;
+}
+
+.applymenu{
+    position: absolute;
+    left: 55%;
+    font-weight:lighter;
+
+}
+
+#applyoption{
+    margin: 0px;
+}
+.lv{
+    position: absolute;
+    left: 55%;
+    font-weight: lighter;
+    
+}
+
+#lv1{
+    margin: 0px;
+}
+.love{
+    margin-bottom:175px;
+    font-weight: bold;
+}
+
+.sell{
+    display: flex;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+.options{
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 1px solid black;
+    
+    position: absolute;
+    left: 55%;
+    font-weight: lighter;
+}
+
+#selloption{
+    margin: 0px;
+}
+.dropdownmenu{
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#menu{
+    position: absolute;
+    left: 55%;
+}
+
+.review{
+    display: flex;
+    margin-bottom: 85px;
+    font-weight: bold;
+}
+
+#textarea{
+    position: absolute;
+    left: 55%;
+    padding-bottom: 50px;
+    padding-right: 250px;
+}
+
+#c{
+    position:absolute;    
+}

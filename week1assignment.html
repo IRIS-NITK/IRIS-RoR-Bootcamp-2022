@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guest Book</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>My Guest Book</h1>
+    <p>Please sign my guest book. Thanks!</p>
+
+    <form>
+        <div class="getname">
+            <label>What is your name?</label>
+            <input type="text" id="namebox">
+        </div>
+
+        <div class="getmail">
+            <label >What is your email address?</label>
+            <input type="email" id="emailbox">
+            
+        </div>
+
+        <div class="apply">
+            <label id="pls">Please check all that apply:</label>
+            <div class="applymenu">
+              <p id="applyoption"><input type="checkbox">I really like your website</p>
+              <p id="applyoption"><input type="checkbox">One of the best sites I've seen.</p>
+              <p id="applyoption"><input type="checkbox">I sure wish my site looked as good as yours</p>
+              <p id="applyoption"><input type="checkbox">I have no taste and I'm pretty dense, so your site didn't do much for me</p>
+            </div>
+        </div>
+
+        <div class="love">
+            <label id="c">Choose the one thing that you love best about my web site</label>
+            <div class="lv">
+            <p id="lv1"><input type="radio" name="love">That gorgeous picture of you</p>
+            <p id="lv1"><input type="radio" name="love">All the beautiful pictures of your cats</p>
+            <p id="lv1"><input type="radio" name="love">The inspiring recap of your suburban childhood</p>
+            <p id="lv1"><input type="radio" name="love">The detailed list of all your Elvis memorabilia's</p>
+            </div>
+
+        </div>
+
+        <div class="sell">
+            <label>If my website were a book, how many copies would it sell?</label>
+            <div class="options">
+                <p id="selloption">Millions, for sure</p>
+                <p id="selloption">100,000+ (would be Orphan's favourite)</p>
+                <p id="selloption">Thousands (an under apprecidated classic)</p>
+            </div>
+        </div>
+
+        <div class="dropdownmenu">
+            <label>How can I improve my website?</label>
+            <select name="dropdown" id="menu">
+                <option value="option1">Couldn't be better</option>
+                
+            </select>
+        </div>
+
+        <div class="review">
+            <label>Feel free to type more praise, gift offers, etc, below:</label>
+            <textarea id="textarea"></textarea>
+        </div>
+
+        <div class="end">
+            <input type="submit" value="Click Here to submit">
+            <input type="reset" value="Erase and start over">
+        </div>
+    </form>
+</body>
+</html>
