@@ -95,6 +95,6 @@ For example, to debug `prime_numbers.rb` do the following:
 - Execute the function (or any valid ruby statement using the
   interpreter).
 
-![Debugging](screenshots/irb.png)
+![image](https://user-images.githubusercontent.com/66632353/209439834-f103fe31-4d5f-41d0-83e6-f2559163f7fb.png)
 
 - [How to use IRB to Explore Ruby](https://www.digitalocean.com/community/tutorials/how-to-use-irb-to-explore-ruby)
