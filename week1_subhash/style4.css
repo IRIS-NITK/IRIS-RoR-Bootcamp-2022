@@ -1,0 +1,30 @@
+
+ .body1{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    overflow-x: hidden;
+    background-color: cadetblue;
+    font-weight:500;
+
+}
+.container{
+    padding-left: 60px;
+    padding-right: 30px;
+    width: 60%;
+}
+.navbar-brand{
+    color: aliceblue;
+    font-weight: bolder;
+   
+    
+}
+nav{
+    
+    flex: auto;
+}
+#but1, #but2{
+    background-color: darkcyan;
+    color: black;
+}
