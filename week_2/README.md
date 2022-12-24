@@ -35,11 +35,10 @@ We will raise an `ArgumentError` exception to let the caller know that
 their function arguments were incorrect.
 
 **Note** - Do not use use the inbuilt `prime` library
-> Implement the function `prime_numbers` in the `file prime.rb`
+> Implement the function `prime_numbers` in the file `prime.rb`
 > and test your code with `ruby prime_test.rb`.
 
 - [Ruby - if...else, case, unless - TutorialPoint](https://www.tutorialspoint.com/ruby/ruby_if_else.htm)
 - [Ruby Keyword Arguments](https://thoughtbot.com/upcase/videos/ruby-keyword-arguments)
 - [How to Use Ruby Conversion Methods](https://www.rubyguides.com/2018/09/ruby-conversion-methods/)
 - [A Beginner's Guide to Exceptions in Ruby](https://www.honeybadger.io/blog/a-beginner-s-guide-to-exceptions-in-ruby/)
-

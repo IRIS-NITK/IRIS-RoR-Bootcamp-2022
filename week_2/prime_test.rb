@@ -1,4 +1,4 @@
-require_relative 'p_imp'
+require_relative 'prime'
 require 'minitest/autorun'
 
 class PrimeTest < Minitest::Test
