@@ -1,4 +1,5 @@
 # Week 2 - Ruby
+- [Into to Ruby](./intro_to_ruby.md)
 
 To make you familar with ruby syntax, we have created some exercises to help you
 learn and practice Ruby syntax - covering conditional statements (`if`, `else`, `elsif`), 
@@ -6,7 +7,7 @@ different ways of iteration (`each`, `map`) and some object oriented code.
 
 If you not familiar with programming concepts like `variable`, `function` and `class`,
 you can refer to the following resources
-- [TryRuby](https://try.ruby-lang.org/) and
+- [TryRuby](https://try.ruby-lang.org/)
 - [Learn Ruby the Hard Way](https://learnrubythehardway.org/book/).
 
 ## Pre-requisites
