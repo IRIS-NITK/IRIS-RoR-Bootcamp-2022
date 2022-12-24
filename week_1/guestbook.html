@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Guest Book</title>
+    <style>
+        body {
+            background: ivory;
+            font: 12pt Cambria;
+        }
+        .desc {
+            color:  sienna;
+            font-weight: bold;
+            width: 3in;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .inp {
+            font: 12pt Candara;
+            display: inline-block;
+        }
+    </style>
+
+    <script>
+        function reset(f) {
+            alert("hello");
+            var v = document.getElementsByClassName("clearable");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>My Guest Book</h1>
+    <p>Please sign my guest book. Thanks!</p>
+
+    <form>
+
+        <p>
+            <span id="foo" class="desc">What is your name? </span>
+            <span class="inp"><input class="clearable" name="name" width="20"></input></span>
+        </p>
+
+        <p>
+            <span class="desc">What is your email address?</span>
+            <span class="inp"><input class="clearable" name="email" width="20"></input></span>
+        </p>
+
+
+        <p>
+            <span class="desc">Please check all that apply: </span>
+            <span class="inp">
+                <input type="checkbox" value="v1"></input>
+                <label>I really like your website</label> <br />
+                <input type="checkbox" value="v2"></input>
+                <label>One of the best sites I've seen. </label><br />
+                <input type="checkbox" value="v3"></input>
+                <label>I sure wish my site looked as good as you</label> <br />
+                <input type="checkbox" value="v4"></input>
+                <label>I have no taste and I'm pretty dense, so your site didn't do much for me</label>
+            </span>
+        </p>
+
+        <p>
+            <span class="desc">Choose the one thing that you love best about my
+                web site </span>
+
+            <span class="inp">
+                <input   type="radio" name="best" value="r1"></input>
+                <label>That gorgeous picture of you </label><br />
+                <input checked="checked" type="radio" name="best"  value="r2"></input>
+                <label >All the beautiful pictures of your cats </label><br />
+                <input type="radio" name="best" value="r3"></input>
+                <label>The inspiring recap of your suburban childhood </label><br />
+                <input type="radio" name="best" value="r4"></input>
+                <label>The detailed list of all your Elvis memorabilia's </label>
+            </span>
+        </p>
+
+        <p>
+            <span class="desc">If my website were a book, how many copies would it sell? </span>
+            <span class="inp">
+                <textarea cols="40">
+Millions, for sure
+100,000+ (would be Orphan's favorite)
+Thousands (an under appreciated classic)
+Couldnt be better
+</textarea>
+            </span>
+        </p>
+
+        <p>
+            <span class="desc">How can I improve my website? </span>
+            <span class="inp">
+                <select name="cars" id="cars">
+                    <option value="volvo">Couldn't be Better</option>
+                    <option value="saab">Needs Work</option>
+                    <option value="mercedes">What website?</option>
+                    <option value="audi">No Comments</option>
+                </select>
+            </span>
+        </p>
+
+        <p>
+            <span class="desc">Feel free to type more praise, gift offers, etc, below: </span>
+            <span class="inp">
+                <textarea class="clearable" cols="60" rows="5">
+    </textarea>
+            </span>
+        </p>
+
+        <p>
+            <input type="button" value="Submit"></input>&nbsp;
+            <input type="button" value="Erase And Start Over" onclick='reset(this.form);'></input>
+        </p>
+    </form>
+</body>
+
+</html>
