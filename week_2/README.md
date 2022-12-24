@@ -25,11 +25,13 @@ ruby <file_name>
 ```
 
 ## Submission
-- Use the week1_<your_name> branch for your work
+- Use the week2_<your_name> branch for your work
 ```bash
-git checkout -b week1_<your_name>
+git checkout -b week2_<your_name>
 ```
 - Your Pull Request will be graded by the automated tests.
+- Once you have completed the assignment, submit a Pull
+Request with your work to the branch `week2_assignment` **(not `main`)**.
 
 ## Prime number
 
