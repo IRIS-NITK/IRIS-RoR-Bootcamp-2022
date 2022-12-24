@@ -44,8 +44,8 @@ whole number greater than 1 that cannot be exactly divided by
 any whole number other than itself and 1 
 (e.g. 2, 3, 5, 7, 11).
 
-The function below takes a [keyword argument
-s](https://en.wikipedia.org/wiki/Named_parameter) `n` and 
+The function below takes a [keyword argum
+ent](https://en.wikipedia.org/wiki/Named_parameter) `n` and 
 returns an array of prime numbers less than or equal to `n`.
 
 For example, `prime_numbers(n: 20)` should return the following:
