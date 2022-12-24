@@ -1,4 +1,4 @@
-require_relative 'prime'
+require_relative 'prime_numbers'
 require 'minitest/autorun'
 
 class PrimeTest < Minitest::Test
@@ -16,7 +16,7 @@ class PrimeTest < Minitest::Test
       expected << prime
 
       assert_equal expected, prime_numbers(n: prime),
-        "Wrong asnwer fot n: #{prime}"
+        "Wrong asnwer for n: #{prime}"
     end
   end
 

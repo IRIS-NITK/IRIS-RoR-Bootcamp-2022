@@ -16,3 +16,4 @@
 def prime_numbers(n:)
   raise NotImplementedError # TODO
 end
+
