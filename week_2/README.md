@@ -55,7 +55,7 @@ We will raise an `ArgumentError` exception to let the caller know that
 their function arguments were incorrect.
 
 **Note** - Do not use use the inbuilt `prime` library
-> Implement the function `prime_numbers` in the file `prime_numbers.rb`
+> Implement the function `prime_numbers` in the file [`prime_numbers.rb`](prime_numbers.rb)
 > and test your code with `ruby prime_test.rb`.
 
 - [Ruby - if...else, case, unless - TutorialPoint](https://www.tutorialspoint.com/ruby/ruby_if_else.htm)
@@ -74,7 +74,7 @@ the following information:
 - Type of animal(Mammals, Fish ...)(`animal_type_id`)
 - Food consumed by the pet per day in Kg(`food_consumed_per_day`)
 
-> Implement the class `Pet` above in the file `pet.rb` and test
+> Implement the class `Pet` above in the file [`pet.rb`](pet.rb) and test
 > your code with `ruby pet_test.rb`.
 
 - [attr_accessor, attr_writer and attr_reader](https://www.rubyguides.com/2018/11/attr_accessor/)
