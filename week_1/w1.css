@@ -1,0 +1,17 @@
+body {
+  margin-left: 30px;
+}
+.grid-items {
+  display: flex;
+  margin-top: 5px;
+  gap:20px;
+}
+.left_questions {
+  font-weight: bold;
+  width: 22%;
+}
+
+.input {
+  height: 100px;
+  width: 400px;
+}

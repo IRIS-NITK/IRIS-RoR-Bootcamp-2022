@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My guest page</title>
+    <link rel="stylesheet" href="w1.css" />
+  </head>
+  <body>
+    <h1>My Guest Book</h1>
+    <p>Please sign my guest book. Thanks!</p>
+    <div class="grid-items">
+      <div class="left_questions">What is your name?</div>
+      <form><input type="text" /></form>
+    </div>
+    <div class="grid-items">
+      <div class="left_questions">What is your email address?</div>
+      <form><input type="text" /></form>
+    </div>
+    <div class="grid-items">
+      <div class="left_questions">Please check all that apply:</div>
+      <form>
+        <input type="checkbox" id="question1" />
+        <label for="question1">I really like your website</label><br />
+        <input type="checkbox" id="question2" />
+        <label for="question2">One of the best websites I've seen</label><br />
+        <input type="checkbox" id="question3" />
+        <label for="question3"
+          >I sure wish my site looked as good as yours</label
+        ><br />
+        <input type="checkbox" id="question4" />
+        <label for="question4"
+          >I have no taste and I'm pretty dense, so your site didn't do much for
+          me</label
+        >
+      </form>
+    </div>
+    <div class="grid-items">
+      <div class="left_questions">
+        Choose the one thing that you love the best about my web site
+      </div>
+      <form>
+        <input type="radio" id="rad1" name="choose_one" />
+        <label for="rad1">That gorgeous picture of you</label><br />
+        <input type="radio" id="rad2" name="choose_one" />
+        <label for="rad2">All the beautiful pictures of your cats</label><br />
+        <input type="radio" id="rad3" name="choose_one" />
+        <label for="rad3">The inspiring recap of your suburban childhood</label
+        ><br />
+        <input type="radio" id="rad4" name="choose_one" />
+        <label for="rad4"
+          >The detailed list of all your Elvis memorabilia's</label
+        ><br />
+      </form>
+    </div>
+    <div class="grid-items">
+      <div class="left_questions">
+        If my web site were a book, how many copies would it sell?
+      </div>
+      <form>
+        <textarea rows="3" cols="15"> </textarea>
+      </form>
+    </div>
+    <div class="grid-items">
+      <div class="left_questions">How can I improve my website?</div>
+      <label>
+        <select>
+          <option value="best">Couldn't be better</option>
+        </select>
+      </label>
+    </div>
+    <div class="grid-items">
+      <div class="left_questions">
+        Feel free to type more praises, gift offers, etc, below:
+      </div>
+      <form><input class="input" type="text" /></form>
+    </div>
+    <div class="footerButton">
+        <button type="submit">Click Here to Submit</button>
+        <button type="submit">Erase and start over</button>
+    </div>
+
+  </body>
+</html>
