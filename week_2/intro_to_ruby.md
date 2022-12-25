@@ -66,13 +66,13 @@ Relational operators these check the relation between the two operands and retur
 <hr/>
 
 ## Some important functions
-1. .pow() function . This is similar to ** function . Its used to raise a number to a power of n 
-2. .abs()  function. this function returns the absolute value of the number
-3. Math.sqrt() . This function is present in the Math class. This function returns the square root of a number
-4.  Math.log() . This function returns the log of a number to the base of e
-5.  .to_i  This is used to convert any literal into integer literal 
-6.  .to_f This is used to convert any literal into float literal 
-7.  .to_s This is used to convert any literal into string literal 
+1. [.pow() function](https://apidock.com/ruby/v2_5_5/Integer/pow) . This is similar to ** function . Its used to raise a number to a power of n 
+2. [.abs()  function](https://apidock.com/ruby/v2_5_5/Rational/abs). this function returns the absolute value of the number
+3. [Math.sqrt()](https://apidock.com/ruby/v2_5_5/Math/sqrt/class) . This function is present in the Math class. This function returns the square root of a number
+4. [Math.log()](https://apidock.com/ruby/Math/log/class) . This function returns the log of a number to the base of e
+5. [.to_i](https://apidock.com/ruby/String/to_i)  This is used to convert any literal into integer literal 
+6. [.to_f](https://apidock.com/ruby/v2_5_5/String/to_f) This is used to convert any literal into float literal 
+7. [.to_s](https://apidock.com/ruby/Method/to_s) This is used to convert any literal into string literal
 
 ```
 puts 2.pow(3)     	   	 # 8
@@ -293,6 +293,46 @@ while index <= 5
 end
 ```
 <hr/>
+
+
+## Map Method
+The map method takes an enumerable object, (i.e. the object you call it on), and a block.<br/>
+Then, for each of the elements in the enumerable, it executes the block, passing it the current element as an argument.<br/> The result of evaluating the block is then used to construct the resulting array.<br/>
+Applying map on an array returns a new array where each element is the result of evaluating the block with the element as an argument. 
+```
+[1, 2, 3].map { |n| n * 2 } # => [2, 4, 6]
+
+[1, 2, 3].map { |n| n.even? }
+# could be written as
+[1, 2, 3].map(&:even?)
+
+my_array = [
+  [1, 2, 3, 4],
+  [5, 6, 7, 8],
+]
+my_array.map { |row| row.map { |col| col + 1 } }
+# => [[2, 3, 4, 5], [6, 7, 8, 9]]
+```
+<hr/>
+
+## Select in ruby
+Select() is a Array class method which returns a new array containing all elements of array for which the given block returns a true value.<br/>
+You can use the select method in Ruby to filter an array of objects.
+For example, you can find all the even numbers in a list using 
+```
+[1,2,3,4,5,6].select { |n| n.even? }
+```
+you can also use select with hashes 
+```
+stock = {
+  apples: 10,
+  oranges: 5,
+  bananas: 1
+}
+stock.select { |k, v| v > 1 }
+# {:apples=>10, :oranges=>5}
+```
+Where k represents the key & v represent the values<hr/>
 
 ## References
 - [https://launchschool.com](https://launchschool.com/books/ruby/read/introduction#briefhistory)
