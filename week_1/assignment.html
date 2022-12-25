@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="assignment.css">
+</head>
+<body>
+<div class="book">  
+<b><h2 style="padding-top: 20px"> MY GUEST BOOK </h2></b>
+<p> Please sign my guest book. Thanks! </p>
+
+<form>
+  <table class="guest-book">
+  <tr>
+    <td style="padding-bottom: 20px"><label for="name"><b>What is your name?</b></label></td>
+    <td style="padding-bottom: 20px"><input type="text" id="name" name="name"></td>
+  </tr>
+  <tr >
+    <td style="padding-bottom: 20px"><label for="email" ><b>What is your email address?</b></label></td>
+    <td style="padding-bottom: 20px"><input type="text" id="email" name="email"></td>
+  </tr>
+  <tr>
+    <td >
+      <label for="check" ><b>Please check all that apply:</b></label>
+    </td>
+    <td>
+      <input type="checkbox" id="option-1" name="option-1" value="Liked the website">
+      <label for="option-1" > I really like your website </label>
+    </td>
+  </tr>
+  <tr>
+      <td></td>
+      <td>
+        <input type="checkbox" id="option-2" name="option-2" value="Amongst the best websites">
+        <label for="option-2" > One of the best sites I've seen.</label>
+      </td>
+  </tr>
+  <tr>
+      <td></td>
+      <td>
+        <input type="checkbox" id="option-3" name="option-3" value="Desire to make our website resemble that of the guest book">
+        <label for="option-3" > I sure wish my site looked as good as yours.</label>
+      </td>
+  </tr>
+  <tr>
+       <td style="padding-bottom: 20px"></td>
+       <td style="padding-bottom: 20px">
+        <input type="checkbox" id="option-4" name="option-4" value="Dissatisfied">
+        <label for="option-4" > I have no taste and I'm pretty dense, so your site didn't do much for me</label>
+      </td>
+  </tr>
+ 
+  <tr >
+    <td>
+      <label for="check" ><b>Choose the one thing you love best about my website</b></label>
+    </td>
+    <td >
+      <input type="radio" id="choice-1" name="choice-1" value="gorgeous picture">
+      <label for="choice-1" >That gorgeous picture of you</label>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>
+        <input type="radio" id="choice-2" name="choice-2" value="beautiful pictures of cats">
+        <label for="choice-2" >All the beautiful pictures of your cats</label>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>
+        <input type="radio" id="choice-3" name="choice-3" value="inspring tales of suburban childhood">
+        <label for="choice-3" >The inspiring recap of your suburban childhood</label>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding-bottom: 20px"></td>
+    <td style="padding-bottom: 20px">
+        <input type="radio" id="choice-4" name="choice-4" value="Elvis memorabilia">
+        <label for="choice-4" >The detailed list of all your Elvis memorabilia's</label>
+    </td>
+  </tr>
+  <tr >
+    <td style="padding-bottom: 20px">
+      <label for="website" ><b>If my website were a book, how many copies would it sell?</b></label>
+    </td>
+    <td style="padding-bottom: 20px">
+      <textarea id="copies-sold" name="estimation of copies" cols="50" style="overflow-y: scroll;resize: none" placeholder="Millions for sure 100,000+ (would be Orphan's favourite) Thousands (an under appreciated classic)"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding-bottom: 20px">
+      <label for="website" ><b>How can I improve my website?</b></label>
+    </td>
+    <td style="padding-bottom: 20px">
+      <select name="opinion" id="opinion">
+        <option value="Better">Couldn't be better</option>
+        <option value="Not upto the mark">Could be better</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding-bottom: 20px">
+      <label for="feedback" ><b>Feel free to type more praise, gift offers, etc below:</b></label>
+    </td>
+    <td style="padding-bottom: 20px">
+      <textarea id="feedback" name="feedback" rows="5" cols="50" style="resize: none""></textarea>
+    </td>
+  </tr>
+</table>
+    <button  type="submit"  value="Submit">Click here to Submit</button>
+    <button  type="erase"  value="Erase" style="padding-right:10px;">Erase and start over</button>
+</form>
+</div>
+</body>
+</html>

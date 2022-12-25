@@ -1,0 +1,57 @@
+body {
+ 
+    background-image: linear-gradient(140deg, #EADEDB 0%, #BC70AF 50%, #BFD640 75%);
+    opacity: 0.95;
+    padding-left: 30px;
+  }
+  p {
+    text-align: center;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:italic;
+    color:yellow;
+  }
+  h2 {
+    background-color: palevioletred;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 30px;
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+    text-align:center;
+    margin:auto;
+    color:#f3f3f3;
+    font-size:30px;
+    font-weight:500;
+    padding-top:10px;
+  }
+  .guest-book td
+{
+    padding:0 20px 0 0; 
+}
+
+form {
+  position: relative;
+  left: 8%;
+  width: fit-content;
+  padding: 20px;
+  margin: 20px;
+}
+
+label {
+  font-family:cursive;
+    color:#f3f3f3;
+  font-weight:300;
+}
+
+button {
+  border-radius: 25px;
+  font-size: 15px;
+  border: 0;
+  background: #73AD21;
+  padding: 10px; 
+  font-family:cursive;
+  color:#f3f3f3;
+font-weight:300;
+outline: 0;
+}
