@@ -18,7 +18,7 @@ you can refer to the following resources
 - Make sure you are in the correct directory(week_2) while running commands
 ```bash
 cd week_2
-ls #imp.rb   p_imp.rb   pet.rb   pet_test.rb ....
+ls #pet.rb   pet_test.rb ....
 rvm gemset create week_2
 rvm use 3.0.5@week_2
 ruby <file_name>
