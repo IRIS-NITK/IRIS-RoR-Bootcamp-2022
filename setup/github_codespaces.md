@@ -16,3 +16,6 @@ The Github codespaces will have `rvm`, `node` and `yarn` preinstalled so you can
 
 ![image](https://user-images.githubusercontent.com/66632353/208957960-e61db7c7-c9f7-4989-9e07-87aab5185c29.png)
 
+--------------------------------------------------
+
+Once done head over [here](./README.md#rvm), to learn about RVM and gemsets.
