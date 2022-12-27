@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Guest Book </title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<header> <h1>My Guest Book</h1></header>
+<body>
+    <p> Please sign my guest book. Thanks! </p>
+    <form action="">
+        <h3> What is your name ? </h3>
+        <div>
+            <input type="text" name="fname" id="fname">
+            </div>
+                <h3> What is your Email address </h3>
+                <div> <input type="email" name="email" id="email">
+                </div>
+                <h3> Please check all that apply:  </h3>
+                <div class="hello"> <input type="checkbox" name="check" id="check">I Really like your website.
+                    <br>
+                    <input type="checkbox" name="check" id="check">One of the best sites I've seen.
+                    <br>
+                    <input type="checkbox" name="check" id="check">I sure wish my site looked as good as yous.
+                    <br>
+                    <input  type="checkbox" name="check" id="check">I have no taste and  I'm pretty dense, so your site didn't do much for me.</div>
+                        <h3> Choose the one thing that you love best about my <br> website </h3>
+                <div class="hello">
+                    <input type="radio" name="irlyw" id="irlyw"> I Really like your website 
+                    <br>
+                    <input type="radio" name="irlyw" id="irlyw"> All the beautiful pictures of your cats 
+                    <br>
+                    <input type="radio" name="irlyw" id="irlyw"> The inspiring recap of your suburban chidhood
+                    <br>
+                    <input type="radio" name="irlyw" id="irlyw"> The detailed list of all your Elvis memorabilia's
+                </div>
+                <h3> If my website were a book how many copies<br> would it sell ?</h3>
+                <textarea name="text" id="text" cols="40" rows="5"></textarea>
+                <h3> How can my website be more better ?</h3>
+                <select name="website_better" id="website_better">
+                <option value="couldn't_be_better"> Couldn't be better </option>
+                <option value="CSS_could_be_better"> CSS could be better </option>
+                <option value="website_could_be_more_dynamic"> Website could be more Dynamic </option>
+                </select>
+                <h3> Fell free to type more praise , gift offers , etc </h3>
+                <textarea name="comments" id="comments" cols="80" rows="10"></textarea>
+                <p><input type="submit" value=" Click Here to Submit ">
+                <input type="submit" value=" Erase and start over "></p>
+    </form>  
+</body>
+</html>
