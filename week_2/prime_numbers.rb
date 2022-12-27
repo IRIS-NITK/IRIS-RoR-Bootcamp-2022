@@ -14,5 +14,26 @@
 # We will raise an `ArgumentError` exception to let the caller know that
 # their function arguments were incorrect.
 def prime_numbers(n:)
-  raise NotImplementedError # TODO
+    arr = []
+    flag = 1;
+    i=2
+    if n<=1
+        raise ArgumentError
+      end
+    while i<=n
+        flag = 1
+        j = 2
+        while j<i
+            if(i%j==0)
+                flag = 0;
+                break
+            end
+            j+=1
+        end
+        if flag==1
+            arr.push(i)
+        end
+        i+=1
+    end
+    return arr
 end
