@@ -1,9 +1,9 @@
 # A prime number is a whole number greater than 1
-# that cannot be exactly divided by any whole number 
-# other than itself and 1 
+# that cannot be exactly divided by any whole number
+# other than itself and 1
 # (e.g. 2, 3, 5, 7, 11).
 
-# The function below takes a keyword arguments `n` and 
+# The function below takes a keyword arguments `n` and
 # returns an array of prime numbers less than or equal to
 # `n`.
 
@@ -13,6 +13,25 @@
 # If the user gives a invalid input like -4
 # We will raise an `ArgumentError` exception to let the caller know that
 # their function arguments were incorrect.
-def prime_numbers(n:)
-  raise NotImplementedError # TODO
+
+def prime_numbers(n: )
+  if n>0
+    primes = []
+    (2..n).each{ |current_number|
+        is_prime = true
+
+        (2..current_number/2).each{ |possible_divisor|
+            if current_number % possible_divisor == 0
+              is_prime = false
+              break
+            end
+        }
+        primes << current_number if is_prime
+    }
+  return primes
+  else
+    raise ArgumentError
+  end
 end
+
+
