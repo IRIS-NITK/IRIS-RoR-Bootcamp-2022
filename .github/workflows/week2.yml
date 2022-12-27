@@ -1,0 +1,32 @@
+name: 'Week 2 Assignment'
+
+on:
+  pull_request:
+    types: [synchronize, opened, reopened, edited]
+    branches:
+      - 'week2_*'
+
+  workflow_dispatch:
+
+jobs:
+  week2:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0.5
+          working-directory: week_2
+          bundler-cache: true
+
+      - name: Test Prime
+        working-directory: week_2
+        run: ruby prime_test.rb
+
+      - name: Test Pet store
+        working-directory: week_2
+        run: ruby pet_test.rb
