@@ -1,5 +1,6 @@
 require_relative 'pet'
 require 'minitest/autorun'
+require 'set'
 
 class PetTest < Minitest::Test
   PETS = [
