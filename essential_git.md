@@ -4,7 +4,7 @@ Git is a software designed for coordinating work among programmers and
 tracking changes. We will be using Git to coordinate with other
 developers (i.e. Bootcamp mentors) by downloading and submitting
 exercises.
-
+ 
 If you are new to Git or would like a refresher, read through the
 'Beginner', 'Getting Started' and 'Collaborating' sections of the
 Atlassian tutorials: https://www.atlassian.com/git/tutorials
