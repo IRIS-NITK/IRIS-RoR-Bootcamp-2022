@@ -46,11 +46,7 @@ class Pet
 
   # Return the habitat of the pet
   def habitat
-    for key in HABITATS.keys
-      if HABITATS[key].include? animal_type_id
-        return key
-      end
-    end
+    return HABITATS.keys.find{|key| HABITATS[key].include? animal_type_id}
   end
 
   # Returns the cost of food required to feed the animal 
@@ -94,11 +90,7 @@ class Pet
   # snake = Pet.new(name: 'python', animal_type_id: 4, food_consumed_per_day: 0.3)
   # Pet.cost_to_feed([cat, dog, fish, snake], 6) will return 6180.0
   def self.cost_to_feed(pets, days)
-    sum = 0
-    for pet in pets
-      sum = sum + pet.food_consumed_per_day*days*FOOD_COST_PER_KG[pet.animal_type_id]
-    end
-    return sum
+    pets.reduce(0){|sum,pet| sum+pet.food_consumed_per_day*days*FOOD_COST_PER_KG[pet.animal_type_id]}
   end
 
   # This function takes an array of pets as input
@@ -119,8 +111,8 @@ class Pet
   # Note - Order is not important
   def self.group_by_animal_type(pets)
     ans = {}
-    for pet in pets
-      if ans.keys.include? pet.animal_type_id
+    pets.each do |pet|
+      if ans[pet.animal_type_id] != nil
         ans[pet.animal_type_id].push(pet.name)
       else
         ans[pet.animal_type_id] = []
