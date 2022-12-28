@@ -1,5 +1,6 @@
 require_relative 'prime_numbers'
 require 'minitest/autorun'
+require 'set'
 
 class PrimeTest < Minitest::Test
   PRIMES = [
