@@ -29,8 +29,12 @@ cd IRIS-RoR-Bootcamp-2022
 code .
 ```
 ## 3. Open the folder in dev container
-* Click on quick actions Status bar item, and from the dropdown select **Reopen in Container**. This uses the dev container [config file](https://github.com/IRIS-NITK/IRIS-RoR-Bootcamp-2022/blob/install-ror/.devcontainer/devcontainer.json) inside `.devcontainer` folder to create a new dev container.
-<img width="960" alt="r" src="https://user-images.githubusercontent.com/66632353/208943230-bc1fc5c4-a8fe-4b05-9ad6-2c65ae32a2b4.png">
+* Open the repo in VS code and press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>p</kbd> to bring up the Command Palette,
+and search for command **Dev Containers: Reopen in Container** and execute it. This uses the dev 
+container [config file](https://github.com/IRIS-NITK/IRIS-RoR-Bootcamp-2022/blob/install-ror/.devcontainer/devcontainer.json) 
+inside `.devcontainer` folder to create a new dev container.
+
+<img width="960" alt="dev_cont" src="https://user-images.githubusercontent.com/66632353/209476750-c8bec9ca-0ea5-4f3c-a548-a55eef8da866.png">
 
 * The VS Code window will reload and start building the dev container. A progress notification provides status updates.
 * After the build completes, VS Code will automatically connect to the container.
