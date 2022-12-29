@@ -7,7 +7,7 @@ body {
 
 h1 {
     font-size: 1.5em;
-    color: lightgrey;
+    color: whitesmoke;
 }
 
 .input_info_prompt{
@@ -19,12 +19,12 @@ h1 {
 
 .input_box1{
     margin-left: 19.1em;
-    background-color: lightgrey;
+    background-color: whitesmoke;
 }
 
 .input_box2{
     margin-left: 15em;
-    background-color: lightgrey;
+    background-color: whitesmoke;
     position: relative;
     left: -2.5em;
 }
@@ -55,7 +55,7 @@ h1 {
     margin-left: 4em;
     width: 20%;
     padding-bottom: 100px;
-    background-color: lightgrey;
+    background-color: whitesmoke;
     position: relative;
     left: -3.5em;
 }
