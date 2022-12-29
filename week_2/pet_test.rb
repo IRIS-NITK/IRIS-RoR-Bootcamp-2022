@@ -1,5 +1,6 @@
 require_relative 'pet'
 require 'minitest/autorun'
+require 'set'
 
 class PetTest < Minitest::Test
   PETS = [
@@ -79,7 +80,7 @@ class PetTest < Minitest::Test
     end
 
     [4, 5, 7, 50, 0, 18, 400].each do |days|
-      assert_equal Pet.cost_to_feed(rand_pets, days), 
+      assert_equal Pet.cost_to_feed(rand_pets, days),
         expected_cost.reduce(0) { |sum, c| sum + c * days },
         "Cost to feed animals do not match"
     end
@@ -108,7 +109,7 @@ class PetTest < Minitest::Test
 
     assert_equal Set.new(expected.keys), Set.new(answer.keys),
       "No extra animal type ids should be present"
-    
+
     expected.each do |k, pet_names|
       assert_equal Set.new(pet_names), Set.new(answer[k]),
         "Group of animal_type_id = #{k}, doesn't match"
