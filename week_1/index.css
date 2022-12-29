@@ -1,0 +1,76 @@
+body {
+    margin-left: 3em;
+    background-color: rgba(0, 0, 0, 0.917);
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: lightgrey;
+}
+
+.input_info_prompt{
+    font-weight: bolder;
+    font-size: 1em;
+    padding-bottom: 0.75em;
+    color: palevioletred;
+}
+
+.input_box1{
+    margin-left: 19.1em;
+    background-color: lightgrey;
+}
+
+.input_box2{
+    margin-left: 15em;
+    background-color: lightgrey;
+    position: relative;
+    left: -2.5em;
+}
+
+.checkboxes{
+    font-weight: 400;
+    margin-left: 25em;
+    position: relative;
+    top: -1em;
+    right: -4em;
+}
+
+.radio{
+    font-weight: 400;
+    margin-left: 25em;
+    position: relative;
+    top: -2em;
+    right: -4em;
+}
+
+.input_box3{
+    margin-left: 14em;
+    position: relative;
+    left: 5.5em;
+}
+
+.input_box4{
+    margin-left: 4em;
+    width: 20%;
+    padding-bottom: 100px;
+    background-color: lightgrey;
+    position: relative;
+    left: -3.5em;
+}
+
+.scrollbox{
+    font-weight: 400;
+    display:block;
+    border: 1px solid black;
+    padding:5px;
+    margin-left: 25.5em;
+    width:300px;
+    height:80px;
+    overflow-y:scroll;
+    position: relative;
+    top: -1em;
+    left: 9em;
+}
+

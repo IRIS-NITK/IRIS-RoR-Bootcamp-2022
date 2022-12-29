@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "index.css">
+    <title>My Guest Book</title>
+</head>
+<body>
+    <h1>My Guest Book</h1>
+    <p style="color: antiquewhite;">Please sign my guest book. Thanks!</p>
+    <div class = "input_info_prompt">What is your name?  <input class = "input_box1"></div>
+    <div class = "input_info_prompt">What is your email address?  <input class = "input_box2"></div>
+    <div class = "input_info_prompt">Please check all that apply : 
+        <div class = "checkboxes">
+            <input type = "checkbox" id = "feedback1" name = "feedback">
+            <label for = "feedback1">I really like your website</label><br>
+            <input type = "checkbox" id = "feedback2" name = "feedback">
+            <label for = "feedback2">One of the best sites I've seen</label><br>
+            <input type = "checkbox" id = "feedback3" name = "feedback">
+            <label for = "feedback3">I sure wished my site looked as good as yours</label><br>
+            <input type = "checkbox" id = "feedback4" name = "feedback">
+            <label for = "feedback4">I have no taste and I'm pretty dense, so your site didn't do much for me</label>
+        </div>
+    </div>
+    <div class = "input_info_prompt">Choose the one thing that you loved best about <br>my web site : 
+        <div class = "radio">
+            <input type = "radio" id = "opinion1" name = "opinion">
+            <label for = "opinion">That gorgeous picture of you</label><br>
+            <input type = "radio" id = "opinion2" name = "opinion">
+            <label for = "opinion2">All beautiful pictures of your cat</label><br>
+            <input type = "radio" id = "opinion3" name = "opinion">
+            <label for = "opinion3">The inspiring recap of your suburban childhood</label><br>
+            <input type = "radio" id = "opinion4" name = "opinion">
+            <label for = "opinion4">The detailed list of all your Elvis memorabilia's</label>
+        </div>
+    </div>
+    <div class = "input_info_prompt">If my website were a book how may copies would it sell?
+        <div class="scrollbox">
+            Millions, for sure  100,000+ (would be Orphan's favorite) Thousands (an under appreciated classic)
+        </div>
+    </div>
+    <div class = "input_info_prompt">How can I improve my website? 
+        <select name = "more_feedback" id = "asking_for_improvement" class = "input_box3">
+            <option value = "">Couldn't be better</option>
+        </select>
+    </div>
+    <div class = "input_info_prompt">Feel free to type more praise, gift offers, etc, below:  
+        <input class = "input_box4">
+    </div>
+    <button type="button" class = "buttons">Click Here to submit</button>
+    <button type="button" class = "buttons">Erase and Start over</button>   
+</body>
+</html>
