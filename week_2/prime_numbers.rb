@@ -14,11 +14,8 @@
 # We will raise an `ArgumentError` exception to let the caller know that
 # their function arguments were incorrect.
 def prime_numbers(n:)
-  begin
-    n < 0
-    raise ArgumentError.new("Negative Input!")
-  rescue ArgumentError => e  
-    puts e.message
+  if n < 0
+    raise ArgumentError.new("Negative Input is not allowed!")
   end
   
   index = 2
