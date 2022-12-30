@@ -15,10 +15,14 @@
 # their function arguments were incorrect.
 def prime_numbers(n:)
    # TODO
-  puts"Prime no are "
-if(n>2)
-    puts 2;
+ arr=Array.new()
+k=0
+puts"Prime no are "
+if(n>=2)
+     arr[k]=2
+           k=k+1
 end
+   if(n>=3)
 for i in 3..n do
     c=0;
     for j in 2..i/2 do
@@ -27,9 +31,11 @@ for i in 3..n do
         end 
   end
         if(c==0)
-            puts i
+           arr[k]=i
+           k=k+1
         
     end
 end
+   end
+    puts arr
 
-end
