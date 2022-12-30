@@ -14,5 +14,24 @@
 # We will raise an `ArgumentError` exception to let the caller know that
 # their function arguments were incorrect.
 def prime_numbers(n:)
-  raise NotImplementedError # TODO
+  if n <= 0
+    raise ArgumentError.new("Arguments not valid. Please enter value greater than 0")
+  end
+  primes = []
+  for num in 1..n
+    count = 0
+    for i in 1..num
+      if num%i == 0
+
+        count = count + 1
+      end
+      if count > 2
+        break
+      end
+    end
+    if count == 2
+      primes.push(num)
+    end
+  end
+  return primes
 end
