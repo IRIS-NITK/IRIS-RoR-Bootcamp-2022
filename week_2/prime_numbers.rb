@@ -15,25 +15,28 @@
 # their function arguments were incorrect.
 def prime_numbers(n:)
     arr = []
-    flag = 1;
     i=2
     if n<=1
         raise ArgumentError
       end
     while i<=n
-        flag = 1
-        j = 2
-        while j<i
-            if(i%j==0)
-                flag = 0;
-                break
-            end
-            j+=1
-        end
-        if flag==1
+        if check_prime(i)
             arr.push(i)
         end
         i+=1
     end
     return arr
+end
+
+def check_prime(i)
+    flag = true
+    j = 2
+    while j<=(i/2)
+        if(i%j==0)
+            flag = false;
+            break
+        end
+        j+=1
+    end
+    return flag
 end

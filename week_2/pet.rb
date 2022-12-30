@@ -46,13 +46,13 @@ class Pet
 
   # Return the habitat of the pet
   def habitat
-    HABITATS.values.each{ |x|
-      x.each{ |k|
+    HABITATS.values.each do |x|
+      x.each do |k|
         if(k==animal_type_id)
           return HABITATS.key(x)
         end
-      }
-    }
+      end
+    end
   end
 
   # Returns the cost of food required to feed the animal 
@@ -122,7 +122,10 @@ class Pet
   def self.group_by_animal_type(pets)
     names = {}
     pets.each{|x|
-      names[x.animal_type_id] = x.name
+      names[x.animal_type_id] = [];
+    }
+    pets.each{|x|
+      names[x.animal_type_id].push(x.name)
     }
     return names
   end
