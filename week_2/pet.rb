@@ -119,8 +119,7 @@ class Pet
     pets_by_type = pets.group_by { |pet| pet.animal_type_id }
     by_animal_type = {}
     pets_by_type.each do |animal_type_id, pets|
-      pet_names = []
-      pets.each { |pet| pet_names << pet.name }
+      pet_names = pets.map { |pet| pet.name }
       by_animal_type[animal_type_id] = pet_names
   end
   by_animal_type
