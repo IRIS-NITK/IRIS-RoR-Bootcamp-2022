@@ -15,7 +15,7 @@
 # their function arguments were incorrect.
 def prime_numbers(n:)
   if n <= 1
-    raise NotImplementedError # TODO
+    raise ArgumentError.new("The number should be greater than 1") # TODO
   end
   result = []
   num = 2

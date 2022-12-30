@@ -46,14 +46,13 @@ class Pet
 
   # Return the habitat of the pet
   def habitat
-    if @animal_type_id in HABITATS[0]
+    if @animal_type_id in 1..3
       return "Aquatic"
-    elsif @animal_type_id in HABITATS[1]
+    elsif @animal_type_id == 4
       return "Terrariums"
-    elsif @animal_type_id in HABITATS[2]
+    elsif @animal_type_id in 5..6
       return "Cages"
     end
-    raise NotImplementedError # TODO
   end
 
   # Returns the cost of food required to feed the animal 
@@ -74,7 +73,6 @@ class Pet
   # cat.food_required(28) = 11.2 (0.4 * 28)
   def food_required(days)
     return (@food_consumed_per_day * days).round(2)
-    raise NotImplementedError # TODO
   end
 
   # This function takes the number of `days` as the input
@@ -85,7 +83,6 @@ class Pet
   # cat.food_cost(28) = 8960
   def food_cost(days)
     return FOOD_COST_PER_KG[@animal_type_id]*(@food_consumed_per_day)*days
-    raise NotImplementedError # TODO
   end
 
   # This function takes an array of pets and the `days`
@@ -108,7 +105,6 @@ class Pet
       sum += animal.do_the_deed
     end
     return sum*days
-    raise NotImplementedError # TODO
   end
 
   # This function takes an array of pets as input
@@ -141,6 +137,5 @@ class Pet
       pet.print_result(result)
     end
     return result
-    raise NotImplementedError # TODO
   end
 end
