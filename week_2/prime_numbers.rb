@@ -37,5 +37,5 @@ for i in 3..n do
     end
 end
    end
-    puts arr
+    return arr
 
