@@ -14,5 +14,30 @@
 # We will raise an `ArgumentError` exception to let the caller know that
 # their function arguments were incorrect.
 def prime_numbers(n:)
-  raise NotImplementedError # TODO
+  begin
+    n < 0
+    raise ArgumentError.new("Negative Input!")
+  rescue ArgumentError => e  
+    puts e.message
+  end
+  
+  index = 2
+  index2 = 2
+  flag = true
+  while index <= n
+    while index2 < index
+      if index % index2 == 0
+        flag = false
+      end
+      index2 += 1
+    end
+    
+    if flag
+      print index.to_s + ", "# TODO
+    end
+
+    index += 1
+    index2 = 2
+    flag = true
+  end
 end
