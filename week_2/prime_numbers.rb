@@ -13,12 +13,12 @@ def prime_numbers(n:)
           break
         end
       end
-   if count==0
-    prime_num.push(i)                          #storing prime numbers in the array prime_num
-   end
+     if count==0
+     prime_num.push(i)                          #storing prime numbers in the array prime_num
+     end
   end
-else
-  raise ArgumentError.new("Incorrect Argument")         # error for n<2
+  else
+   raise ArgumentError.new("Incorrect Argument")         # error for n<2
   end
-    return prime_num
+ return prime_num
 end
