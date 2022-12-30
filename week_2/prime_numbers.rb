@@ -14,5 +14,28 @@
 # We will raise an `ArgumentError` exception to let the caller know that
 # their function arguments were incorrect.
 def prime_numbers(n:)
-  raise NotImplementedError # TODO
+  if n<2
+    raise ArgumentError, "Given number is not valid for this operation"
+  end
+  prime = Array.new(n+1,false)
+  prime.each_with_index do |num,i|
+      if i>1
+          if num==false
+              j = i*i
+              while j<=n
+                  prime[j] = true
+                  j += i
+              end
+          end
+      end
+  end
+  nums=Array.new
+
+  prime.each_with_index do |num,i|
+      if i>1 && !num
+          nums << i
+      end
+  end
+
+  return nums
 end
