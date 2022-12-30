@@ -18,6 +18,7 @@ def prime_numbers(n:)
     raise ArgumentError.new("Negative Input is not allowed!")
   end
   
+  ans = Array.new()
   index = 2
   index2 = 2
   flag = true
@@ -30,11 +31,12 @@ def prime_numbers(n:)
     end
     
     if flag
-      print index.to_s + ", "# TODO
+      ans.push(index)# TODO
     end
 
     index += 1
     index2 = 2
     flag = true
   end
+  return ans
 end
