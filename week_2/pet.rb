@@ -90,7 +90,7 @@ class Pet
   # snake = Pet.new(name: 'python', animal_type_id: 4, food_consumed_per_day: 0.3)
   # Pet.cost_to_feed([cat, dog, fish, snake], 6) will return 6180.0
   def self.cost_to_feed(pets, days)
-    pets.reduce(0){|sum,pet| sum+pet.food_consumed_per_day*days*FOOD_COST_PER_KG[pet.animal_type_id]}
+    pets.reduce(0){|sum,pet| sum+pet.food_cost(days) }
   end
 
   # This function takes an array of pets as input
