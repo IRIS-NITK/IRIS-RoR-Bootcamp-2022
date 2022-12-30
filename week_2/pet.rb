@@ -46,7 +46,11 @@ class Pet
 
   # Return the habitat of the pet
   def habitat
-    raise NotImplementedError # TODO
+    for (keys,value) in HABITATS do
+      if value.include?(animal_type_id)
+        return keys
+      end
+    end
   end
 
   # Returns the cost of food required to feed the animal 
@@ -66,7 +70,7 @@ class Pet
   # cat = Pet.new(name: 'cat', animal_type_id: 6, food_consumed_per_day: 0.4)
   # cat.food_required(28) = 11.2 (0.4 * 28)
   def food_required(days)
-    raise NotImplementedError # TODO
+    return food_consumed_per_day*days
   end
 
   # This function takes the number of `days` as the input
@@ -76,7 +80,8 @@ class Pet
   # cat = Pet.new(name: 'cat', animal_type_id: 6, food_consumed_per_day: 0.4)
   # cat.food_cost(28) = 8960
   def food_cost(days)
-    raise NotImplementedError # TODO
+    
+    return  food_consumed_per_day*FOOD_COST_PER_KG[animal_type_id]*days
   end
 
   # This function takes an array of pets and the `days`
@@ -90,26 +95,40 @@ class Pet
   # snake = Pet.new(name: 'python', animal_type_id: 4, food_consumed_per_day: 0.3)
   # Pet.cost_to_feed([cat, dog, fish, snake], 6) will return 6180.0
   def self.cost_to_feed(pets, days)
-    raise NotImplementedError # TODO
+    c=0
+   
+  pets.each do |an|
+    c=c+(FOOD_COST_PER_KG[an.animal_type_id]*days*an.food_consumed_per_day)
+  end
+    return c
   end
 
   # This function takes an array of pets as input
   # and returns a hash with pets name grouped by their animal type
   #
   # Eg - 
-  # cat = Pet.new(name: 'cat', animal_type_id: 6, food_consumed_per_day: 0.4)
+ 
+  #  cat = Pet.new(name: 'cat', animal_type_id: 6, food_consumed_per_day: 0.4)
   # dog = Pet.new(name: 'dog', animal_type_id: 6, food_consumed_per_day: 0.7)
   # fish = Pet.new(name: 'clownfish', animal_type_id: 2, food_consumed_per_day: 0.1)
   # snake = Pet.new(name: 'python', animal_type_id: 4, food_consumed_per_day: 0.3)
-  # Pet.group_by_animal_type([cat, dog, fish, snake]) will return the follwing hash
+  #  Pet.group_by_animal_type([cat, dog, fish, snake]) will return the follwing hash
   # {
   #   6 => ['cat', 'dog'],
   #   2 => ['clownfish'],
   #   4 => ['python']
   # }
-  #
   # Note - Order is not important
   def self.group_by_animal_type(pets)
-    raise NotImplementedError # TODO
-  end
+ans={}
+for pet in pets do
+  if(ans.keys.include?pet.animal_type_id)
+    ans[pet.animal_type_id].push(pet.name)
+  else 
+    ans[pet.animal_type_id]=[]
+    ans[pet.animal_type_id] .push(pet.name)
+end
+end
+  return ans
+end
 end
