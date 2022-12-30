@@ -13,12 +13,16 @@
 # If the user gives a invalid input like -4
 # We will raise an `ArgumentError` exception to let the caller know that
 # their function arguments were incorrect.
+def prime?(n)
+   return (2...n).none? { |p| n%p==0}
+end 
+
 def prime_numbers(n:)
    # TODO
 raise ArgumentError if n<=0
    ans=[]
    (2..n).each do |x|
-      ans.push(x) if x.prime?
+      ans.push(x) if prime?(x)
    end 
    return ans
 end
