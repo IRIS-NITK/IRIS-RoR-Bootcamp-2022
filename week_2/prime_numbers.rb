@@ -13,6 +13,21 @@
 # If the user gives a invalid input like -4
 # We will raise an `ArgumentError` exception to let the caller know that
 # their function arguments were incorrect.
-def prime_numbers(n:)
-  raise NotImplementedError # TODO
+def prime_numbers(n: )
+  if n>1
+    primes=[]
+    (2..n).each{ |num|
+      flag=true
+      (2..num/2).each{ |div|
+        if num%div==0
+          flag=false
+          break
+        end
+      }
+      primes << num if flag
+    }
+    return primes
+  else
+    raise ArgumentError
+  end
 end
