@@ -15,27 +15,10 @@
 # their function arguments were incorrect.
 def prime_numbers(n:)
    # TODO
- arr=Array.new()
-k=0
-puts"Prime no are "
-if(n>=2)
-     arr[k]=2
-           k=k+1
+raise ArgumentError if n<=0
+   ans=[]
+   (2..n).each do |x|
+      ans.push(x) if x.prime?
+   end 
+   return ans
 end
-   if(n>=3)
-for i in 3..n do
-    c=0;
-    for j in 2..i/2 do
-        if (i%j==0)
-           c=c+1; 
-        end 
-  end
-        if(c==0)
-           arr[k]=i
-           k=k+1
-        
-    end
-end
-   end
-    return arr
-
