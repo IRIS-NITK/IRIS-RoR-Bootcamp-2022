@@ -1,0 +1,31 @@
+# This workflow warns and then closes issues and PRs that have had no activity for a specified amount of time.
+#
+# You can adjust the behavior by modifying this file.
+# For more information, see:
+# https://github.com/actions/stale
+name: Mark stale pull requests
+
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: '38 3 * * *'
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+    - uses: actions/stale@v5
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-pr-message: 'Good job, since changes have been approved, we will shortly be closing this pull request'
+        close-pr-message: 'Good job, closing pull request since changes have been approved'
+        stale-pr-label: 'closed'
+        only-pr-labels: 'Approved'
+        any-of-pr-labels: 'Approved'
+        days-before-pr-stale: 1
+        days-before-pr-close: 1
