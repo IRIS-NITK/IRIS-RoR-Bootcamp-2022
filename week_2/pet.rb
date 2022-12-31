@@ -46,13 +46,19 @@ class Pet
 
   # Return the habitat of the pet
   def habitat
-    raise NotImplementedError # TODO
+    if @animal_type_id in 1..3
+      return "Aquatic"
+    elsif @animal_type_id == 4
+      return "Terrariums"
+    elsif @animal_type_id in 5..6
+      return "Cages"
+    end
   end
 
   # Returns the cost of food required to feed the animal 
   # per day
   def food_cost_per_day
-    return FOOD_COST_PER_KG[animal_type_id] * food_consumed_per_day
+    return FOOD_COST_PER_KG[@animal_type_id] *(@food_consumed_per_day)
   end
 
   # This function takes the number of `days` as the input
@@ -66,7 +72,7 @@ class Pet
   # cat = Pet.new(name: 'cat', animal_type_id: 6, food_consumed_per_day: 0.4)
   # cat.food_required(28) = 11.2 (0.4 * 28)
   def food_required(days)
-    raise NotImplementedError # TODO
+    return (@food_consumed_per_day * days).round(2)
   end
 
   # This function takes the number of `days` as the input
@@ -76,7 +82,7 @@ class Pet
   # cat = Pet.new(name: 'cat', animal_type_id: 6, food_consumed_per_day: 0.4)
   # cat.food_cost(28) = 8960
   def food_cost(days)
-    raise NotImplementedError # TODO
+    return FOOD_COST_PER_KG[@animal_type_id]*(@food_consumed_per_day)*days
   end
 
   # This function takes an array of pets and the `days`
@@ -88,9 +94,17 @@ class Pet
   # dog = Pet.new(name: 'dog', animal_type_id: 6, food_consumed_per_day: 0.7)
   # fish = Pet.new(name: 'clownfish', animal_type_id: 2, food_consumed_per_day: 0.1)
   # snake = Pet.new(name: 'python', animal_type_id: 4, food_consumed_per_day: 0.3)
-  # Pet.cost_to_feed([cat, dog, fish, snake], 6) will return 6180.0
+   #Pet.cost_to_feed([cat, dog, fish, snake], 6) will return 6180.0
+  
   def self.cost_to_feed(pets, days)
-    raise NotImplementedError # TODO
+    def do_the_deed
+      return FOOD_COST_PER_KG[@animal_type_id] * @food_consumed_per_day
+    end
+    sum = 0
+    for animal in pets
+      sum += animal.do_the_deed
+    end
+    return sum*days
   end
 
   # This function takes an array of pets as input
@@ -107,9 +121,21 @@ class Pet
   #   2 => ['clownfish'],
   #   4 => ['python']
   # }
-  #
   # Note - Order is not important
   def self.group_by_animal_type(pets)
-    raise NotImplementedError # TODO
+    result = {}
+    def mapping(hash)
+      hash[@animal_type_id] = []
+    end
+    for animal in pets
+      animal.mapping(result)
+    end
+    def print_result(hash2)
+      hash2[@animal_type_id].push(name)
+    end
+    for pet in pets
+      pet.print_result(result)
+    end
+    return result
   end
 end
