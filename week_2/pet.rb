@@ -121,12 +121,13 @@ class Pet
   # Note - Order is not important
   def self.group_by_animal_type(pets)
     names = {}
-    pets.each{|x|
-      names[x.animal_type_id] = [];
-    }
-    pets.each{|x|
-      names[x.animal_type_id].push(x.name)
-    }
+    pets.each do |x|
+      if names[x.animal_type_id]
+        names[x.animal_type_id].push(x.name)
+      else
+        names[x.animal_type_id] = [x.name]
+      end
+    end
     return names
   end
 end
