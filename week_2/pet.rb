@@ -46,7 +46,9 @@ class Pet
 
   # Return the habitat of the pet
   def habitat
-    raise NotImplementedError # TODO
+    HABITATS.each do |habitat, animal_type_ids|
+      return habitat if animal_type_ids.include?(animal_type_id)
+    end
   end
 
   # Returns the cost of food required to feed the animal 
@@ -66,7 +68,7 @@ class Pet
   # cat = Pet.new(name: 'cat', animal_type_id: 6, food_consumed_per_day: 0.4)
   # cat.food_required(28) = 11.2 (0.4 * 28)
   def food_required(days)
-    raise NotImplementedError # TODO
+    food_consumed_per_day * days
   end
 
   # This function takes the number of `days` as the input
@@ -76,7 +78,7 @@ class Pet
   # cat = Pet.new(name: 'cat', animal_type_id: 6, food_consumed_per_day: 0.4)
   # cat.food_cost(28) = 8960
   def food_cost(days)
-    raise NotImplementedError # TODO
+    food_cost_per_day * days
   end
 
   # This function takes an array of pets and the `days`
@@ -90,9 +92,12 @@ class Pet
   # snake = Pet.new(name: 'python', animal_type_id: 4, food_consumed_per_day: 0.3)
   # Pet.cost_to_feed([cat, dog, fish, snake], 6) will return 6180.0
   def self.cost_to_feed(pets, days)
-    raise NotImplementedError # TODO
+    total_cost = 0
+    pets.each do |pet|
+      total_cost += pet.food_cost(days)
+    end
+    total_cost
   end
-
   # This function takes an array of pets as input
   # and returns a hash with pets name grouped by their animal type
   #
@@ -110,6 +115,6 @@ class Pet
   #
   # Note - Order is not important
   def self.group_by_animal_type(pets)
-    raise NotImplementedError # TODO
+    pets.group_by { |pet| pet.animal_type_id }
   end
 end

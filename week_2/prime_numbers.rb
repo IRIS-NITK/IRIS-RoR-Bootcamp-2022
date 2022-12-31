@@ -14,5 +14,30 @@
 # We will raise an `ArgumentError` exception to let the caller know that
 # their function arguments were incorrect.
 def prime_numbers(n:)
-  raise NotImplementedError # TODO
+  # Validate the input
+  raise ArgumentError, "n must be a positive integer" unless n.is_a?(Integer) && n > 0
+
+  # Initialize an empty array to store the prime numbers
+  primes = []
+
+  # Iterate through the range of numbers from 2 to n
+  (2..n).each do |i|
+    # Initialize a flag variable to check if i is prime or not
+    is_prime = true
+
+    # Check if i is divisible by any number other than 1 and itself
+    (2...i).each do |j|
+      if i % j == 0
+        # If i is divisible by j, then it is not a prime number
+        is_prime = false
+        break
+      end
+    end
+
+    # If i is prime, add it to the list of prime numbers
+    primes << i if is_prime
+  end
+
+  # Return the list of prime numbers
+  primes
 end
