@@ -38,7 +38,7 @@ class Pet
 
   attr_accessor :name, :animal_type_id, :food_consumed_per_day
 
-  def initialize(name: , animal_type_id: , food_consumed_per_day:)
+  def initialize(name: "CAT", animal_type_id: 6, food_consumed_per_day: 0.4)
     @name = name
     @animal_type_id = animal_type_id
     @food_consumed_per_day = food_consumed_per_day
@@ -46,7 +46,16 @@ class Pet
 
   # Return the habitat of the pet
   def habitat
-    raise NotImplementedError # TODO
+    isPresent = false
+    HABITATS.each { |h, at|
+      if at.include?animal_type_id
+        isPresent = true
+        return h
+      end
+    }
+    if !isPresent
+      raise ArgumentError("Habitat not found")
+    end
   end
 
   # Returns the cost of food required to feed the animal 
@@ -66,7 +75,10 @@ class Pet
   # cat = Pet.new(name: 'cat', animal_type_id: 6, food_consumed_per_day: 0.4)
   # cat.food_required(28) = 11.2 (0.4 * 28)
   def food_required(days)
-    raise NotImplementedError # TODO
+    if days < 0
+      raise ArgumentError.new("Days should be positive")
+    end
+    return food_consumed_per_day * days
   end
 
   # This function takes the number of `days` as the input
@@ -76,7 +88,10 @@ class Pet
   # cat = Pet.new(name: 'cat', animal_type_id: 6, food_consumed_per_day: 0.4)
   # cat.food_cost(28) = 8960
   def food_cost(days)
-    raise NotImplementedError # TODO
+    if days < 0
+      raise ArgumentError.new("Days should be positive")
+    end
+    return food_required(days) * FOOD_COST_PER_KG[animal_type_id]
   end
 
   # This function takes an array of pets and the `days`
@@ -90,7 +105,9 @@ class Pet
   # snake = Pet.new(name: 'python', animal_type_id: 4, food_consumed_per_day: 0.3)
   # Pet.cost_to_feed([cat, dog, fish, snake], 6) will return 6180.0
   def self.cost_to_feed(pets, days)
-    raise NotImplementedError # TODO
+    return pets.reduce(0) {
+      |sum, pet| sum + pet.food_cost(days)
+    }
   end
 
   # This function takes an array of pets as input
@@ -110,6 +127,13 @@ class Pet
   #
   # Note - Order is not important
   def self.group_by_animal_type(pets)
-    raise NotImplementedError # TODO
+    res = {}
+    pets.each { |pet|
+      res[pet.animal_type_id] = []
+    }
+    pets.group_by { |pet| 
+      res[pet.animal_type_id].push(pet.name)
+    }
+    return res
   end
 end
