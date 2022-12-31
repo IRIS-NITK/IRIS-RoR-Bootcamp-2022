@@ -6,37 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Guest Book</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     
 </head>
-<body>
+<body class="body1">
     <form>
-    <h2>My Guest Book</h2>
-    <span>Please Sign My guest book. Thanks!</span><br><br>
-    <b>What is your name ?</b> <input style="margin-left: 391px;"  type="text"><br><br>
-    <b>What is your email address ?</b> <input style="margin-left: 324px;"  type="text"><br><br>
-    <div class="check"><b>Please Check all that apply:</b>
-    <input style="margin-left: 332px;" type="checkbox"> I really like your website<br>
-    <input class="move" type="checkbox"> One of the best sites I've ever seen<br>
-    <input class="move" type="checkbox"> I Sure wish my site looked as good as yours<br>
-    <input class="move" type="checkbox"> I have no taste and I'm pretty dense, so your site didn't do much for me<br><br>
-    <b>Choose one thing that you love about my website.</b>
-    <input style="margin-left: 157px;" type="radio">That gorgeous picture of you<br>
-    <input class="move" type="radio">All beautiful pictures of your cats<br>
-    <input class="move" type="radio">The inspiring recap of your suburban childhood<br>
-    <input class="move" type="radio">The detailed list of all your Elvis memorabilia's</div><br>
-    <br>
-    <b>If my website was a book, how many copies would it sell?</b>
-    <textarea style="margin-left: 100px;" ></textarea><br>
-    <br>
-    <b>How can I improve my website ?</b>
-    <select style="margin-left: 300px;">
-        <option selected="selected">Couldn't be better</option>
-        <option>Could be better</option>
-    </select><br><br>
-    <b>Feel free to type more prise, gift offers, etc, below :</b>
-    <textarea style="margin-left: 155px;"></textarea><br><br><br><br>
+    <h2>
+        My Guest Book
+        <small class="text-muted">Please Sign My guest book. Thanks!</small>
+    </h2>
+    <div class="cen" style="width: 35rem;" class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">What is your name ?</span>
+        <input type="text" class="form-control" placeholder="name" aria-label="Username" aria-describedby="addon-wrapping">
+    </div><br>
+    <div class="cen" style="width: 35rem;" class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">What is your email address ?</span>
+        <input type="email" class="form-control" placeholder="email" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
 
-    <input type="reset" value="Erase and start over"> <input type="submit" value="Click here to submit">
+    <div class="container px-4 text-center">
+        <div class="row gx-5">
+          <div class="col">
+           <div class="p-3"><div class="card" style="width: 35rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><b>Please Check all that apply:</b></li>
+              <li class="list-group-item"><input type="checkbox"> I really like your website</li>
+              <li class="list-group-item"><input type="checkbox"> One of the best sites I've ever seen</li>
+              <li class="list-group-item"><input type="checkbox"> I Sure wish my site looked as good as yours</li>
+              <li class="list-group-item"><input type="checkbox"> I have no taste and I'm pretty dense, so your site didn't do much for me</li>
+            </ul>
+    </div></div>
+          </div>
+          <div class="col">
+            <div class="p-3">
+                <div class="card text-bg-success mb-3" style="max-width: 30rem;">
+                    <div class="card-header"><b>Choose one thing that you love about my website.</b></div>
+                      <p class="card-text">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                That gorgeous picture of you
+                            </label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                All beautiful pictures of your cats
+                            </label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                The inspiring recap of your suburban childhood
+                            </label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                The detailed list of all your Elvis memorabilia's
+                            </label>
+                          </div>
+                      </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    
+
+    <br>
+    
+    <div class="cen" style="width: 35rem;" class="input-group">
+        <span class="input-group-text"><b>If my website was a book, how many copies would it sell?</b></span>
+        <textarea class="form-control" placeholder="Millions for sure 100,000+ (Would be orphan's favorite) Thousands (An unappreciated classic)" aria-label="With textarea"></textarea>
+    </div>
+    <br>
+    <br>
+    <b>How can I improve my website ?</b><br>
+
+    <select style="width: 20rem; margin-left: 600px;" class="form-select" aria-label="Default select example">
+        <option selected>Couldn't be better</option>
+        <option value="1">Could be better</option>
+    </select><br><br>
+    
+    <div class="cen" style="width: 35rem;" class="input-group">
+        <span class="input-group-text"><b>Feel free to type more prise, gift offers, etc, below :</b></span>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+    </div>
+    <br><br>
+    <input type="reset" class="btn btn-primary btn-lg" value="Erase and start over">
+    <input type="submit" class="btn btn-secondary btn-lg" value="Click here to submit">
 </form>
 </body>
 </html>

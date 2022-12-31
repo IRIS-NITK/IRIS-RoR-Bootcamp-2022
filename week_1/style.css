@@ -1,8 +1,12 @@
-.move {
-    
-    margin-left: 565px;
+.body1{
+    background-color:bisque;
+    text-align: center;
 }
-body{
-    margin-left: 50px;
-    font-size: larger;
+.cen {
+    margin-left: 450px;
+}
+
+.cen :hover{
+    background-color:antiquewhite;
+    box-shadow: 2px 2px;
 }
