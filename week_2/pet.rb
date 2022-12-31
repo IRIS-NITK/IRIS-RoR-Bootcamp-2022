@@ -122,7 +122,7 @@ class Pet
   def self.group_by_animal_type(pets)
 ans={}
 for pet in pets do
-  if !ans[pet.animal_type_id]
+  if ans.keys.include?pet.animal_type_id
     ans[pet.animal_type_id].push(pet.name)
   else 
     ans[pet.animal_type_id]=[]
