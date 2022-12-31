@@ -120,11 +120,10 @@ class Pet
   def self.group_by_animal_type(pets)
     ophash = Hash.new()
     for pet in pets
-      pet_animal_type_id = pet.animal_type_id
-      if ophash[:pet_animal_type_id].length == 0
-        ophash[:pet_animal_type_id] = ["#{pet}"] # TODO
+      if ophash[pet.animal_type_id] == nil
+        ophash[pet.animal_type_id] = [pet.name] # TODO
       else
-        ophash[:pet_animal_type_id].push("#{pet}")
+        ophash[pet.animal_type_id].push(pet.name)
       end
     end
     return ophash
