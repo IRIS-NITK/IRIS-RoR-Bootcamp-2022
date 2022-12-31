@@ -13,6 +13,38 @@
 # If the user gives a invalid input like -4
 # We will raise an `ArgumentError` exception to let the caller know that
 # their function arguments were incorrect.
-def prime_numbers(n:)
-  raise NotImplementedError # TODO
+
+def sieve(num)
+  is_prime = Array.new(num + 1, true)
+  is_prime[0] = is_prime[1] = false
+  i = 2
+  while i * i <= num
+    if is_prime[i]
+      j = i * i
+      while j <= num
+        is_prime[j] = false
+        j += i
+      end
+    end
+    i += 1
+  end
+  return is_prime
 end
+
+def prime_numbers(n:200)
+  if n <= 0
+    raise ArgumentError.new("Positive value expected")
+  end
+  res = Array.new()
+  p = sieve(n)
+  i = 2
+  while i <= n
+    if p[i]
+      res.append(i)
+    end
+    i += 1
+  end
+  return res
+end
+
+# puts "#{prime_numbers()}"
