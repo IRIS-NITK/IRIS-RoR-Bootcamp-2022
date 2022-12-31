@@ -76,7 +76,7 @@ class Pet
   # cat.food_required(28) = 11.2 (0.4 * 28)
   def food_required(days)
     if days < 0
-      raise ArgumentError.new("Days should be positive")
+      raise ArgumentError.new("Number of days should be positive")
     end
     return food_consumed_per_day * days
   end
@@ -89,7 +89,7 @@ class Pet
   # cat.food_cost(28) = 8960
   def food_cost(days)
     if days < 0
-      raise ArgumentError.new("Days should be positive")
+      raise ArgumentError.new("Number of days should be positive")
     end
     return food_required(days) * FOOD_COST_PER_KG[animal_type_id]
   end
