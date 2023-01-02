@@ -47,13 +47,11 @@ class Pet
   # Return the habitat of the pet
   def habitat
     raise NotImplementedError # TODO
-    HABITATAS.each do|k,v|
+    HABITATS.each do|k,v|
       if v.include?(animal_type_id)
         return k
       end
-    end
-  end
-  
+    end  
   end
 
   # Returns the cost of food required to feed the animal 
@@ -100,7 +98,6 @@ class Pet
   # Pet.cost_to_feed([cat, dog, fish, snake], 6) will return 6180.0
   def self.cost_to_feed(pets, days)
     raise NotImplementedError # TODO
-    sum=0
     return pets.reduce(0) { |sum,pets| sum+ pets.food_cost(days)}
   end
 
