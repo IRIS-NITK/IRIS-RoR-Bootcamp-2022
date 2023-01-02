@@ -122,11 +122,11 @@ class Pet
   # Note - Order is not important
   def self.group_by_animal_type(pets)
     raise NotImplementedError # TODO
-    group=Hash.new
+    grp=Hash.new
     pets.group_by  {|pet| pet.animal_type_id}.each do |id,pets|
       petname=[]
-    pets.each {||pet} names << pet.name }
-    grp[animal_type_id] = name
+    pets.each {|pet| petname << pet.name }
+    grp[id] = petname
   end
   return grp
   end
