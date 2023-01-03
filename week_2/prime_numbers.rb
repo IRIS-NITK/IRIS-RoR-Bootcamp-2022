@@ -12,5 +12,5 @@ def prime_numbers(n:)
     end
     primes << i if is_prime
   end
- puts primes
+ returns primes
 end
