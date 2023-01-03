@@ -14,7 +14,6 @@
 # We will raise an `ArgumentError` exception to let the caller know that
 # their function arguments were incorrect.
 def prime_numbers(n:)
-  raise NotImplementedError # TODO
   
   if n<2
     raise ArgumentError
