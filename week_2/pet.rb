@@ -46,19 +46,11 @@ class Pet
 
   # Return the habitat of the pet
   def habitat
-    HABITATS["Aquatic"].each do |i|
-      if self.animal_type_id == i
-        return "Aquatic"
-      end
-    end
-    HABITATS["Terrariums"].each do |i|
-      if self.animal_type_id == i
-        return "Terrariums"
-      end
-    end
-    HABITATS["Cages"].each do |i|
-      if self.animal_type_id == i
-        return "Cages"
+    HABITATS.each do |key, value|
+      value.each do |i|
+        if i == self.animal_type_id
+          return key
+        end
       end
     end
   end
