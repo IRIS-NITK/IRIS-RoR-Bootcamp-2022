@@ -115,6 +115,12 @@ class Pet
   #
   # Note - Order is not important
   def self.group_by_animal_type(pets)
-    pets.group_by { |pet| pet.animal_type_id }
+    pet_group = pets.group_by { |pet| pet.animal_type_id }
+    res = {}
+    pet_group.each do |id, pet_arr|
+      res[id] = pet_arr.map { |p| p.name| }
+    end
+    
+    res
   end
 end
