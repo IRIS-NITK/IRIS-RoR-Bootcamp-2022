@@ -4,7 +4,7 @@ def prime_numbers(n:)
   primes = []
   (2..n).each do |i|
     is_prime = true
-    (2..Math.sqrt(i).ceil).each do |j|
+    (2..i-1).each do |j|
       if i % j == 0
         is_prime = false
         break
