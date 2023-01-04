@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --font-base: "Poppins", sans-serif;
+    
+    --primary-color: #edf2f8;
+    --secondary-color: #313bac;
+    --black-color: #030303;
+    --lightGray-color: #e4e4e4;
+    --gray-color: #6b7688;
+    --brown-color: #46364a;
+    --white-color: #ffffff;
+}
+
+
+* {
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+.heading{
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.form {
+    position: relative;
+    width: 1000px;
+    margin: 2rem;
+    text-align: left;
+    padding: 20px;
+    background-color: aliceblue;
+    border: 3px var(--secondary-color);
+    border-radius: 10px;  
+}
+
+
+
+body{
+    background-color: #0d6efd;
+}
+
+.col-form-label {
+    width:30%;
+    font-weight: 500;
+    
+}
+
+.col-sm-10 {
+    width:70%;
+    margin-left: 0;
+}
+
+.form-control {
+    width: 50%;
+}
+
+.form-select {
+    width: 50%;
+}
+
+.form-floating {
+    position: relative;
+    width: 150%;
+    height: 550%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    
+}
+
+.btn-primary {
+    margin-top: 1rem;
+}
+
+.footer{
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.para {
+    margin: 0;
+    font-size: 15px;
+    color: var(--gray-color);
+}
+
+

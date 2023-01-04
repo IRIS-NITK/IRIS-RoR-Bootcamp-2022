@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="trash2.css">
+</head>
+
+<body>
+    <form class="form">
+        <h2 class="heading">My Guest Book</h2>
+        <p class="heading">Please sign my guest book. Thanks!</p>
+
+        <div class="row mb-3">
+            <label for="inputName3" class="col-sm-2 col-form-label">What is your name?</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputName3">
+            </div>
+          </div>
+
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">What is your email address</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+        </div>
+
+
+
+        <div class="row mb-3">
+            <label class="col-sm-2 col-form-label">Please select all that apply</label>
+            <div class="col-sm-10 offset-sm-2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  I really liked your website!
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck2">
+                <label class="form-check-label" for="gridCheck2">
+                  I felt that your site is okayish
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck3">
+                <label class="form-check-label" for="gridCheck3">
+                  Your website is a trash!
+                </label>
+              </div>
+              
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck4">
+                <label class="form-check-label" for="gridCheck4">
+                  Nevermind
+                </label>
+              </div>
+
+            </div>
+        </div>
+
+
+
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Choose the one you love the most about my website</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Your presence
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Beautiful pictures and animations added
+              </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  The design 
+                </label>
+              </div>
+            <div class="form-check disabled">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+              <label class="form-check-label" for="gridRadios3">
+                Nothing
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">If my website were a book, how many copies would it sell?</legend>
+            <div class="col-sm-10">
+                <select class="form-select" size="3" aria-label="size 3 select example">
+                    <option selected>World's best seller, for sure</option>
+                    <option value="1" disabled>One(for yourself)</option>
+                    <option value="3">Saath Karode!</option>
+                    <option value="2">Thousands</option>           
+            </select>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">How can I improve my website?</legend>
+            <div class="col-sm-10">
+                <select class="form-select" aria-label="select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">It's already the best</option>
+                    <option value="2">Add a navbar to the site</option>
+                    <option value="3">Change the colour scheme</option>
+                  </select>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">Praise me more in this section</legend>
+            <div class="col-sm-10">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Praise my site!!" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Comments</label>
+                  </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Reset</button>
+        </div>
+
+              
+        <footer class="footer">
+            <p class="para">@2022 SHRIHARI PADIGAR</p>
+            <p class="para">ALL RIGHTS RESERVED</p>
+        </footer>
+      </form>
+      
+
+</body>
