@@ -16,5 +16,5 @@ def prime_numbers(n:)
             arr.push(i)
         end
     end
-    print arr
+    return arr
 end
