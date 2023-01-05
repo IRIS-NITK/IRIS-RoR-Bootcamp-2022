@@ -1,0 +1,68 @@
+.header {
+  padding: 0.01px;
+  text-align: center;
+  background: white;
+  color: black
+  font-size: 30px;
+  font: italic small-caps bold 16px/2 cursive;
+}
+
+.body{
+  font-size: 18px;
+}
+.p1 {
+    font: italic 1.2em "Fira Sans", serif;
+    text-align: center;
+}
+
+#name {
+  margin-left: 163px;
+}
+
+#email {
+    margin-left: 100px;
+}
+
+#dropdown {
+    margin-left: 246px;
+}
+
+#review {
+    margin-left: 97px;
+    height:120px;
+    width:350px;
+}
+
+
+
+.rd input{
+    display: inline-block;
+    margin-left: 470px;
+}
+.rd{
+    display: flex;
+    flex-direction: column;
+}
+#radbtn{
+    margin:20px;
+    margin-left:0;
+}
+.cb{
+    display: flex;
+    flex-direction: column;
+}
+.cb input{
+    display: inline-block;
+    margin-left: 470px;
+}
+
+select {
+    display: inline-block;
+    vertical-align: top;
+    margin-left:46px;
+}
+
+body {
+  background: linear-gradient(#e66465, #9198e5);
+
+}
