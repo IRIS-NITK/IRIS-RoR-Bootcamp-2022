@@ -14,5 +14,20 @@
 # We will raise an `ArgumentError` exception to let the caller know that
 # their function arguments were incorrect.
 def prime_numbers(n:)
-  raise NotImplementedError # TODO
+  if n>1
+    primes=[]
+    (2..n).each{ |n|
+      flag=true
+      (2..n/2).each{ |d|
+        if n%d==0
+          flag=false
+          break
+        end
+      }
+      primes << n if flag 
+    }
+    return primes
+ else
+  raise ArgumentError 
+ end
 end
