@@ -69,3 +69,16 @@ The routes file specifies the URLs that are recognized by the application.
 - You should be able to see see your changes at `http://localhost:3000` and
   `http://localhost:3000/about_me`.
 
+- Copy the test file from session_1 directory to hello_world/test/controllers:
+```bash
+cp page_controller_test.rb hello_world/test/controllers
+```
+
+- Execute the test suite to ensure the page works as expected.
+
+```bash
+rails test
+```
+- If the test fails, check the view files and debug the application.
+
+- Once the test works locally, submit your changes.
