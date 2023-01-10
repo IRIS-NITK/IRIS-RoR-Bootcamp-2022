@@ -1,0 +1,33 @@
+Started GET "/" for 127.0.0.1 at 2023-01-10 13:29:55 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-3.0.5@week_3/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-3.0.5@week_3/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.7ms | Allocations: 931)
+Completed 200 OK in 34ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 7908)
+
+
+Started GET "/about_me" for 127.0.0.1 at 2023-01-10 13:44:28 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/about_me"):
+  
+Started GET "/about_me" for 127.0.0.1 at 2023-01-10 13:44:36 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/about_me"):
+  
+Started GET "/" for 127.0.0.1 at 2023-01-10 13:45:05 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-3.0.5@week_3/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-3.0.5@week_3/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 493)
+Completed 200 OK in 9ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 4248)
+
+
+Started GET "/about_me" for 127.0.0.1 at 2023-01-10 13:49:10 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/about_me"):
+  
+Started GET "/" for 127.0.0.1 at 2023-01-10 13:49:20 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/rvm/gems/ruby-3.0.5@week_3/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-3.0.5@week_3/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 486)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 1366)
+
+
