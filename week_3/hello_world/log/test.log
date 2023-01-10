@@ -1,0 +1,58 @@
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+PageControllerTest: test_should_get_about_me
+--------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+PageControllerTest: test_should_get_root
+----------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+PageControllerTest: test_should_get_root
+----------------------------------------
+Started GET "/" for 127.0.0.1 at 2023-01-10 14:33:01 +0000
+Processing by PageController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/root.html.erb within layouts/application
+  Rendered page/root.html.erb within layouts/application (Duration: 23.1ms | Allocations: 1010)
+  Rendered layout layouts/application.html.erb (Duration: 4421.2ms | Allocations: 94018)
+Completed 200 OK in 4608ms (Views: 4492.0ms | ActiveRecord: 0.0ms | Allocations: 99946)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+PageControllerTest: test_should_get_about_me
+--------------------------------------------
+Started GET "/about_me" for 127.0.0.1 at 2023-01-10 14:33:06 +0000
+Processing by PageController#about_me as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/about_me.html.erb within layouts/application
+  Rendered page/about_me.html.erb within layouts/application (Duration: 21.0ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 1125)
+Completed 200 OK in 46ms (Views: 26.2ms | ActiveRecord: 0.0ms | Allocations: 1508)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+PageControllerTest: test_should_get_root
+----------------------------------------
+Started GET "/" for 127.0.0.1 at 2023-01-10 14:34:39 +0000
+Processing by PageController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/root.html.erb within layouts/application
+  Rendered page/root.html.erb within layouts/application (Duration: 21.5ms | Allocations: 452)
+  Rendered layout layouts/application.html.erb (Duration: 994.9ms | Allocations: 21317)
+Completed 200 OK in 1161ms (Views: 1044.8ms | ActiveRecord: 0.0ms | Allocations: 27245)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+PageControllerTest: test_should_get_about_me
+--------------------------------------------
+Started GET "/about_me" for 127.0.0.1 at 2023-01-10 14:34:40 +0000
+Processing by PageController#about_me as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/about_me.html.erb within layouts/application
+  Rendered page/about_me.html.erb within layouts/application (Duration: 16.4ms | Allocations: 144)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 1123)
+Completed 200 OK in 40ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 1506)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
