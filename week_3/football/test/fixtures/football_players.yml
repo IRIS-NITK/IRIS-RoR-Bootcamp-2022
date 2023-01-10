@@ -1,0 +1,1746 @@
+Alisson:
+  age: 29.0
+  born: 1992
+  corner_kicks: 47
+  country: BRA
+  fouls_committed: 252
+  goals: 240
+  league: Premier League
+  matches_played: 36
+  minutes_played: 3240
+  name: Alisson
+  penalty_kicks_made: 891
+  penalty_kicks_won: 297
+  position: GK
+  rank: 66
+  red_card: 56
+  squad: Liverpool
+  yellow_card: 145
+Allan:
+  age: 31.0
+  born: 1991
+  corner_kicks: 226
+  country: BRA
+  fouls_committed: 118
+  goals: 133
+  league: Premier League
+  matches_played: 28
+  minutes_played: 2183
+  name: Allan
+  penalty_kicks_made: 381
+  penalty_kicks_won: 127
+  position: MF
+  rank: 67
+  red_card: 197
+  squad: Everton
+  yellow_card: 237
+Amath:
+  age: 25.0
+  born: 1996
+  corner_kicks: 115
+  country: SEN
+  fouls_committed: 28
+  goals: 10
+  league: La Liga
+  matches_played: 19
+  minutes_played: 884
+  name: Amath
+  penalty_kicks_made: 858
+  penalty_kicks_won: 286
+  position: FWMF
+  rank: 81
+  red_card: 186
+  squad: Mallorca
+  yellow_card: 248
+Amine Adli:
+  age: 22.0
+  born: 2000
+  corner_kicks: 232
+  country: FRA
+  fouls_committed: 214
+  goals: 279
+  league: Bundesliga
+  matches_played: 25
+  minutes_played: 1256
+  name: Amine Adli
+  penalty_kicks_made: 684
+  penalty_kicks_won: 228
+  position: FWMF
+  rank: 18
+  red_card: 220
+  squad: Leverkusen
+  yellow_card: 156
+"Andr\xE9s Andrade Cede\xF1o":
+  age: 23.0
+  born: 1998
+  corner_kicks: 206
+  country: PAN
+  fouls_committed: 83
+  goals: 200
+  league: Bundesliga
+  matches_played: 17
+  minutes_played: 1046
+  name: "Andr\xE9s Andrade Cede\xF1o"
+  penalty_kicks_made: 600
+  penalty_kicks_won: 200
+  position: DF
+  rank: 94
+  red_card: 268
+  squad: Arminia
+  yellow_card: 13
+Anel Ahmedhodzic:
+  age: 23.0
+  born: 1999
+  corner_kicks: 202
+  country: BIH
+  fouls_committed: 157
+  goals: 295
+  league: Ligue 1
+  matches_played: 15
+  minutes_played: 1350
+  name: Anel Ahmedhodzic
+  penalty_kicks_made: 447
+  penalty_kicks_won: 149
+  position: DF
+  rank: 31
+  red_card: 230
+  squad: Bordeaux
+  yellow_card: 129
+"Angeli\xF1o":
+  age: 25.0
+  born: 1997
+  corner_kicks: 162
+  country: ESP
+  fouls_committed: 185
+  goals: 64
+  league: Bundesliga
+  matches_played: 29
+  minutes_played: 2298
+  name: "Angeli\xF1o"
+  penalty_kicks_made: 351
+  penalty_kicks_won: 117
+  position: DF
+  rank: 99
+  red_card: 172
+  squad: RB Leipzig
+  yellow_card: 277
+"Benjamin Andr\xE9":
+  age: 31.0
+  born: 1990
+  corner_kicks: 197
+  country: FRA
+  fouls_committed: 232
+  goals: 261
+  league: Ligue 1
+  matches_played: 33
+  minutes_played: 2752
+  name: "Benjamin Andr\xE9"
+  penalty_kicks_made: 249
+  penalty_kicks_won: 83
+  position: MF
+  rank: 96
+  red_card: 272
+  squad: Lille
+  yellow_card: 246
+"Carles Ale\xF1\xE1":
+  age: 24.0
+  born: 1998
+  corner_kicks: 131
+  country: ESP
+  fouls_committed: 60
+  goals: 229
+  league: La Liga
+  matches_played: 33
+  minutes_played: 2320
+  name: "Carles Ale\xF1\xE1"
+  penalty_kicks_made: 486
+  penalty_kicks_won: 162
+  position: MF
+  rank: 62
+  red_card: 251
+  squad: Getafe
+  yellow_card: 271
+Carlos Akapo:
+  age: 29.0
+  born: 1993
+  corner_kicks: 201
+  country: EQG
+  fouls_committed: 255
+  goals: 102
+  league: La Liga
+  matches_played: 25
+  minutes_played: 1844
+  name: Carlos Akapo
+  penalty_kicks_made: 42
+  penalty_kicks_won: 14
+  position: DF
+  rank: 39
+  red_card: 51
+  squad: "C\xE1diz"
+  yellow_card: 74
+Charles Abi:
+  age: 22.0
+  born: 2000
+  corner_kicks: 111
+  country: FRA
+  fouls_committed: 273
+  goals: 93
+  league: Ligue 1
+  matches_played: 1
+  minutes_played: 45
+  name: Charles Abi
+  penalty_kicks_made: 30
+  penalty_kicks_won: 10
+  position: FW
+  rank: 5
+  red_card: 27
+  squad: "Saint-\xC9tienne"
+  yellow_card: 39
+Che Adams:
+  age: 25.0
+  born: 1996
+  corner_kicks: 256
+  country: SCO
+  fouls_committed: 99
+  goals: 134
+  league: Premier League
+  matches_played: 30
+  minutes_played: 2039
+  name: Che Adams
+  penalty_kicks_made: 711
+  penalty_kicks_won: 237
+  position: FW
+  rank: 14
+  red_card: 154
+  squad: Southampton
+  yellow_card: 121
+Dani Alves:
+  age: 39.0
+  born: 1983
+  corner_kicks: 31
+  country: BRA
+  fouls_committed: 271
+  goals: 236
+  league: La Liga
+  matches_played: 14
+  minutes_played: 1098
+  name: Dani Alves
+  penalty_kicks_made: 480
+  penalty_kicks_won: 160
+  position: DF
+  rank: 76
+  red_card: 136
+  squad: Barcelona
+  yellow_card: 191
+Daniel Amartey:
+  age: 27.0
+  born: 1994
+  corner_kicks: 198
+  country: GHA
+  fouls_committed: 34
+  goals: 18
+  league: Premier League
+  matches_played: 28
+  minutes_played: 2123
+  name: Daniel Amartey
+  penalty_kicks_made: 144
+  penalty_kicks_won: 48
+  position: DF
+  rank: 80
+  red_card: 59
+  squad: Leicester City
+  yellow_card: 163
+David Alaba:
+  age: 29.0
+  born: 1992
+  corner_kicks: 297
+  country: AUT
+  fouls_committed: 15
+  goals: 183
+  league: La Liga
+  matches_played: 30
+  minutes_played: 2642
+  name: David Alaba
+  penalty_kicks_made: 855
+  penalty_kicks_won: 285
+  position: DF
+  rank: 47
+  red_card: 178
+  squad: Real Madrid
+  yellow_card: 76
+Dele Alli:
+  age: 26.0
+  born: 1996
+  corner_kicks: 199
+  country: ENG
+  fouls_committed: 20
+  goals: 287
+  league: Premier League
+  matches_played: 10
+  minutes_played: 657
+  name: Dele Alli
+  penalty_kicks_made: 534
+  penalty_kicks_won: 178
+  position: MFFW
+  rank: 70
+  red_card: 234
+  squad: Tottenham
+  yellow_card: 71
+Dickson Abiama:
+  age: 23.0
+  born: 1998
+  corner_kicks: 53
+  country: NGA
+  fouls_committed: 269
+  goals: 244
+  league: Bundesliga
+  matches_played: 24
+  minutes_played: 726
+  name: Dickson Abiama
+  penalty_kicks_made: 450
+  penalty_kicks_won: 150
+  position: FW
+  rank: 6
+  red_card: 187
+  squad: "Greuther F\xFCrth"
+  yellow_card: 260
+"Do\xF0an Alemdar":
+  age: 19.0
+  born: 2002
+  corner_kicks: 192
+  country: TUR
+  fouls_committed: 152
+  goals: 281
+  league: Ligue 1
+  matches_played: 12
+  minutes_played: 1080
+  name: "Do\xF0an Alemdar"
+  penalty_kicks_made: 450
+  penalty_kicks_won: 150
+  position: GK
+  rank: 61
+  red_card: 209
+  squad: Rennes
+  yellow_card: 45
+Ebenezer Annan:
+  age: 19.0
+  born: 2002
+  corner_kicks: 15
+  country: GHA
+  fouls_committed: 206
+  goals: 286
+  league: Serie A
+  matches_played: 1
+  minutes_played: 25
+  name: Ebenezer Annan
+  penalty_kicks_made: 417
+  penalty_kicks_won: 139
+  position: DF
+  rank: 100
+  red_card: 40
+  squad: Bologna
+  yellow_card: 128
+Emmanuel Amankwaa Akurugu:
+  age: 20.0
+  born: 2001
+  corner_kicks: 174
+  country: GHA
+  fouls_committed: 100
+  goals: 37
+  league: La Liga
+  matches_played: 3
+  minutes_played: 79
+  name: Emmanuel Amankwaa Akurugu
+  penalty_kicks_made: 48
+  penalty_kicks_won: 16
+  position: DF
+  rank: 79
+  red_card: 89
+  squad: Getafe
+  yellow_card: 162
+Ethan Ampadu:
+  age: 21.0
+  born: 2000
+  corner_kicks: 80
+  country: WAL
+  fouls_committed: 231
+  goals: 55
+  league: Serie A
+  matches_played: 29
+  minutes_played: 2282
+  name: Ethan Ampadu
+  penalty_kicks_made: 687
+  penalty_kicks_won: 229
+  position: MFDF
+  rank: 88
+  red_card: 217
+  squad: Venezia
+  yellow_card: 151
+Felipe Anderson:
+  age: 29.0
+  born: 1993
+  corner_kicks: 38
+  country: BRA
+  fouls_committed: 42
+  goals: 287
+  league: Serie A
+  matches_played: 38
+  minutes_played: 2888
+  name: Felipe Anderson
+  penalty_kicks_made: 546
+  penalty_kicks_won: 182
+  position: FW
+  rank: 91
+  red_card: 80
+  squad: Lazio
+  yellow_card: 269
+Felix Afena-Gyan:
+  age: 19.0
+  born: 2003
+  corner_kicks: 42
+  country: GHA
+  fouls_committed: 13
+  goals: 131
+  league: Serie A
+  matches_played: 17
+  minutes_played: 668
+  name: Felix Afena-Gyan
+  penalty_kicks_made: 702
+  penalty_kicks_won: 234
+  position: FWMF
+  rank: 21
+  red_card: 211
+  squad: Roma
+  yellow_card: 245
+Florin Andone:
+  age: 29.0
+  born: 1993
+  corner_kicks: 243
+  country: ROU
+  fouls_committed: 58
+  goals: 60
+  league: La Liga
+  matches_played: 5
+  minutes_played: 176
+  name: Florin Andone
+  penalty_kicks_made: 747
+  penalty_kicks_won: 249
+  position: FW
+  rank: 93
+  red_card: 218
+  squad: "C\xE1diz"
+  yellow_card: 297
+Francesco Acerbi:
+  age: 34.0
+  born: 1988
+  corner_kicks: 66
+  country: ITA
+  fouls_committed: 212
+  goals: 147
+  league: Serie A
+  matches_played: 30
+  minutes_played: 2536
+  name: Francesco Acerbi
+  penalty_kicks_made: 381
+  penalty_kicks_won: 127
+  position: DF
+  rank: 10
+  red_card: 152
+  squad: Lazio
+  yellow_card: 18
+"Fredrik Andr\xE9 Bj\xF8rkan":
+  age: 23.0
+  born: 1998
+  corner_kicks: 10
+  country: NOR
+  fouls_committed: 292
+  goals: 289
+  league: Bundesliga
+  matches_played: 9
+  minutes_played: 353
+  name: "Fredrik Andr\xE9 Bj\xF8rkan"
+  penalty_kicks_made: 573
+  penalty_kicks_won: 191
+  position: DF
+  rank: 95
+  red_card: 155
+  squad: Hertha BSC
+  yellow_card: 57
+Giorgio Altare:
+  age: 23.0
+  born: 1998
+  corner_kicks: 239
+  country: ITA
+  fouls_committed: 215
+  goals: 45
+  league: Serie A
+  matches_played: 19
+  minutes_played: 1466
+  name: Giorgio Altare
+  penalty_kicks_made: 330
+  penalty_kicks_won: 110
+  position: DF
+  rank: 73
+  red_card: 110
+  squad: Cagliari
+  yellow_card: 114
+"Hugo \xC1lvarez":
+  age: 36.0
+  born: 1985
+  corner_kicks: 141
+  country: ESP
+  fouls_committed: 58
+  goals: 165
+  league: La Liga
+  matches_played: 1
+  minutes_played: 11
+  name: "Hugo \xC1lvarez"
+  penalty_kicks_made: 501
+  penalty_kicks_won: 167
+  position: FW
+  rank: 74
+  red_card: 195
+  squad: Celta Vigo
+  yellow_card: 280
+Ibrahim Amadou:
+  age: 29.0
+  born: 1993
+  corner_kicks: 116
+  country: FRA
+  fouls_committed: 113
+  goals: 277
+  league: Ligue 1
+  matches_played: 10
+  minutes_played: 812
+  name: Ibrahim Amadou
+  penalty_kicks_made: 309
+  penalty_kicks_won: 103
+  position: DFMF
+  rank: 78
+  red_card: 247
+  squad: Metz
+  yellow_card: 28
+Ilias Akhomach:
+  age: 18.0
+  born: 2004
+  corner_kicks: 27
+  country: ESP
+  fouls_committed: 222
+  goals: 78
+  league: La Liga
+  matches_played: 2
+  minutes_played: 124
+  name: Ilias Akhomach
+  penalty_kicks_made: 861
+  penalty_kicks_won: 287
+  position: FW
+  rank: 42
+  red_card: 66
+  squad: Barcelona
+  yellow_card: 177
+"Iv\xE1n Alejo":
+  age: 27.0
+  born: 1995
+  corner_kicks: 128
+  country: ESP
+  fouls_committed: 264
+  goals: 190
+  league: La Liga
+  matches_played: 20
+  minutes_played: 1065
+  name: "Iv\xE1n Alejo"
+  penalty_kicks_made: 747
+  penalty_kicks_won: 249
+  position: MFFW
+  rank: 60
+  red_card: 109
+  squad: "C\xE1diz"
+  yellow_card: 75
+Jean-Daniel Akpa-Akpro:
+  age: 29.0
+  born: 1992
+  corner_kicks: 152
+  country: CIV
+  fouls_committed: 213
+  goals: 203
+  league: Serie A
+  matches_played: 10
+  minutes_played: 315
+  name: Jean-Daniel Akpa-Akpro
+  penalty_kicks_made: 111
+  penalty_kicks_won: 37
+  position: MF
+  rank: 45
+  red_card: 112
+  squad: Lazio
+  yellow_card: 131
+Jean-Eudes Aholou:
+  age: 28.0
+  born: 1994
+  corner_kicks: 224
+  country: CIV
+  fouls_committed: 58
+  goals: 214
+  league: Ligue 1
+  matches_played: 25
+  minutes_played: 1004
+  name: Jean-Eudes Aholou
+  penalty_kicks_made: 633
+  penalty_kicks_won: 211
+  position: MF
+  rank: 32
+  red_card: 30
+  squad: Strasbourg
+  yellow_card: 121
+Jim Allevinah:
+  age: 27.0
+  born: 1995
+  corner_kicks: 266
+  country: GAB
+  fouls_committed: 250
+  goals: 275
+  league: Ligue 1
+  matches_played: 30
+  minutes_played: 1488
+  name: Jim Allevinah
+  penalty_kicks_made: 342
+  penalty_kicks_won: 114
+  position: FW
+  rank: 68
+  red_card: 98
+  squad: Clermont Foot
+  yellow_card: 255
+Joachim Andersen:
+  age: 25.0
+  born: 1996
+  corner_kicks: 24
+  country: DEN
+  fouls_committed: 46
+  goals: 104
+  league: Premier League
+  matches_played: 34
+  minutes_played: 2916
+  name: Joachim Andersen
+  penalty_kicks_made: 585
+  penalty_kicks_won: 195
+  position: DF
+  rank: 90
+  red_card: 74
+  squad: Crystal Palace
+  yellow_card: 71
+Jordan Amavi:
+  age: 28.0
+  born: 1994
+  corner_kicks: 150
+  country: FRA
+  fouls_committed: 117
+  goals: 66
+  league: Ligue 1
+  matches_played: 8
+  minutes_played: 413
+  name: Jordan Amavi
+  penalty_kicks_made: 306
+  penalty_kicks_won: 102
+  position: DF
+  rank: 83
+  red_card: 81
+  squad: Nice
+  yellow_card: 120
+Jordi Alba:
+  age: 33.0
+  born: 1989
+  corner_kicks: 128
+  country: ESP
+  fouls_committed: 246
+  goals: 151
+  league: La Liga
+  matches_played: 30
+  minutes_played: 2644
+  name: Jordi Alba
+  penalty_kicks_made: 405
+  penalty_kicks_won: 135
+  position: DF
+  rank: 51
+  red_card: 252
+  squad: Barcelona
+  yellow_card: 109
+Joseph Aidoo:
+  age: 26.0
+  born: 1995
+  corner_kicks: 158
+  country: GHA
+  fouls_committed: 110
+  goals: 254
+  league: La Liga
+  matches_played: 32
+  minutes_played: 2637
+  name: Joseph Aidoo
+  penalty_kicks_made: 504
+  penalty_kicks_won: 168
+  position: DF
+  rank: 33
+  red_card: 191
+  squad: Celta Vigo
+  yellow_card: 69
+"Josu\xE9 Albert":
+  age: 30.0
+  born: 1992
+  corner_kicks: 47
+  country: GUF
+  fouls_committed: 288
+  goals: 298
+  league: Ligue 1
+  matches_played: 2
+  minutes_played: 22
+  name: "Josu\xE9 Albert"
+  penalty_kicks_made: 888
+  penalty_kicks_won: 296
+  position: DF
+  rank: 52
+  red_card: 292
+  squad: Clermont Foot
+  yellow_card: 67
+"Jos\xE9 \xC1ngel":
+  age: 32.0
+  born: 1989
+  corner_kicks: 91
+  country: ESP
+  fouls_committed: 55
+  goals: 90
+  league: La Liga
+  matches_played: 23
+  minutes_played: 1083
+  name: "Jos\xE9 \xC1ngel"
+  penalty_kicks_made: 177
+  penalty_kicks_won: 59
+  position: DF
+  rank: 98
+  red_card: 112
+  squad: Osasuna
+  yellow_card: 128
+Julen Agirrezabala:
+  age: 21.0
+  born: 2000
+  corner_kicks: 237
+  country: ESP
+  fouls_committed: 297
+  goals: 36
+  league: La Liga
+  matches_played: 4
+  minutes_played: 360
+  name: Julen Agirrezabala
+  penalty_kicks_made: 795
+  penalty_kicks_won: 265
+  position: GK
+  rank: 23
+  red_card: 12
+  squad: Athletic Club
+  yellow_card: 108
+Kelvin Amian:
+  age: 24.0
+  born: 1998
+  corner_kicks: 39
+  country: FRA
+  fouls_committed: 102
+  goals: 203
+  league: Serie A
+  matches_played: 32
+  minutes_played: 2646
+  name: Kelvin Amian
+  penalty_kicks_made: 879
+  penalty_kicks_won: 293
+  position: DF
+  rank: 85
+  red_card: 278
+  squad: Spezia
+  yellow_card: 173
+Kevin Agudelo:
+  age: 23.0
+  born: 1998
+  corner_kicks: 111
+  country: COL
+  fouls_committed: 121
+  goals: 225
+  league: Serie A
+  matches_played: 23
+  minutes_played: 1237
+  name: Kevin Agudelo
+  penalty_kicks_made: 843
+  penalty_kicks_won: 281
+  position: MFFW
+  rank: 25
+  red_card: 190
+  squad: Spezia
+  yellow_card: 224
+Kevin Akpoguma:
+  age: 27.0
+  born: 1995
+  corner_kicks: 194
+  country: NGA
+  fouls_committed: 85
+  goals: 124
+  league: Bundesliga
+  matches_played: 26
+  minutes_played: 1527
+  name: Kevin Akpoguma
+  penalty_kicks_made: 420
+  penalty_kicks_won: 140
+  position: DF
+  rank: 46
+  red_card: 60
+  squad: Hoffenheim
+  yellow_card: 79
+Kristoffer Ajer:
+  age: 24.0
+  born: 1998
+  corner_kicks: 278
+  country: NOR
+  fouls_committed: 120
+  goals: 279
+  league: Premier League
+  matches_played: 24
+  minutes_played: 1995
+  name: Kristoffer Ajer
+  penalty_kicks_made: 375
+  penalty_kicks_won: 125
+  position: DF
+  rank: 36
+  red_card: 126
+  squad: Brentford
+  yellow_card: 69
+Laurent Abergel:
+  age: 29.0
+  born: 1993
+  corner_kicks: 257
+  country: FRA
+  fouls_committed: 270
+  goals: 224
+  league: Ligue 1
+  matches_played: 34
+  minutes_played: 2956
+  name: Laurent Abergel
+  penalty_kicks_made: 162
+  penalty_kicks_won: 54
+  position: MF
+  rank: 4
+  red_card: 200
+  squad: Lorient
+  yellow_card: 122
+Lucas Alario:
+  age: 29.0
+  born: 1992
+  corner_kicks: 236
+  country: ARG
+  fouls_committed: 48
+  goals: 43
+  league: Bundesliga
+  matches_played: 27
+  minutes_played: 655
+  name: Lucas Alario
+  penalty_kicks_made: 90
+  penalty_kicks_won: 30
+  position: FW
+  rank: 50
+  red_card: 104
+  squad: Leverkusen
+  yellow_card: 240
+Lucien Agoume:
+  age: 20.0
+  born: 2002
+  corner_kicks: 158
+  country: FRA
+  fouls_committed: 192
+  goals: 60
+  league: Ligue 1
+  matches_played: 27
+  minutes_played: 1868
+  name: Lucien Agoume
+  penalty_kicks_made: 753
+  penalty_kicks_won: 251
+  position: MF
+  rank: 24
+  red_card: 75
+  squad: Brest
+  yellow_card: 131
+Ludovic Ajorque:
+  age: 28.0
+  born: 1994
+  corner_kicks: 102
+  country: REU
+  fouls_committed: 150
+  goals: 106
+  league: Ligue 1
+  matches_played: 36
+  minutes_played: 2738
+  name: Ludovic Ajorque
+  penalty_kicks_made: 693
+  penalty_kicks_won: 231
+  position: FW
+  rank: 37
+  red_card: 131
+  squad: Strasbourg
+  yellow_card: 41
+Luis Abram:
+  age: 26.0
+  born: 1996
+  corner_kicks: 192
+  country: PER
+  fouls_committed: 38
+  goals: 48
+  league: La Liga
+  matches_played: 8
+  minutes_played: 560
+  name: Luis Abram
+  penalty_kicks_made: 678
+  penalty_kicks_won: 226
+  position: DF
+  rank: 9
+  red_card: 19
+  squad: Granada
+  yellow_card: 216
+Luis Alberto:
+  age: 29.0
+  born: 1992
+  corner_kicks: 214
+  country: ESP
+  fouls_committed: 285
+  goals: 284
+  league: Serie A
+  matches_played: 34
+  minutes_played: 2353
+  name: Luis Alberto
+  penalty_kicks_made: 762
+  penalty_kicks_won: 254
+  position: MF
+  rank: 53
+  red_card: 134
+  squad: Lazio
+  yellow_card: 42
+Maghnes Akliouche:
+  age: 20.0
+  born: 2002
+  corner_kicks: 56
+  country: FRA
+  fouls_committed: 135
+  goals: 289
+  league: Ligue 1
+  matches_played: 7
+  minutes_played: 54
+  name: Maghnes Akliouche
+  penalty_kicks_made: 162
+  penalty_kicks_won: 54
+  position: MFFW
+  rank: 43
+  red_card: 120
+  squad: Monaco
+  yellow_card: 56
+Manuel Akanji:
+  age: 26.0
+  born: 1995
+  corner_kicks: 188
+  country: SUI
+  fouls_committed: 269
+  goals: 273
+  league: Bundesliga
+  matches_played: 26
+  minutes_played: 2261
+  name: Manuel Akanji
+  penalty_kicks_made: 582
+  penalty_kicks_won: 194
+  position: DF
+  rank: 38
+  red_card: 165
+  squad: Dortmund
+  yellow_card: 199
+Marc Albrighton:
+  age: 32.0
+  born: 1989
+  corner_kicks: 107
+  country: ENG
+  fouls_committed: 219
+  goals: 55
+  league: Premier League
+  matches_played: 17
+  minutes_played: 1132
+  name: Marc Albrighton
+  penalty_kicks_made: 432
+  penalty_kicks_won: 144
+  position: FWDF
+  rank: 55
+  red_card: 194
+  squad: Leicester City
+  yellow_card: 174
+"Marcos Acu\xF1a":
+  age: 30.0
+  born: 1991
+  corner_kicks: 78
+  country: ARG
+  fouls_committed: 240
+  goals: 245
+  league: La Liga
+  matches_played: 31
+  minutes_played: 2260
+  name: "Marcos Acu\xF1a"
+  penalty_kicks_made: 279
+  penalty_kicks_won: 93
+  position: DF
+  rank: 13
+  red_card: 117
+  squad: Sevilla
+  yellow_card: 69
+Marcos Alonso:
+  age: 31.0
+  born: 1990
+  corner_kicks: 240
+  country: ESP
+  fouls_committed: 227
+  goals: 277
+  league: Premier League
+  matches_played: 28
+  minutes_played: 2167
+  name: Marcos Alonso
+  penalty_kicks_made: 201
+  penalty_kicks_won: 67
+  position: DF
+  rank: 72
+  red_card: 204
+  squad: Chelsea
+  yellow_card: 67
+"Marley Ak\xE9":
+  age: 21.0
+  born: 2001
+  corner_kicks: 71
+  country: FRA
+  fouls_committed: 230
+  goals: 66
+  league: Serie A
+  matches_played: 4
+  minutes_played: 77
+  name: "Marley Ak\xE9"
+  penalty_kicks_made: 576
+  penalty_kicks_won: 192
+  position: MFFW
+  rank: 40
+  red_card: 16
+  squad: Juventus
+  yellow_card: 65
+Martin Adeline:
+  age: 18.0
+  born: 2003
+  corner_kicks: 35
+  country: FRA
+  fouls_committed: 68
+  goals: 242
+  league: Ligue 1
+  matches_played: 8
+  minutes_played: 352
+  name: Martin Adeline
+  penalty_kicks_made: 684
+  penalty_kicks_won: 228
+  position: MFFW
+  rank: 17
+  red_card: 246
+  squad: Reims
+  yellow_card: 108
+Martin Agirregabiria:
+  age: 26.0
+  born: 1996
+  corner_kicks: 69
+  country: ESP
+  fouls_committed: 261
+  goals: 125
+  league: La Liga
+  matches_played: 24
+  minutes_played: 1616
+  name: Martin Agirregabiria
+  penalty_kicks_made: 894
+  penalty_kicks_won: 298
+  position: DF
+  rank: 22
+  red_card: 152
+  squad: "Alav\xE9s"
+  yellow_card: 175
+Matthis Abline:
+  age: 19.0
+  born: 2003
+  corner_kicks: 83
+  country: FRA
+  fouls_committed: 286
+  goals: 117
+  league: Ligue 1
+  matches_played: 7
+  minutes_played: 103
+  name: Matthis Abline
+  penalty_kicks_made: 252
+  penalty_kicks_won: 84
+  position: FW
+  rank: 7
+  red_card: 155
+  squad: Rennes
+  yellow_card: 276
+Max Aarons:
+  age: 22.0
+  born: 2000
+  corner_kicks: 20
+  country: ENG
+  fouls_committed: 208
+  goals: 71
+  league: Premier League
+  matches_played: 34
+  minutes_played: 2881
+  name: Max Aarons
+  penalty_kicks_made: 33
+  penalty_kicks_won: 11
+  position: DF
+  rank: 1
+  red_card: 297
+  squad: Norwich City
+  yellow_card: 41
+Michel Aebischer:
+  age: 25.0
+  born: 1997
+  corner_kicks: 117
+  country: SUI
+  fouls_committed: 270
+  goals: 265
+  league: Serie A
+  matches_played: 12
+  minutes_played: 443
+  name: Michel Aebischer
+  penalty_kicks_made: 219
+  penalty_kicks_won: 73
+  position: MF
+  rank: 20
+  red_card: 250
+  squad: Bologna
+  yellow_card: 38
+"Miguel Almir\xF3n":
+  age: 28.0
+  born: 1994
+  corner_kicks: 241
+  country: PAR
+  fouls_committed: 24
+  goals: 67
+  league: Premier League
+  matches_played: 30
+  minutes_played: 1716
+  name: "Miguel Almir\xF3n"
+  penalty_kicks_made: 429
+  penalty_kicks_won: 143
+  position: MFFW
+  rank: 71
+  red_card: 122
+  squad: Newcastle Utd
+  yellow_card: 172
+Mircea Alexandru Tirlea:
+  age: 22.0
+  born: 2000
+  corner_kicks: 26
+  country: ROU
+  fouls_committed: 208
+  goals: 185
+  league: La Liga
+  matches_played: 1
+  minutes_played: 15
+  name: Mircea Alexandru Tirlea
+  penalty_kicks_made: 732
+  penalty_kicks_won: 244
+  position: DF
+  rank: 64
+  red_card: 189
+  squad: "Alav\xE9s"
+  yellow_card: 257
+Mohamed Achi:
+  age: 20.0
+  born: 2002
+  corner_kicks: 247
+  country: FRA
+  fouls_committed: 208
+  goals: 45
+  league: Ligue 1
+  matches_played: 1
+  minutes_played: 10
+  name: Mohamed Achi
+  penalty_kicks_made: 426
+  penalty_kicks_won: 142
+  position: MF
+  rank: 12
+  red_card: 225
+  squad: Nantes
+  yellow_card: 94
+Mohamed Ali Cho:
+  age: 18.0
+  born: 2004
+  corner_kicks: 173
+  country: FRA
+  fouls_committed: 139
+  goals: 69
+  league: Ligue 1
+  matches_played: 32
+  minutes_played: 1837
+  name: Mohamed Ali Cho
+  penalty_kicks_made: 189
+  penalty_kicks_won: 63
+  position: FW
+  rank: 65
+  red_card: 269
+  squad: Angers
+  yellow_card: 239
+Nadiem Amiri:
+  age: 25.0
+  born: 1996
+  corner_kicks: 121
+  country: GER
+  fouls_committed: 299
+  goals: 208
+  league: Bundesliga
+  matches_played: 13
+  minutes_played: 369
+  name: Nadiem Amiri
+  penalty_kicks_made: 456
+  penalty_kicks_won: 152
+  position: MFFW
+  rank: 87
+  red_card: 266
+  squad: Leverkusen
+  yellow_card: 132
+Naouirou Ahamada:
+  age: 20.0
+  born: 2002
+  corner_kicks: 185
+  country: FRA
+  fouls_committed: 222
+  goals: 244
+  league: Bundesliga
+  matches_played: 3
+  minutes_played: 61
+  name: Naouirou Ahamada
+  penalty_kicks_made: 342
+  penalty_kicks_won: 114
+  position: MF
+  rank: 30
+  red_card: 42
+  squad: Stuttgart
+  yellow_card: 63
+"Nathan Ak\xE9":
+  age: 27.0
+  born: 1995
+  corner_kicks: 286
+  country: NED
+  fouls_committed: 101
+  goals: 41
+  league: Premier League
+  matches_played: 14
+  minutes_played: 923
+  name: "Nathan Ak\xE9"
+  penalty_kicks_made: 882
+  penalty_kicks_won: 294
+  position: DF
+  rank: 41
+  red_card: 93
+  squad: Manchester City
+  yellow_card: 287
+Nayef Aguerd:
+  age: 26.0
+  born: 1996
+  corner_kicks: 11
+  country: MAR
+  fouls_committed: 158
+  goals: 44
+  league: Ligue 1
+  matches_played: 31
+  minutes_played: 2735
+  name: Nayef Aguerd
+  penalty_kicks_made: 39
+  penalty_kicks_won: 13
+  position: DF
+  rank: 26
+  red_card: 162
+  squad: Rennes
+  yellow_card: 87
+Ola Aina:
+  age: 25.0
+  born: 1996
+  corner_kicks: 38
+  country: NGA
+  fouls_committed: 228
+  goals: 75
+  league: Serie A
+  matches_played: 21
+  minutes_played: 1437
+  name: Ola Aina
+  penalty_kicks_made: 636
+  penalty_kicks_won: 212
+  position: DF
+  rank: 34
+  red_card: 294
+  squad: Torino
+  yellow_card: 109
+Omar Alderete:
+  age: 25.0
+  born: 1996
+  corner_kicks: 160
+  country: PAR
+  fouls_committed: 112
+  goals: 103
+  league: La Liga
+  matches_played: 29
+  minutes_played: 2403
+  name: Omar Alderete
+  penalty_kicks_made: 720
+  penalty_kicks_won: 240
+  position: DF
+  rank: 59
+  red_card: 66
+  squad: Valencia
+  yellow_card: 134
+"Paco Alc\xE1cer":
+  age: 28.0
+  born: 1993
+  corner_kicks: 148
+  country: ESP
+  fouls_committed: 67
+  goals: 252
+  league: La Liga
+  matches_played: 18
+  minutes_played: 787
+  name: "Paco Alc\xE1cer"
+  penalty_kicks_made: 327
+  penalty_kicks_won: 109
+  position: FW
+  rank: 56
+  red_card: 167
+  squad: Villarreal
+  yellow_card: 230
+Paul Akouokou:
+  age: 24.0
+  born: 1997
+  corner_kicks: 83
+  country: CIV
+  fouls_committed: 139
+  goals: 122
+  league: La Liga
+  matches_played: 8
+  minutes_played: 516
+  name: Paul Akouokou
+  penalty_kicks_made: 780
+  penalty_kicks_won: 260
+  position: MF
+  rank: 44
+  red_card: 166
+  squad: Betis
+  yellow_card: 21
+Ragnar Ache:
+  age: 23.0
+  born: 1998
+  corner_kicks: 86
+  country: GER
+  fouls_committed: 230
+  goals: 201
+  league: Bundesliga
+  matches_played: 13
+  minutes_played: 259
+  name: Ragnar Ache
+  penalty_kicks_made: 777
+  penalty_kicks_won: 259
+  position: MFFW
+  rank: 11
+  red_card: 85
+  squad: Eint Frankfurt
+  yellow_card: 137
+"Rayan A\xEFt Nouri":
+  age: 20.0
+  born: 2001
+  corner_kicks: 75
+  country: FRA
+  fouls_committed: 82
+  goals: 78
+  league: Premier League
+  matches_played: 23
+  minutes_played: 1828
+  name: "Rayan A\xEFt Nouri"
+  penalty_kicks_made: 351
+  penalty_kicks_won: 117
+  position: DF
+  rank: 35
+  red_card: 214
+  squad: Wolves
+  yellow_card: 217
+"Ra\xFAl Albiol":
+  age: 36.0
+  born: 1985
+  corner_kicks: 195
+  country: ESP
+  fouls_committed: 190
+  goals: 33
+  league: La Liga
+  matches_played: 28
+  minutes_played: 2465
+  name: "Ra\xFAl Albiol"
+  penalty_kicks_made: 837
+  penalty_kicks_won: 279
+  position: DF
+  rank: 54
+  red_card: 256
+  squad: Villarreal
+  yellow_card: 108
+Robert Andrich:
+  age: 27.0
+  born: 1994
+  corner_kicks: 194
+  country: GER
+  fouls_committed: 194
+  goals: 263
+  league: Bundesliga
+  matches_played: 26
+  minutes_played: 1817
+  name: Robert Andrich
+  penalty_kicks_made: 141
+  penalty_kicks_won: 47
+  position: MF
+  rank: 97
+  red_card: 257
+  squad: Leverkusen
+  yellow_card: 172
+Ruben Aguilar:
+  age: 29.0
+  born: 1993
+  corner_kicks: 155
+  country: FRA
+  fouls_committed: 272
+  goals: 261
+  league: Ligue 1
+  matches_played: 28
+  minutes_played: 2140
+  name: Ruben Aguilar
+  penalty_kicks_made: 549
+  penalty_kicks_won: 183
+  position: DF
+  rank: 28
+  red_card: 139
+  squad: Monaco
+  yellow_card: 80
+"Rub\xE9n Alcaraz":
+  age: 31.0
+  born: 1991
+  corner_kicks: 49
+  country: ESP
+  fouls_committed: 223
+  goals: 74
+  league: La Liga
+  matches_played: 14
+  minutes_played: 1105
+  name: "Rub\xE9n Alcaraz"
+  penalty_kicks_made: 381
+  penalty_kicks_won: 127
+  position: MF
+  rank: 58
+  red_card: 132
+  squad: "C\xE1diz"
+  yellow_card: 26
+Salis Abdul Samed:
+  age: 22.0
+  born: 2000
+  corner_kicks: 56
+  country: GHA
+  fouls_committed: 134
+  goals: 259
+  league: Ligue 1
+  matches_played: 31
+  minutes_played: 2462
+  name: Salis Abdul Samed
+  penalty_kicks_made: 711
+  penalty_kicks_won: 237
+  position: MF
+  rank: 3
+  red_card: 209
+  squad: Clermont Foot
+  yellow_card: 75
+Sargis Adamyan:
+  age: 29.0
+  born: 1993
+  corner_kicks: 159
+  country: ARM
+  fouls_committed: 256
+  goals: 147
+  league: Bundesliga
+  matches_played: 13
+  minutes_played: 331
+  name: Sargis Adamyan
+  penalty_kicks_made: 225
+  penalty_kicks_won: 75
+  position: FWMF
+  rank: 16
+  red_card: 66
+  squad: Hoffenheim
+  yellow_card: 188
+Sebastian Andersson:
+  age: 30.0
+  born: 1991
+  corner_kicks: 162
+  country: SWE
+  fouls_committed: 259
+  goals: 136
+  league: Bundesliga
+  matches_played: 26
+  minutes_played: 1257
+  name: Sebastian Andersson
+  penalty_kicks_made: 678
+  penalty_kicks_won: 226
+  position: FW
+  rank: 92
+  red_card: 107
+  squad: "K\xF6ln"
+  yellow_card: 131
+"Sergio Ag\xFCero":
+  age: 33.0
+  born: 1988
+  corner_kicks: 63
+  country: ARG
+  fouls_committed: 98
+  goals: 138
+  league: La Liga
+  matches_played: 4
+  minutes_played: 151
+  name: "Sergio Ag\xFCero"
+  penalty_kicks_made: 447
+  penalty_kicks_won: 149
+  position: FW
+  rank: 27
+  red_card: 195
+  squad: Barcelona
+  yellow_card: 217
+Sofiane Alakouch:
+  age: 23.0
+  born: 1998
+  corner_kicks: 175
+  country: MAR
+  fouls_committed: 92
+  goals: 232
+  league: Ligue 1
+  matches_played: 4
+  minutes_played: 158
+  name: Sofiane Alakouch
+  penalty_kicks_made: 618
+  penalty_kicks_won: 206
+  position: DFMF
+  rank: 48
+  red_card: 284
+  squad: Metz
+  yellow_card: 74
+Sofyan Amrabat:
+  age: 25.0
+  born: 1996
+  corner_kicks: 198
+  country: MAR
+  fouls_committed: 47
+  goals: 89
+  league: Serie A
+  matches_played: 23
+  minutes_played: 944
+  name: Sofyan Amrabat
+  penalty_kicks_made: 708
+  penalty_kicks_won: 236
+  position: MF
+  rank: 89
+  red_card: 200
+  squad: Fiorentina
+  yellow_card: 33
+Steven Alzate:
+  age: 23.0
+  born: 1998
+  corner_kicks: 129
+  country: COL
+  fouls_committed: 102
+  goals: 109
+  league: Premier League
+  matches_played: 9
+  minutes_played: 404
+  name: Steven Alzate
+  penalty_kicks_made: 498
+  penalty_kicks_won: 166
+  position: MF
+  rank: 77
+  red_card: 50
+  squad: Brighton
+  yellow_card: 224
+Tammy Abraham:
+  age: 24.0
+  born: 1997
+  corner_kicks: 283
+  country: ENG
+  fouls_committed: 203
+  goals: 49
+  league: Serie A
+  matches_played: 37
+  minutes_played: 3084
+  name: Tammy Abraham
+  penalty_kicks_made: 780
+  penalty_kicks_won: 260
+  position: FW
+  rank: 8
+  red_card: 201
+  squad: Roma
+  yellow_card: 191
+"Thiago Alc\xE1ntara":
+  age: 31.0
+  born: 1991
+  corner_kicks: 292
+  country: ESP
+  fouls_committed: 282
+  goals: 198
+  league: Premier League
+  matches_played: 25
+  minutes_played: 1534
+  name: "Thiago Alc\xE1ntara"
+  penalty_kicks_made: 408
+  penalty_kicks_won: 136
+  position: MF
+  rank: 57
+  red_card: 38
+  squad: Liverpool
+  yellow_card: 291
+"Tom\xE1s Alarc\xF3n":
+  age: 23.0
+  born: 1999
+  corner_kicks: 252
+  country: CHI
+  fouls_committed: 185
+  goals: 132
+  league: La Liga
+  matches_played: 23
+  minutes_played: 1425
+  name: "Tom\xE1s Alarc\xF3n"
+  penalty_kicks_made: 612
+  penalty_kicks_won: 204
+  position: MF
+  rank: 49
+  red_card: 56
+  squad: "C\xE1diz"
+  yellow_card: 10
+Trent Alexander-Arnold:
+  age: 23.0
+  born: 1998
+  corner_kicks: 37
+  country: ENG
+  fouls_committed: 111
+  goals: 162
+  league: Premier League
+  matches_played: 32
+  minutes_played: 2853
+  name: Trent Alexander-Arnold
+  penalty_kicks_made: 159
+  penalty_kicks_won: 53
+  position: DF
+  rank: 63
+  red_card: 125
+  squad: Liverpool
+  yellow_card: 125
+Tyler Adams:
+  age: 23.0
+  born: 1999
+  corner_kicks: 99
+  country: USA
+  fouls_committed: 25
+  goals: 135
+  league: Bundesliga
+  matches_played: 24
+  minutes_played: 1351
+  name: Tyler Adams
+  penalty_kicks_made: 87
+  penalty_kicks_won: 29
+  position: MF
+  rank: 15
+  red_card: 210
+  squad: RB Leipzig
+  yellow_card: 209
+Wisdom Amey:
+  age: 16.0
+  born: 2005
+  corner_kicks: 59
+  country: ITA
+  fouls_committed: 84
+  goals: 284
+  league: Serie A
+  matches_played: 1
+  minutes_played: 71
+  name: Wisdom Amey
+  penalty_kicks_made: 456
+  penalty_kicks_won: 152
+  position: DF
+  rank: 84
+  red_card: 194
+  squad: Bologna
+  yellow_card: 225
+Yacine Adli:
+  age: 21.0
+  born: 2000
+  corner_kicks: 42
+  country: FRA
+  fouls_committed: 293
+  goals: 59
+  league: Ligue 1
+  matches_played: 36
+  minutes_played: 2260
+  name: Yacine Adli
+  penalty_kicks_made: 144
+  penalty_kicks_won: 48
+  position: MFFW
+  rank: 19
+  red_card: 268
+  squad: Bordeaux
+  yellow_card: 150
+"Yeray \xC1lvarez":
+  age: 27.0
+  born: 1995
+  corner_kicks: 238
+  country: ESP
+  fouls_committed: 89
+  goals: 273
+  league: La Liga
+  matches_played: 22
+  minutes_played: 1860
+  name: "Yeray \xC1lvarez"
+  penalty_kicks_made: 315
+  penalty_kicks_won: 105
+  position: DF
+  rank: 75
+  red_card: 67
+  squad: Athletic Club
+  yellow_card: 287
+Yunis Abdelhamid:
+  age: 34.0
+  born: 1987
+  corner_kicks: 85
+  country: MAR
+  fouls_committed: 169
+  goals: 49
+  league: Ligue 1
+  matches_played: 34
+  minutes_played: 2983
+  name: Yunis Abdelhamid
+  penalty_kicks_made: 441
+  penalty_kicks_won: 147
+  position: DF
+  rank: 2
+  red_card: 10
+  squad: Reims
+  yellow_card: 82
+"\xC1lvaro Aguirre":
+  age: 22.0
+  born: 2000
+  corner_kicks: 87
+  country: ESP
+  fouls_committed: 295
+  goals: 197
+  league: La Liga
+  matches_played: 1
+  minutes_played: 9
+  name: "\xC1lvaro Aguirre"
+  penalty_kicks_made: 396
+  penalty_kicks_won: 132
+  position: FW
+  rank: 29
+  red_card: 39
+  squad: Rayo Vallecano
+  yellow_card: 53
