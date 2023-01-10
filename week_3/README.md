@@ -60,6 +60,7 @@ Rails.application.routes.draw do
   get '/', to: 'page#root'
   get 'about_me', to: 'page#about_me'
 end
+```
 
 The routes file specifies the URLs that are recognized by the application.
 
