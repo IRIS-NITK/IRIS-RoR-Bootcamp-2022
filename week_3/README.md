@@ -68,6 +68,9 @@ The routes file specifies the URLs that are recognized by the application.
 
 - You should be able to see see your changes at `http://localhost:3000` and
   `http://localhost:3000/about_me`.
+  
+![image](https://user-images.githubusercontent.com/66632353/211770375-4cc14806-7e60-4135-9e40-7b73e3c4ed23.png)
+![image](https://user-images.githubusercontent.com/66632353/211770741-56dfaea8-2095-474b-974a-2b151953a3de.png)
 
 - Copy the test file from week_3 directory to hello_world/test/controllers:
 ```bash
