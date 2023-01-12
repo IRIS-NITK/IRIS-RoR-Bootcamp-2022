@@ -79,7 +79,10 @@ This adds some sample data(/test/fixtures/football_players.yml) to the database.
 The INSERT INTO statement is used to insert new records in a table
 
 ```sql
-INSERT INTO football_players (id, name, rank, country, position, squad, league, age, born, minutes_played, goals, penalty_kicks_made, matches_played, corner_kicks, yellow_card, red_card, penalty_kicks_won, fouls_committed) VALUES (1, Sergio Agüero, 20, "ARG", , "forward", "Barcelona", "La Liga", 33, 1988, 151, 179, 10, 4, 4, 3, 4, 1,) 
+INSERT INTO football_players (id, name, rank, country, position, squad, league, age, born, 
+minutes_played, goals, penalty_kicks_made, matches_played, corner_kicks, yellow_card, 
+red_card, penalty_kicks_won, fouls_committed) 
+VALUES (1, Sergio Agüero, 20, "ARG", , "forward", "Barcelona", "La Liga", 33, 1988, 151, 179, 10, 4, 4, 3, 4, 1,) 
 ```
 
 In Rails
