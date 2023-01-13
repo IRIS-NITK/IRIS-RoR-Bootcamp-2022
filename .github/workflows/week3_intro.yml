@@ -21,7 +21,6 @@ jobs:
         with:
           ruby-version: 3.0.5
           working-directory: week_3/hello_world
-          bundler-cache: true
 
       - name: Install NPM packages
         uses: bahmutov/npm-install@v1
