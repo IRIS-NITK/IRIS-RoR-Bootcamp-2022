@@ -13,7 +13,7 @@ class FootballPlayer < ApplicationRecord
   # Sort players by their rank
   scope :order_by_rank, -> { raise NotImplementedError }
 
-  # Average goals per game = (total matches) / (total goals)
+  # Average goals per game = (total goals) / (total matches)
   #
   # If total matches or total goals is missing return nil
   def average_goals_per_game
@@ -29,6 +29,8 @@ class FootballPlayer < ApplicationRecord
 
   # Return the penalty succes rate of the player
   # penalty_success_rate = (penalty_kicks_won * 100) / penalty_kicks_made
+  # 
+  # if data is missing return nil
   def penalty_success_rate
     raise NotImplementedError
   end

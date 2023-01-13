@@ -117,7 +117,7 @@ Implement the function `import_argentinian_players` in
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |Marcos Acuna|13|ARG|defender|Sevilla|La Liga|30|1991|2260|105|705|31|248|81|267|235|237|
 |Lucas Alario|50|ARG|forward|Leverkusen|Bundesliga|29|1992|655|79|192|27|193|148|263|64|172|
-|Sergio Agüero|27|ARG|forward|Barcelona|La Liga|33|1988|151|179|402|4|52|74|81|134|146|
+|Sergio Aguero|27|ARG|forward|Barcelona|La Liga|33|1988|151|179|402|4|52|74|81|134|146|
 
 - [Insert Into](https://www.w3schools.com/sql/sql_insert.asp)
 - [Create | Active Record](https://guides.rubyonrails.org/active_record_basics.html#create)
