@@ -19,7 +19,6 @@ jobs:
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0.5
           working-directory: week_3/football
           bundler-cache: true
 
