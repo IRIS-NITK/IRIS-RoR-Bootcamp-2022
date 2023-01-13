@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  week2:
+  week3_model:
     runs-on: ubuntu-latest
 
     steps:
