@@ -216,3 +216,11 @@ FootballPlayer.find_by(name: "Messi").destroy
 
 - [DELETE | ActiveRecord](https://guides.rubyonrails.org/active_record_basics.html#delete)
 
+
+# Rails console
+The Rails console is useful for testing out quick ideas with code and debugging applications.
+
+```bash
+rails console
+```
+![image](https://user-images.githubusercontent.com/66632353/212348259-fbf59057-7eb1-4e1a-af8c-634161164afc.png)
