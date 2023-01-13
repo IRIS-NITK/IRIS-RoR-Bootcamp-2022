@@ -1,0 +1,342 @@
+Amine Adli:
+  age: 22.0
+  born: 2000
+  corner_kicks: 31
+  country: FRA
+  fouls_committed: 94
+  goals: 160
+  league: Bundesliga
+  matches_played: 25
+  minutes_played: 1256
+  name: Amine Adli
+  penalty_kicks_made: 300
+  penalty_kicks_won: 100
+  position: forward
+  rank: 18
+  red_card: 225
+  squad: Leverkusen
+  yellow_card: 202
+Charles Abi:
+  age: 22.0
+  born: 2000
+  corner_kicks: 145
+  country: FRA
+  fouls_committed: 17
+  goals: 261
+  league: Ligue 1
+  matches_played: 1
+  minutes_played: 45
+  name: Charles Abi
+  penalty_kicks_made: 177
+  penalty_kicks_won: 59
+  position: forward
+  rank: 5
+  red_card: 102
+  squad: "Saint-\xC9tienne"
+  yellow_card: 120
+Che Adams:
+  age: 25.0
+  born: 1996
+  corner_kicks: 294
+  country: SCO
+  fouls_committed: 195
+  goals: 43
+  league: Premier League
+  matches_played: 30
+  minutes_played: 2039
+  name: Che Adams
+  penalty_kicks_made: 693
+  penalty_kicks_won: 231
+  position: forward
+  rank: 14
+  red_card: 122
+  squad: Southampton
+  yellow_card: 76
+Dickson Abiama:
+  age: 23.0
+  born: 1998
+  corner_kicks: 13
+  country: NGA
+  fouls_committed: 31
+  goals: 33
+  league: Bundesliga
+  matches_played: 24
+  minutes_played: 726
+  name: Dickson Abiama
+  penalty_kicks_made: 132
+  penalty_kicks_won: 44
+  position: forward
+  rank: 6
+  red_card: 120
+  squad: "Greuther F\xFCrth"
+  yellow_card: 104
+Francesco Acerbi:
+  age: 34.0
+  born: 1988
+  corner_kicks: 240
+  country: ITA
+  fouls_committed: 274
+  goals: 94
+  league: Serie A
+  matches_played: 30
+  minutes_played: 2536
+  name: Francesco Acerbi
+  penalty_kicks_made: 291
+  penalty_kicks_won: 97
+  position: defender
+  rank: 10
+  red_card: 204
+  squad: Lazio
+  yellow_card: 239
+Laurent Abergel:
+  age: 29.0
+  born: 1993
+  corner_kicks: 172
+  country: FRA
+  fouls_committed: 140
+  goals: 240
+  league: Ligue 1
+  matches_played: 34
+  minutes_played: 2956
+  name: Laurent Abergel
+  penalty_kicks_made: 348
+  penalty_kicks_won: 116
+  position: midfielder
+  rank: 4
+  red_card: 123
+  squad: Lorient
+  yellow_card: 107
+Luis Abram:
+  age: 26.0
+  born: 1996
+  corner_kicks: 70
+  country: PER
+  fouls_committed: 218
+  goals: 104
+  league: La Liga
+  matches_played: 8
+  minutes_played: 560
+  name: Luis Abram
+  penalty_kicks_made: 99
+  penalty_kicks_won: 33
+  position: defender
+  rank: 9
+  red_card: 104
+  squad: Granada
+  yellow_card: 119
+Martin Adeline:
+  age: 18.0
+  born: 2003
+  corner_kicks: 18
+  country: FRA
+  fouls_committed: 89
+  goals: 15
+  league: Ligue 1
+  matches_played: 8
+  minutes_played: 352
+  name: Martin Adeline
+  penalty_kicks_made: 393
+  penalty_kicks_won: 131
+  position: midfielder
+  rank: 17
+  red_card: 109
+  squad: Reims
+  yellow_card: 288
+Matthis Abline:
+  age: 19.0
+  born: 2003
+  corner_kicks: 279
+  country: FRA
+  fouls_committed: 294
+  goals: 212
+  league: Ligue 1
+  matches_played: 7
+  minutes_played: 103
+  name: Matthis Abline
+  penalty_kicks_made: 618
+  penalty_kicks_won: 206
+  position: forward
+  rank: 7
+  red_card: 268
+  squad: Rennes
+  yellow_card: 131
+Max Aarons:
+  age: 22.0
+  born: 2000
+  corner_kicks: 285
+  country: ENG
+  fouls_committed: 89
+  goals: 11
+  league: Premier League
+  matches_played: 34
+  minutes_played: 2881
+  name: Max Aarons
+  penalty_kicks_made: 363
+  penalty_kicks_won: 121
+  position: defender
+  rank: 1
+  red_card: 247
+  squad: Norwich City
+  yellow_card: 85
+Michel Aebischer:
+  age: 25.0
+  born: 1997
+  corner_kicks: 98
+  country: SUI
+  fouls_committed: 115
+  goals: 275
+  league: Serie A
+  matches_played: 12
+  minutes_played: 443
+  name: Michel Aebischer
+  penalty_kicks_made: 723
+  penalty_kicks_won: 241
+  position: midfielder
+  rank: 20
+  red_card: 150
+  squad: Bologna
+  yellow_card: 207
+Mohamed Achi:
+  age: 20.0
+  born: 2002
+  corner_kicks: 75
+  country: FRA
+  fouls_committed: 142
+  goals: 179
+  league: Ligue 1
+  matches_played: 1
+  minutes_played: 10
+  name: Mohamed Achi
+  penalty_kicks_made: 816
+  penalty_kicks_won: 272
+  position: midfielder
+  rank: 12
+  red_card: 291
+  squad: Nantes
+  yellow_card: 73
+Ragnar Ache:
+  age: 23.0
+  born: 1998
+  corner_kicks: 286
+  country: GER
+  fouls_committed: 133
+  goals: 265
+  league: Bundesliga
+  matches_played: 13
+  minutes_played: 259
+  name: Ragnar Ache
+  penalty_kicks_made: 315
+  penalty_kicks_won: 105
+  position: midfielder
+  rank: 11
+  red_card: 251
+  squad: Eint Frankfurt
+  yellow_card: 90
+Salis Abdul Samed:
+  age: 22.0
+  born: 2000
+  corner_kicks: 185
+  country: GHA
+  fouls_committed: 166
+  goals: 30
+  league: Ligue 1
+  matches_played: 31
+  minutes_played: 2462
+  name: Salis Abdul Samed
+  penalty_kicks_made: 84
+  penalty_kicks_won: 28
+  position: midfielder
+  rank: 3
+  red_card: 135
+  squad: Clermont Foot
+  yellow_card: 269
+Sargis Adamyan:
+  age: 29.0
+  born: 1993
+  corner_kicks: 275
+  country: ARM
+  fouls_committed: 86
+  goals: 255
+  league: Bundesliga
+  matches_played: 13
+  minutes_played: 331
+  name: Sargis Adamyan
+  penalty_kicks_made: 645
+  penalty_kicks_won: 215
+  position: forward
+  rank: 16
+  red_card: 278
+  squad: Hoffenheim
+  yellow_card: 41
+Tammy Abraham:
+  age: 24.0
+  born: 1997
+  corner_kicks: 261
+  country: ENG
+  fouls_committed: 97
+  goals: 296
+  league: Serie A
+  matches_played: 37
+  minutes_played: 3084
+  name: Tammy Abraham
+  penalty_kicks_made: 273
+  penalty_kicks_won: 91
+  position: forward
+  rank: 8
+  red_card: 10
+  squad: Roma
+  yellow_card: 102
+Tyler Adams:
+  age: 23.0
+  born: 1999
+  corner_kicks: 280
+  country: USA
+  fouls_committed: 91
+  goals: 96
+  league: Bundesliga
+  matches_played: 24
+  minutes_played: 1351
+  name: Tyler Adams
+  penalty_kicks_made: 606
+  penalty_kicks_won: 202
+  position: midfielder
+  rank: 15
+  red_card: 251
+  squad: RB Leipzig
+  yellow_card: 149
+Yacine Adli:
+  age: 21.0
+  born: 2000
+  corner_kicks: 246
+  country: FRA
+  fouls_committed: 276
+  goals: 201
+  league: Ligue 1
+  matches_played: 36
+  minutes_played: 2260
+  name: Yacine Adli
+  penalty_kicks_made: 867
+  penalty_kicks_won: 289
+  position: midfielder
+  rank: 19
+  red_card: 77
+  squad: Bordeaux
+  yellow_card: 177
+Yunis Abdelhamid:
+  age: 34.0
+  born: 1987
+  corner_kicks: 55
+  country: MAR
+  fouls_committed: 228
+  goals: 243
+  league: Ligue 1
+  matches_played: 34
+  minutes_played: 2983
+  name: Yunis Abdelhamid
+  penalty_kicks_made: 108
+  penalty_kicks_won: 36
+  position: defender
+  rank: 2
+  red_card: 194
+  squad: Reims
+  yellow_card: 42

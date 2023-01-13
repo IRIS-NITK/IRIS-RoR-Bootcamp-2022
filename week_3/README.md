@@ -85,3 +85,6 @@ rails test
 - If the test fails, check the view files and debug the application.
 
 - Once the test works locally, submit your changes.
+
+# Model
+Once done head over to [football](./football) directory to learn more about models.

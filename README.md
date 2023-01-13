@@ -18,6 +18,11 @@ In the first week, we will introduce you to basic concepts related to Web Develo
 ## [Week 2 - Ruby](/week_2)
 In this week, we'll take a look at Ruby and instructions to get your device ready for creating Ruby on Rails projects.
 
+## [Week 3 - Getting Started with Rails and Model](/week_3)
+In this we will learn how to install Ruby and Rails,
+create a new Rails project and build a simple website.
+
+Later we will take a closer look at Model of the MVC Architecture and talk about databases and working with records.
 
 ## Contact
 In case of doubts related to the Bootcamp, feel free to reach out to the mentors on the [**#doubts**](https://discord.com/channels/1052463702558908416/1052467811143913552) channel on [Discord](https://discord.gg/HQKpB6XH).
