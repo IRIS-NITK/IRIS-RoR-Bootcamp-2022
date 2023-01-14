@@ -31,3 +31,30 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 1366)
 
 
+Started GET "/" for 127.0.0.1 at 2023-01-14 05:53:20 +0000
+Processing by PageController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/root.html.erb within layouts/application
+  Rendered page/root.html.erb within layouts/application (Duration: 3.1ms | Allocations: 457)
+  Rendered layout layouts/application.html.erb (Duration: 433.0ms | Allocations: 74460)
+Completed 200 OK in 456ms (Views: 439.3ms | ActiveRecord: 0.0ms | Allocations: 80431)
+
+
+Started GET "/about_me" for 127.0.0.1 at 2023-01-14 05:53:54 +0000
+Processing by PageController#about_me as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/about_me.html.erb within layouts/application
+  Rendered page/about_me.html.erb within layouts/application (Duration: 1.3ms | Allocations: 140)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2210)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2643)
+
+
+Started GET "/about_me" for 127.0.0.1 at 2023-01-14 05:54:30 +0000
+Processing by PageController#about_me as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/about_me.html.erb within layouts/application
+  Rendered page/about_me.html.erb within layouts/application (Duration: 0.5ms | Allocations: 139)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2609)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 3699)
+
+
