@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  type: 
+  start: 2023-01-14 06:57:48
+  duration: 9.99
+  categories: 1
+
+two:
+  title: MyString
+  type: 
+  start: 2023-01-14 06:57:48
+  duration: 9.99
+  categories: 1
