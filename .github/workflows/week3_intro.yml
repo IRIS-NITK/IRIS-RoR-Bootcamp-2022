@@ -1,0 +1,39 @@
+name: 'Week 3 getting started'
+
+on:
+  pull_request:
+    types: [synchronize, opened, reopened, edited]
+    branches:
+      - 'week3_*'
+
+  workflow_dispatch:
+
+jobs:
+  week3:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          working-directory: week_3/hello_world
+          bundler-cache: true
+
+      - name: Install NPM packages
+        uses: bahmutov/npm-install@v1
+        with:
+          working-directory: week_3/hello_world
+      
+      - name: Copy Test File
+        working-directory: week_3
+        run: cp page_controller_test.rb hello_world/test/controllers
+
+      - name: Test Rails
+        working-directory: week_3/hello_world
+        run: |
+          bundle exec rails db:create
+          bundle exec rails db:migrate
+          bundle exec rails test

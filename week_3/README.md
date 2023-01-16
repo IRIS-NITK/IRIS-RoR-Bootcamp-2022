@@ -1,84 +1,72 @@
-# Week 3 - Getting Started with Rails
+# Week 3 - Getting Started with Rails + Models
 
 In this week we will get started with Rails.
 
-We will create a simple rails app with two pages, a Home Page and an About Me page.
+At first, we will create a simple rails app with two pages, a Home Page and an About Me page.
 
-## Steps
-- [Set Up Local Workplace](../setup/)
+Follow [these](./getting_started_with_rails.md) instructions to get started.
 
-- Create a new [gemset](../setup/README.md#RVM) and install rails
-```bash
-cd week_3
-rvm gemset create week_3
-rvm use 3.0.5@week_3
-gem install rails --version 7.0.4
-```
+# Models
 
-- Create a new Rails project `hello_world` in the directory `week_1`
-```bash
-rails new hello_world --css=bootstrap --skip-git
-cd hello_world
-rvm use 3.0.5@week_3
-```
+We take a closer look at _Model_ of the MVC architecture and talk about
+databases, migrations and working with records.
 
-> The command `rails new` initialises a Rails project. We have passed
-> the flag `--skip-git` to avoid initializing Git again as we are
-> already within a Git repository.
+The _model_ layer is responsible for storing and processing data.
 
-- Run the rails server using below command and go to http://localhost:3000/.
-```bash
-rails server
-```
+We store data in a _relational database_ and process it in the
+`app/models` of the Rails application.
 
-You should see the rails logo.
+A _relational database_ stores information as a set of tables with columns
+and rows (_records_).  The tables and their columns are together called
+a _schema_. You can think of relational database  as a spreadsheet with
+each table on a different sheet.
 
-### Add a controller
+> There are other non-tabular databases as well, which are better suited
+> to specific problems: [What is a Database | Oracle](https://www.oracle.com/in/database/what-is-database/)
 
-- Generate a new controller `PageController` with actions `root` and
-  `about_me`:
+_Structured Query Language_ (SQL) is used to access and manipulate
+databases. SQL can retrieve, create, read, update and destroy records,
+modify schema and more. Working with SQL directly is difficult, so we
+usually have a Rails equivalent.
 
-```bash
-rails generate controller Page root about_me
-```
+The assignment is split into different sub-tasks, each testing a
+different aspect of Model layer.
 
-> A _controller_ is responsible for making sense of request and producing
-> the appropriate output. It acts as a middleman between the Data
-> (Model) and Presentation (View). Controllers are stored in
-> `app/controllers` directory.
+> We will be using SQLite as our database program, as it requires no
+> setup and is Rails's default.
 
 
-> The generator creates the files and fills it with some default code.
-> the above command creates a controller
-> `PagesController`, creates new view files `root.html.erb` and
-> `about_me.html.erb` and modifies the routes file
+## Task 1 - Creating Tables
 
-- Edit the routes file (`config/routes.rb`) as follow to add new routes:
+Relational databases stores information using tables. You can think of
+tables and their columns as the format in which data is stored.
 
-```ruby
-Rails.application.routes.draw do
-  get '/', to: 'page#root'
-  get 'about_me', to: 'page#about_me'
-end
-```
+In this sub-task, we will build an activity tracker because as programmers we spend long hours sitting and need to keep track of our health. During the course of this bootcamp, we'll build the entire application, adding functionality each week. At the end, you'll have a fully functional acticity tracker! 
 
-The routes file specifies the URLs that are recognized by the application.
+Head over to [activity-tracker](./activity-tracker/README.md) to learn more.
 
-- Edit the view files `app/views/page/root.html.erb` and `app/views/page/about_me.html.erb`.
+## Task 2 - Working with Records
 
-- You should be able to see see your changes at `http://localhost:3000` and
-  `http://localhost:3000/about_me`.
+Once a table is created, we have to fill it with actual data. In
+particular, we can create, read, update and destroy records in a table.
+Each operation maps to a different SQL command and a different Rails
+equivalent.
 
-- Copy the test file from week_3 directory to hello_world/test/controllers:
-```bash
-cp page_controller_test.rb hello_world/test/controllers
-```
+In this sub-task, we will work on some statistics from Football! 
 
-- Execute the test suite to ensure the page works as expected.
+Head over to [football](football/README.md) directory to learn more.
+
+
+## Interactive Console
+
+The Rails console is useful for testing out quick ideas with code and
+debugging applications.
 
 ```bash
-rails test
+rails console
 ```
-- If the test fails, check the view files and debug the application.
 
-- Once the test works locally, submit your changes.
+This should open a console, similar to IRB in the first session. We can
+access your model functions and execute any valid ruby code.
+
+- [The Rails Command Line](https://guides.rubyonrails.org/command_line.html#bin-rails-console)
