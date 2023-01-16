@@ -1,17 +1,17 @@
 class FootballPlayer < ApplicationRecord
   # select players who have postion as forward
-  scope :forwarders, -> { raise NotImplementedError }
+  scope :forwarders, -> { where(postion: 'forward') }
 
   # select goalkeepers
-  scope :goalkeepers, -> { raise NotImplementedError }
+  scope :goalkeepers, -> { where(postion: 'goalkeepers') }
 
   # select players from the country France
   #
   # Note - France country code is 'FRA'
-  scope :french_players, -> { raise NotImplementedError }
+  scope :french_players, -> { where(country: 'FRA') }
 
   # Sort players by their rank
-  scope :order_by_rank, -> { raise NotImplementedError }
+  scope :order_by_rank, -> { order("rank") }
 
   # Average goals per game = (total goals) / (total matches)
   #
@@ -37,7 +37,68 @@ class FootballPlayer < ApplicationRecord
 
   # create argentinian players
   def self.import_argentinian_players
-    raise NotImplementedError
+    player = FootballPlayer.create(
+      name: "Marocs Acuna",
+      rank: 13,
+      country: "ARG",
+      postion: "defender",
+      squad: "Sevilla",
+      league: "La Liga",
+      age: 30,
+      born: 1991,
+      minutes_played: 2260,
+      goals: 105,
+      penalty_kicks_made: 705,
+      matches_played: 31,
+      corner_kicks: 248,
+      yellow_card: 81,
+      red_card: 267,
+      penalty_kicks_won: 64,
+      fouls_committed: 237
+    )
+    player.save
+    player = FootballPlayer.create(
+      name: "Lucas Acuna",
+      rank: 50,
+      country: "ARG",
+      postion: "forward",
+      squad: "Leverkusen",
+      league: "Bundesliga",
+      age: 29,
+      born: 1992,
+      minutes_played: 665,
+      goals: 79,
+      penalty_kicks_made: 192,
+      matches_played: 27,
+      corner_kicks: 193,
+      yellow_card: 148,
+      red_card: 263,
+      penalty_kicks_won: 64,
+      fouls_committed: 172
+    )
+    player.save
+     player = FootballPlayer.create(
+      name: "Sergio Aguero",
+      rank: 27,
+      country: "ARG",
+      postion: "forward",
+      squad: "Barcelona",
+      league: "La Liga",
+      age: 33,
+      born: 1998,
+      minutes_played: 151,
+      goals: 179,
+      penalty_kicks_made: 402,
+      matches_played: 4,
+      corner_kicks: 52,
+      yellow_card: 74,
+      red_card: 81,
+      penalty_kicks_won: 134,
+      fouls_committed: 146
+    )
+    player.save
+
+    
   end
 
   # Update the statistics of a player after a game
@@ -58,11 +119,21 @@ class FootballPlayer < ApplicationRecord
   # `ActiveRecord::RecordNotFound` exception with the player's name as
   # the message.
   def self.update_statistics(stat)
-    raise NotImplementedError
+    stat.each do |s|
+      player = FootballPlayer.find_by(name: s[0])
+      if player.blank?
+        raise ActiveRecord::RecordNotFound
+      else
+        player.goals += s[1]
+        player.minutes_played += s[2]
+        player.red_card += s[3]
+        player.yellow_card += s[4]
+      end
+    end
   end
 
   # Delete the record associated with a player.
   def self.ban(name)
-    raise NotImplementedError
+    FootballPlayer.find_by(name: name).destroy
   end
 end
