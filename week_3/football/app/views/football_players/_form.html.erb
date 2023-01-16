@@ -1,0 +1,102 @@
+<%= form_with(model: football_player) do |form| %>
+  <% if football_player.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(football_player.errors.count, "error") %> prohibited this football_player from being saved:</h2>
+
+      <ul>
+        <% football_player.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :rank, style: "display: block" %>
+    <%= form.number_field :rank %>
+  </div>
+
+  <div>
+    <%= form.label :country, style: "display: block" %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div>
+    <%= form.label :position, style: "display: block" %>
+    <%= form.text_field :position %>
+  </div>
+
+  <div>
+    <%= form.label :squad, style: "display: block" %>
+    <%= form.text_field :squad %>
+  </div>
+
+  <div>
+    <%= form.label :league, style: "display: block" %>
+    <%= form.text_field :league %>
+  </div>
+
+  <div>
+    <%= form.label :age, style: "display: block" %>
+    <%= form.number_field :age %>
+  </div>
+
+  <div>
+    <%= form.label :born, style: "display: block" %>
+    <%= form.number_field :born %>
+  </div>
+
+  <div>
+    <%= form.label :minutes_played, style: "display: block" %>
+    <%= form.number_field :minutes_played %>
+  </div>
+
+  <div>
+    <%= form.label :goals, style: "display: block" %>
+    <%= form.number_field :goals %>
+  </div>
+
+  <div>
+    <%= form.label :penalty_kicks_made, style: "display: block" %>
+    <%= form.number_field :penalty_kicks_made %>
+  </div>
+
+  <div>
+    <%= form.label :matches_played, style: "display: block" %>
+    <%= form.number_field :matches_played %>
+  </div>
+
+  <div>
+    <%= form.label :corner_kicks, style: "display: block" %>
+    <%= form.number_field :corner_kicks %>
+  </div>
+
+  <div>
+    <%= form.label :yellow_card, style: "display: block" %>
+    <%= form.number_field :yellow_card %>
+  </div>
+
+  <div>
+    <%= form.label :red_card, style: "display: block" %>
+    <%= form.number_field :red_card %>
+  </div>
+
+  <div>
+    <%= form.label :penalty_kicks_won, style: "display: block" %>
+    <%= form.number_field :penalty_kicks_won %>
+  </div>
+
+  <div>
+    <%= form.label :fouls_committed, style: "display: block" %>
+    <%= form.number_field :fouls_committed %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
