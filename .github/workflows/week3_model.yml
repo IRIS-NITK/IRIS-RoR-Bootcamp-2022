@@ -1,0 +1,35 @@
+name: 'Week 3 Model'
+
+on:
+  pull_request:
+    types: [synchronize, opened, reopened, edited]
+    branches:
+      - 'week3_*'
+
+  workflow_dispatch:
+
+jobs:
+  week3_model:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          working-directory: week_3/football
+          bundler-cache: true
+
+      - name: Install NPM packages
+        uses: bahmutov/npm-install@v1
+        with:
+          working-directory: week_3/football
+
+      - name: Test FootballFPlayers
+        working-directory: week_3/football
+        run: |
+          bundle exec rails db:create
+          bundle exec rails db:migrate
+          bundle exec rails test:models
