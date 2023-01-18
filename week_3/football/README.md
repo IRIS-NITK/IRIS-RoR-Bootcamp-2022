@@ -220,6 +220,12 @@ FootballPlayer.find_by(name: "Messi").destroy
 - [DELETE | ActiveRecord](https://guides.rubyonrails.org/active_record_basics.html#delete)
 
 
+Once you start implementing functions in app/models/football_player.rb, you can test your code.
+
+```bash
+rails test:models
+```
+
 # Rails console
 The Rails console is useful for testing out quick ideas with code and debugging applications.
 
