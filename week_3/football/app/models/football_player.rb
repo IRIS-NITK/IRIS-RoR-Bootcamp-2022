@@ -19,7 +19,7 @@ class FootballPlayer < ApplicationRecord
   def average_goals_per_game
     return nil if !defined?(goals) || !defined?(matches_played) || matches_played == 0
     goals.to_f / matches_played
-end
+  end
 
 
   # Total penalty cards given = red_card + yellow_card
@@ -75,7 +75,7 @@ end
     player.red_card += stat[3]
     player.yellow_card += stat[4]
     player.save
-end
+  end
 
 
   # Delete the record associated with a player.
@@ -85,5 +85,5 @@ end
         raise ActiveRecord::RecordNotFound
     end
     player.destroy
-end
+  end
 end
