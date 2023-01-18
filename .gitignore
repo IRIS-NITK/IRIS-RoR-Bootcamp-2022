@@ -58,3 +58,4 @@ yarn-debug.log*
 
 **/log/*
 **/tmp/*
+.DS_Store
