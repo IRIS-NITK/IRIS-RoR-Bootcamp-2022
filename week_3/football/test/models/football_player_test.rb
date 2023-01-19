@@ -83,7 +83,7 @@ class FootballPlayerTest < ActiveSupport::TestCase
 
     FootballPlayer.update_statistics(stat)
 
-    assert_equal [["Dickson Abiama", 37, 746, 121, 104]], FootballPlayer.where(name: "Dickson Abiama").pluck(:name, :goals, :minutes_played, :red_card, :yellow_card)      
+    assert_equal [["Dickson Abiama", 37, 746, 121, 104]], FootballPlayer.where(name: "Dickson Abiama").pluck(:name, :goals, :minutes_played, :red_card, :yellow_card)
     assert_equal [["Salis Abdul Samed", 32, 2492, 136, 270]], FootballPlayer.where(name: "Salis Abdul Samed").pluck(:name, :goals, :minutes_played, :red_card, :yellow_card)
   end
 end
