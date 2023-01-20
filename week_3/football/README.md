@@ -75,6 +75,9 @@ rails db:fixtures:load
 ```
 This adds some sample data(/test/fixtures/football_players.yml) to the database.
 
+## Assignment
+> For this assignment you have to implement the function inside [app/models/football_player.rb](https://github.com/IRIS-NITK/IRIS-RoR-Bootcamp-2022/blob/main/week_3/football/app/models/football_player.rb)
+
 ### Creating Records
 The INSERT INTO statement is used to insert new records in a table
 
@@ -216,6 +219,12 @@ FootballPlayer.find_by(name: "Messi").destroy
 
 - [DELETE | ActiveRecord](https://guides.rubyonrails.org/active_record_basics.html#delete)
 
+
+Once you start implementing functions in app/models/football_player.rb, you can test your code.
+
+```bash
+rails test:models
+```
 
 # Rails console
 The Rails console is useful for testing out quick ideas with code and debugging applications.
