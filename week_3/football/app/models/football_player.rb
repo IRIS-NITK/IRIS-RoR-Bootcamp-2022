@@ -4,7 +4,7 @@ class FootballPlayer < ApplicationRecord
   scope :forwarders, -> { where(position: "forward") }
 
   # select goalkeepers
-  scope :goalkeepers, -> { where(position: "goalkeepers") }
+  scope :goalkeepers, -> { where(position: "goalkeeper") }
 
   # select players from the country France
   #
@@ -137,7 +137,7 @@ class FootballPlayer < ApplicationRecord
       player.minutes_played += minutes_played
       player.red_card += red_card
       player.yellow_card += yellow_card
-      player.save
+      player.save! 
     end
   end
 
