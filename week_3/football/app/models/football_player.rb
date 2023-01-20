@@ -17,14 +17,22 @@ class FootballPlayer < ApplicationRecord
   #
   # If total matches or total goals is missing return nil
   def average_goals_per_game
-    raise NotImplementedError
+    if self.goals.blank? || self.matches_played.blank?
+      return nil
+    end
+    total = self.goals / self.matches_played
+    total
   end
 
   # Total penalty cards given = red_card + yellow_card
   #
   # If red_card or yellow_card is missing return nil
   def total_penalty_cards
-    raise NotImplementedError
+    if self.red_card.blank? || self.yellow_card.blank?
+      return nil
+    end
+    total = self.red_card + self.yellow_card
+    total
   end
 
   # Return the penalty succes rate of the player
@@ -32,7 +40,11 @@ class FootballPlayer < ApplicationRecord
   # 
   # if data is missing return nil
   def penalty_success_rate
-    raise NotImplementedError
+    if self.penalty_kicks_made.blank? || self.penalty_kicks_won.blank?
+      return nil
+    end
+    total = (self.penalty_kicks_won * 100) / self.penalty_kicks_made
+    total
   end
 
   # create argentinian players
@@ -122,12 +134,13 @@ class FootballPlayer < ApplicationRecord
     stat.each do |s|
       player = FootballPlayer.find_by(name: s[0])
       if player.blank?
-        raise ActiveRecord::RecordNotFound
+        raise ActiveRecord::RecordNotFound, "Player #{s[0]} not found" 
       else
         player.goals += s[1]
         player.minutes_played += s[2]
         player.red_card += s[3]
         player.yellow_card += s[4]
+        player.save
       end
     end
   end
