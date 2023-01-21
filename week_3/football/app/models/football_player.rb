@@ -17,7 +17,7 @@ class FootballPlayer < ApplicationRecord
   #
   # If total matches or total goals is missing return nil
   def average_goals_per_game
-    return nil if !defined?(goals) || !defined?(matches_played) || matches_played == 0
+    return nil if goals.nil? || matches_played.nil? || matches_played == 0
     goals.to_f / matches_played
   end
 
@@ -26,7 +26,7 @@ class FootballPlayer < ApplicationRecord
   #
   # If red_card or yellow_card is missing return nil
   def total_penalty_cards
-    return nil if !defined?(red_card) || !defined?(yellow_card)
+    return nil if red_card.nil? || yellow_card.nil?
     red_card + yellow_card
   end
 
@@ -35,7 +35,7 @@ class FootballPlayer < ApplicationRecord
   # 
   # if data is missing return nil
   def penalty_success_rate
-    return nil if !defined?(penalty_kicks_made) || !defined?(penalty_kicks_won)
+    return nil if penalty_kicks_made.nil? || penalty_kicks_won.nil?
     (penalty_kicks_won * 100) / penalty_kicks_made
   end
 
@@ -69,12 +69,17 @@ class FootballPlayer < ApplicationRecord
   # `ActiveRecord::RecordNotFound` exception with the player's name as
   # the message.
   def self.update_statistics(stat)
-    player = FootballPlayer.find_or_create_by(name: stat[0])
-    player.goals += stat[1]
-    player.minutes_played += stat[2]
-    player.red_card += stat[3]
-    player.yellow_card += stat[4]
-    player.save
+    stat.each do |substat|
+      player = FootballPlayer.find_by(name: substat[0])
+      if player.nil?
+        raise ActiveRecord::RecordNotFound, "Player not found: #{substat[0]}"
+      end
+      player.goals += substat[1].to_i
+      player.minutes_played += substat[2].to_i
+      player.red_card += substat[3].to_i
+      player.yellow_card += substat[4].to_i
+      player.save
+    end
   end
 
 
