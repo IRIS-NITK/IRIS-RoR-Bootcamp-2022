@@ -6,7 +6,7 @@ class ActivityTest < ActiveSupport::TestCase
     end
 
     test 'has a string column type' do
-      assert_equal :string, Activity.type_for_attribute('type').type
+      assert_equal :string, Activity.type_for_attribute('activity_type').type
     end
 
     test 'has a datetime column start' do

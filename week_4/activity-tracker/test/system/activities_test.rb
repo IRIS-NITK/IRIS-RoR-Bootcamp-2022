@@ -14,11 +14,11 @@ class ActivitiesTest < ApplicationSystemTestCase
     visit activities_url
     click_on "New activity"
 
+    fill_in "Activity type", with: @activity.activity_type
     fill_in "Calories", with: @activity.calories
     fill_in "Duration", with: @activity.duration
     fill_in "Start", with: @activity.start
     fill_in "Title", with: @activity.title
-    fill_in "Type", with: @activity.type
     click_on "Create Activity"
 
     assert_text "Activity was successfully created"
@@ -29,11 +29,11 @@ class ActivitiesTest < ApplicationSystemTestCase
     visit activity_url(@activity)
     click_on "Edit this activity", match: :first
 
+    fill_in "Activity type", with: @activity.activity_type
     fill_in "Calories", with: @activity.calories
     fill_in "Duration", with: @activity.duration
     fill_in "Start", with: @activity.start
     fill_in "Title", with: @activity.title
-    fill_in "Type", with: @activity.type
     click_on "Update Activity"
 
     assert_text "Activity was successfully updated"

@@ -57,6 +57,11 @@ class ActivitiesController < ApplicationController
     end
   end
 
+  def stats
+    @total_calories = Activity.sum(&:calories)
+    @total_duration = Activity.sum(&:duration)
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_activity
@@ -65,6 +70,6 @@ class ActivitiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def activity_params
-      params.require(:activity).permit(:title, :type, :start, :duration, :calories)
+      params.require(:activity).permit(:title, :activity_type, :start, :duration, :calories)
     end
 end

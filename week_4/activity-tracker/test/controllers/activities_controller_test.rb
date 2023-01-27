@@ -17,7 +17,7 @@ class ActivitiesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create activity" do
     assert_difference("Activity.count") do
-      post activities_url, params: { activity: { calories: @activity.calories, duration: @activity.duration, start: @activity.start, title: @activity.title, type: @activity.type } }
+      post activities_url, params: { activity: { activity_type: @activity.activity_type, calories: @activity.calories, duration: @activity.duration, start: @activity.start, title: @activity.title } }
     end
 
     assert_redirected_to activity_url(Activity.last)
@@ -34,7 +34,7 @@ class ActivitiesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update activity" do
-    patch activity_url(@activity), params: { activity: { calories: @activity.calories, duration: @activity.duration, start: @activity.start, title: @activity.title, type: @activity.type } }
+    patch activity_url(@activity), params: { activity: { activity_type: @activity.activity_type, calories: @activity.calories, duration: @activity.duration, start: @activity.start, title: @activity.title } }
     assert_redirected_to activity_url(@activity)
   end
 
@@ -44,5 +44,16 @@ class ActivitiesControllerTest < ActionDispatch::IntegrationTest
     end
 
     assert_redirected_to activities_url
+  end
+
+  test "should get stats" do
+    get stats_activities_url
+    assert_response :success
+    expected_calories = Activity.sum(&:calories)
+    expected_duration = Activity.sum(&:duration)
+    cal = assigns(:total_calories)
+    dur = assigns(:total_duration)
+    expect(cal).to eq(expected_calories)
+    expect(dur).to eq(expected_duration)
   end
 end
