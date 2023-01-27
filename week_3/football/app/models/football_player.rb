@@ -66,7 +66,7 @@ class FootballPlayer < ApplicationRecord
     stat.each do |s|
       player = FootballPlayer.find_by(name: s[0])
 
-      raise ActiveRecord::RecordNotFound.new(z[0]) if player.nil?
+      raise ActiveRecord::RecordNotFound.new(s[0]) if player.nil?
 
       player.goals += s[1]
       player.minutes_played += s[2]
