@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Football players</h1>
+
+<div id="football_players">
+  <% @football_players.each do |football_player| %>
+    <%= render football_player %>
+    <p>
+      <%= link_to "Show this football player", football_player %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New football player", new_football_player_path %>
