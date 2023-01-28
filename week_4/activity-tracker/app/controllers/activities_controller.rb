@@ -57,11 +57,6 @@ class ActivitiesController < ApplicationController
     end
   end
 
-  def stats
-    @total_calories = Activity.sum(&:calories)
-    @total_duration = Activity.sum(&:duration)
-  end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_activity

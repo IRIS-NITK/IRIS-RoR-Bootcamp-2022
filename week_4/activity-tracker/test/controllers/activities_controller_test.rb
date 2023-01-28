@@ -53,7 +53,7 @@ class ActivitiesControllerTest < ActionDispatch::IntegrationTest
     expected_duration = Activity.sum(&:duration)
     cal = assigns(:total_calories)
     dur = assigns(:total_duration)
-    expect(cal).to eq(expected_calories)
-    expect(dur).to eq(expected_duration)
+    assert_equal(expected_calories, cal)
+    assert_equal(expected_duration, dur)
   end
 end

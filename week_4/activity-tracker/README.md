@@ -137,7 +137,7 @@ resources :activities do
     get 'share' # GET /activity/:id/share
   end
   collection do
-    get 'load' # GET /activities/share
+    get 'load' # GET /activities/load
   end
 end
 ```
