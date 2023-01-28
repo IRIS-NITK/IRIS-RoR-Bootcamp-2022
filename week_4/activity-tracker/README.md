@@ -67,7 +67,7 @@ Run the server using `rails server`. If you now go to `localhost:3000/activities
 ## The Controller
 Now, lets open the controller and see what is happening. We'll take an example of a simple function, and try to understand what is happening.
 
-```erbruby
+```ruby
   def index
     @activities = Activity.all
   end
