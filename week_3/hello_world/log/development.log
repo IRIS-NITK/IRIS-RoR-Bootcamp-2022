@@ -90,3 +90,21 @@ Started GET "/im1.jpg" for 127.0.0.1 at 2023-01-10 14:15:45 +0000
   
 ActionController::RoutingError (No route matches [GET] "/im1.jpg"):
   
+Started GET "/" for 127.0.0.1 at 2023-01-10 16:51:42 +0000
+Processing by PageController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/root.html.erb within layouts/application
+  Rendered page/root.html.erb within layouts/application (Duration: 51.3ms | Allocations: 457)
+  Rendered layout layouts/application.html.erb (Duration: 1680.5ms | Allocations: 22678)
+Completed 200 OK in 1962ms (Views: 1783.0ms | ActiveRecord: 0.0ms | Allocations: 28650)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-11 07:50:47 +0000
+Processing by PageController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/root.html.erb within layouts/application
+  Rendered page/root.html.erb within layouts/application (Duration: 61.9ms | Allocations: 457)
+  Rendered layout layouts/application.html.erb (Duration: 2078.6ms | Allocations: 22674)
+Completed 200 OK in 2462ms (Views: 2231.4ms | ActiveRecord: 0.0ms | Allocations: 28647)
+
+
