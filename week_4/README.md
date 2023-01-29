@@ -6,7 +6,7 @@ Hello! Hope you are having a wonderful time at the bootcamp. For this week, we w
 - [Authentication](./activity-tracker/authentication.md)
 
 ## Assignement 1
-After going through the resource on controllers, it is time to make your own! Create a contoller called `stats` that is invoked from the URL `/activities/stats/`. This controller action should define at least two *instance variables*:
+After going through the resource on controllers, it is time to make your own! Create a contoller action called `stats` that is invoked from the URL `/activities/stats/`. This controller action should define at least two *instance variables*:
 
 - `total_duration`: The total duration of all activity logged.
 - `total_calories`: The total amount of calories burnt.
