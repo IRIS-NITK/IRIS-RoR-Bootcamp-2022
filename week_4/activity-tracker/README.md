@@ -64,6 +64,23 @@ Ensure that you have created the database using `rails db:create`. You can now a
 
 Run the server using `rails server`. If you now go to `localhost:3000/activities` on your browser, you can see a basic app in function!
 
+<img width="667" alt="image" src="https://user-images.githubusercontent.com/76661350/215397576-38c2b362-95cf-4e6a-a681-053014845568.png">
+
+Feel free to play around with the app now. Here are some screenshots of what you should be able to see:
+
+<img width="566" alt="image" src="https://user-images.githubusercontent.com/76661350/215397680-c36d9db5-18fa-4774-805c-e4788112a8a6.png">
+
+_New Activity_
+
+<img width="567" alt="image" src="https://user-images.githubusercontent.com/76661350/215397797-360ff438-878b-4748-9407-c57af1a65e6c.png">
+
+_Show activity_
+
+<img width="530" alt="image" src="https://user-images.githubusercontent.com/76661350/215397846-4b703434-c98c-4f84-ac0c-7dc79b2a686e.png">
+
+_Editing an activity_
+
+
 ## The Controller
 Now, lets open the controller and see what is happening. We'll take an example of a simple function, and try to understand what is happening.
 
@@ -81,6 +98,100 @@ If you notice, the variable starts with `@`. This is a special type of variable 
 
 At the end, we do not tell Rails to render any particular template (in opposition to some other frameworks, for instance Django). This is because of how Rails works - convention over configuration. Rails will automatically look for a file with the name `index.html` or `index.html.erb` (you'll learn about the `.erb` format when you learn about views), and directly render that file.
 Pretty convenient, right?
+
+### Other important actions 
+
+- `before_action`: A callback that sets the @activity instance variable with the Activity model instance, based on the id passed in the URL, before executing show, edit, update, and destroy actions.
+
+- `show` action: Displays the information of a single Activity instance, stored in the @activity instance variable. (GET Request)
+
+- `new` action: Creates a new instance of the Activity model, stored in the @activity instance variable. (GET Request)
+
+- `edit` action: Edits an existing Activity instance, stored in the @activity instance variable. (GET Request)
+
+- `create` action: Creates a new Activity instance with the parameters passed from the form, stored in the @activity instance variable. If the save is successful, it redirects to the show view with a success message, otherwise it renders the new view with an error message. (POST Request)
+
+```ruby
+
+  def create
+    @activity = Activity.new(activity_params)
+
+    respond_to do |format|
+      if @activity.save
+        format.html { redirect_to activity_url(@activity), notice: "Activity was successfully created." }
+        format.json { render :show, status: :created, location: @activity }
+      else
+        format.html { render :new, status: :unprocessable_entity }
+        format.json { render json: @activity.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+```
+
+- `update` action: Updates an existing Activity instance with the parameters passed from the form, stored in the @activity instance variable. If the update is successful, it redirects to the show view with a success message, otherwise it renders the edit view with an error message. (PUT/PATCH Request)
+
+```ruby
+
+  def update
+    respond_to do |format|
+      if @activity.update(activity_params)
+        format.html { redirect_to activity_url(@activity), notice: "Activity was successfully updated." }
+        format.json { render :show, status: :ok, location: @activity }
+      else
+        format.html { render :edit, status: :unprocessable_entity }
+        format.json { render json: @activity.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+```
+
+- `destroy` action: Destroys an existing Activity instance, stored in the @activity instance variable. It then redirects to the index view with a success message. (DELETE Request)
+
+```ruby
+
+  def destroy
+    @activity.destroy
+
+    respond_to do |format|
+      format.html { redirect_to activities_url, notice: "Activity was successfully destroyed." }
+      format.json { head :no_content }
+    end
+  end
+
+```
+
+- `set_activity` private method: Sets the @activity instance variable based on the id passed in the URL.
+
+- `activity_params` private method: Strong parameters method, allows only the title, activity_type, start, duration, and calories attributes to be passed as parameters to the Activity model.
+
+<img width="721" alt="image" src="https://user-images.githubusercontent.com/76661350/215396083-b3815770-5658-4ed7-b1dc-fde3d409e833.png">
+
+
+## Looking at the logs
+
+Logs are useful to debug the application and display information about what is happening (as they 'log' everything). They can be viewed in the terminal where you ran `rails server`.
+
+Lets understand one such log. Others follow a similar pattern and can be explored on your own.
+
+<img width="721" alt="image" src="https://user-images.githubusercontent.com/76661350/215396369-d42600fa-e60b-438a-ac3c-8701ad3a3b4e.png">
+
+This is generated when you try to edit an activity.
+
+- The first line indicates that it has started the "PATCH" method for the _route_ `/activites/1`.
+
+- Processing by `ActivitiesController#update` indicates that the request is being processed by the `ActivitiesController`'s `update` action.
+
+- The next line indicates all the paramters being passed. This is the body of an HTTP Request. It contains all the information of our activity.
+
+- `set_activity` is run as a before action to find the mathing activity.
+
+- `UPDATE "activities" SET "calories" = ?....` indicates that an SQL `UPDATE` query is run to update our activity in the database.
+
+- `Redirected to https://mittal-parth-zany-space-engine-6pvjx5rjx743pwp-3000.preview.app.github.dev/activities/1` indicates that after successful updation of the record, the user has been redirected to `/activities/1` (showing the activity)
+
+- `Completed 302` indicates the status code of the response. 302 as you'd recall stands for redirect.
 
 ## `rails generate controller`
 Scaffolding is an extremely easy and powerful way to bring up your resources. However, this is not the only way you can create controllers.
