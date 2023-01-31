@@ -19,7 +19,7 @@ class ActivitiesController < ApplicationController
   def edit
   end
 
-  #GET /activities/stats/
+  # GET /activities/stats/
   def stats
     @total_duration = Activity.sum(:duration)
     @total_calories = Activity.sum(:calories)
