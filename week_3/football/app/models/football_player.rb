@@ -1,9 +1,9 @@
 class FootballPlayer < ApplicationRecord
-  # select players who have postion as forward
-  scope :forwarders, -> { where(postion: 'forward') }
+  # select players who have position as forward
+  scope :forwarders, -> { where(position: 'forward') }
 
   # select goalkeepers
-  scope :goalkeepers, -> { where(postion: 'goalkeepers') }
+  scope :goalkeepers, -> { where(position: 'goalkeepers') }
 
   # select players from the country France
   #
@@ -11,7 +11,7 @@ class FootballPlayer < ApplicationRecord
   scope :french_players, -> { where(country: 'FRA') }
 
   # Sort players by their rank
-  scope :order_by_rank, -> { order("rank") }
+  scope :order_by_rank, -> {order('rank')}
 
   # Average goals per game = (total goals) / (total matches)
   #
@@ -20,8 +20,7 @@ class FootballPlayer < ApplicationRecord
     if self.goals.blank? || self.matches_played.blank?
       return nil
     end
-    total = self.goals / self.matches_played
-    total
+    self.goals / self.matches_played
   end
 
   # Total penalty cards given = red_card + yellow_card
@@ -31,8 +30,7 @@ class FootballPlayer < ApplicationRecord
     if self.red_card.blank? || self.yellow_card.blank?
       return nil
     end
-    total = self.red_card + self.yellow_card
-    total
+    self.red_card + self.yellow_card
   end
 
   # Return the penalty succes rate of the player
@@ -43,17 +41,16 @@ class FootballPlayer < ApplicationRecord
     if self.penalty_kicks_made.blank? || self.penalty_kicks_won.blank?
       return nil
     end
-    total = (self.penalty_kicks_won * 100) / self.penalty_kicks_made
-    total
+    (self.penalty_kicks_won * 100) / self.penalty_kicks_made
   end
 
   # create argentinian players
   def self.import_argentinian_players
     player = FootballPlayer.create(
-      name: "Marocs Acuna",
+      name: "Marcos Acuna",
       rank: 13,
       country: "ARG",
-      postion: "defender",
+      position: "defender",
       squad: "Sevilla",
       league: "La Liga",
       age: 30,
@@ -68,12 +65,11 @@ class FootballPlayer < ApplicationRecord
       penalty_kicks_won: 64,
       fouls_committed: 237
     )
-    player.save
     player = FootballPlayer.create(
-      name: "Lucas Acuna",
+      name: "Lucas Alario",
       rank: 50,
       country: "ARG",
-      postion: "forward",
+      position: "forward",
       squad: "Leverkusen",
       league: "Bundesliga",
       age: 29,
@@ -88,29 +84,25 @@ class FootballPlayer < ApplicationRecord
       penalty_kicks_won: 64,
       fouls_committed: 172
     )
-    player.save
      player = FootballPlayer.create(
-      name: "Sergio Aguero",
-      rank: 27,
-      country: "ARG",
-      postion: "forward",
-      squad: "Barcelona",
-      league: "La Liga",
-      age: 33,
-      born: 1998,
-      minutes_played: 151,
-      goals: 179,
-      penalty_kicks_made: 402,
-      matches_played: 4,
-      corner_kicks: 52,
-      yellow_card: 74,
-      red_card: 81,
-      penalty_kicks_won: 134,
-      fouls_committed: 146
+       name: "Sergio Aguero",
+       rank: 27,
+       country: "ARG",
+       position: "forward",
+       squad: "Barcelona",
+       league: "La Liga",
+       age: 33,
+       born: 1998,
+       minutes_played: 151,
+       goals: 179,
+       penalty_kicks_made: 402,
+       matches_played: 4,
+       corner_kicks: 52,
+       yellow_card: 74,
+       red_card: 81,
+       penalty_kicks_won: 134,
+       fouls_committed: 146
     )
-    player.save
-
-    
   end
 
   # Update the statistics of a player after a game
