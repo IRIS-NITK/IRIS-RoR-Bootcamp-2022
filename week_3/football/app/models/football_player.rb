@@ -21,6 +21,7 @@ class FootballPlayer < ApplicationRecord
       nil
     else
       goals/matches_played
+    end
   end
 
   # Total penalty cards given = red_card + yellow_card
@@ -31,6 +32,7 @@ class FootballPlayer < ApplicationRecord
       nil
     else
       red_card+matches_played
+    end
   end
 
   # Return the penalty succes rate of the player
@@ -42,6 +44,7 @@ class FootballPlayer < ApplicationRecord
       nil
     else
       (penalty_kicks_made*100)/penalty_kicks_won
+    end
   end
 
   # create argentinian players
