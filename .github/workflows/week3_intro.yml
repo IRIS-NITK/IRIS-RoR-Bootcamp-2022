@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  week2:
+  week3:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,7 +19,6 @@ jobs:
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0.5
           working-directory: week_3/hello_world
           bundler-cache: true
 
