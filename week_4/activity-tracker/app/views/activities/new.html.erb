@@ -1,9 +1,11 @@
-<h1>New activity</h1>
+<% if @activity.user == current_user %>
+  <h1>New activity</h1>
 
-<%= render "form", activity: @activity %>
+  <%= render "form", activity: @activity %>
 
-<br>
+  <br>
 
-<div>
-  <%= link_to "Back to activities", activities_path %> | <%= link_to "Back to Home", root_path %>
-</div>
+  <div>
+    <%= link_to "Back to activities", activities_path %> | <%= link_to "Back to Home", root_path %>
+  </div>
+<% end %>

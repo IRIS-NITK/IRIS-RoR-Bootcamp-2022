@@ -11,6 +11,7 @@
     </div>
   <% end %>
 
+<% if @activity.user == current_user %>
   <div>
     <%= form.label :title, style: "display: block" %>
     <%= form.text_field :title %>
@@ -37,6 +38,11 @@
   </div>
 
   <div>
+    <%= form.number_field :user_id, id: :activity_user_id, value: current_user.id, type: :hidden %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
+<% end %>
 <% end %>
