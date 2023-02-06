@@ -24,5 +24,9 @@ create a new Rails project and build a simple website.
 
 Later we will take a closer look at Model of the MVC Architecture and talk about databases and working with records.
 
+## [Week 4 - Controllers and Authentication](/week_4)
+
+This week, we will look into controllers, routing and authentication.
+
 ## Contact
 In case of doubts related to the Bootcamp, feel free to reach out to the mentors on the [**#doubts**](https://discord.com/channels/1052463702558908416/1052467811143913552) channel on [Discord](https://discord.gg/HQKpB6XH).
