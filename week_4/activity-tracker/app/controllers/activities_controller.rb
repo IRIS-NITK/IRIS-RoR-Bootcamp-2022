@@ -1,5 +1,6 @@
 class ActivitiesController < ApplicationController
-  before_action :set_activity, only: %i[ show edit update destroy ]
+  #before_action :set_activity, only: %i[ show edit update destroy ]
+  skip_before_action :authenticate_user!, only: %i[index]
 
   # GET /activities or /activities.json
   def index
@@ -8,6 +9,7 @@ class ActivitiesController < ApplicationController
 
   # GET /activities/1 or /activities/1.json
   def show
+    @activity = Activity.find(params[:id])
   end
 
   # GET /activities/new
@@ -17,6 +19,7 @@ class ActivitiesController < ApplicationController
 
   # GET /activities/1/edit
   def edit
+    @activity = Activity.find(params[:id])
   end
 
   def stats
@@ -45,6 +48,7 @@ class ActivitiesController < ApplicationController
 
   # PATCH/PUT /activities/1 or /activities/1.json
   def update
+    @activity = Activity.find(params[:id])
     respond_to do |format|
       if @activity.update(activity_params)
         format.html { redirect_to activity_url(@activity), notice: "Activity was successfully updated." }
@@ -58,6 +62,7 @@ class ActivitiesController < ApplicationController
 
   # DELETE /activities/1 or /activities/1.json
   def destroy
+    @activity = Activity.find(params[:id])
     @activity.destroy
 
     respond_to do |format|
