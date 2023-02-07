@@ -13,6 +13,22 @@
 # If the user gives a invalid input like -4
 # We will raise an `ArgumentError` exception to let the caller know that
 # their function arguments were incorrect.
+
 def prime_numbers(n:)
-  raise NotImplementedError # TODO
+  raise ArgumentError, "n must be positive int" if n <= 0
+  primes = Array.new()
+
+  for i in 2..n
+    is_prime = true
+    for j in 2..(i - 1)
+      if i % j == 0
+        is_prime = false
+        break
+      end
+    end
+    primes << i if is_prime
+    i+=1
+  end
+return primes
 end
+
