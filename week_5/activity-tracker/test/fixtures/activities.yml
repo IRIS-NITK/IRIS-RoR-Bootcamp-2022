@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  activity_type: MyString
+  start: 2023-02-05 15:12:40
+  duration: 9.99
+  calories: 1
+
+two:
+  title: MyString
+  activity_type: MyString
+  start: 2023-02-05 15:12:40
+  duration: 9.99
+  calories: 1
