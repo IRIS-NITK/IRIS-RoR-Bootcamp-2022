@@ -2,14 +2,14 @@
 
 <h1>Activities</h1>
 
-<div id="activities">
-  <% @activities.each do |activity| %>
-    <%= render activity %>
-    <p>
-      <%= link_to "Show this activity", activity %>
-    </p>
-  <% end %>
-</div>
+  <div id="activities">
+    <% @activities.each do |activity| %>
+        <%= render activity %>
+        <p>
+          <%= link_to "Show this activity", activity %>
+        </p>
+    <% end %>
+  </div>
 
 <%= link_to "New activity", new_activity_path %> |
 <%= link_to "Statistics", stats_activities_path %><hr>
