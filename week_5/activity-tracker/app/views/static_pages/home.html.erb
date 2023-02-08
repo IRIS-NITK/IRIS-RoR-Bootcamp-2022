@@ -1,0 +1,14 @@
+<h1>Welcome to Activity-Tracker</h1>
+
+<% if user_signed_in? %>
+  <div>Welcome <strong><i><%= current_user.username %></i></strong></div><br>
+  <div>You are logged in as: <strong><%= current_user.email %></strong></div>
+  </br><%= link_to "Edit Account Settings", edit_user_registration_path %></br></br>
+  <%= link_to "See Your Activities", activities_path %> |
+  <%= link_to "New activity", new_activity_path %></br></br>
+  <%= link_to "Statistics", stats_activities_path %><hr>
+  <%= button_to "Log Out", destroy_user_session_path, method: :delete %>
+<% else %>
+  <%= link_to "Log In", new_user_session_path %></br>
+  <%= link_to "Sign Up", new_user_registration_path %>
+<% end %>

@@ -3,7 +3,7 @@
   <head>
     <title>ActivityTracker</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%# <link href="" rel="stylesheet"> %>
+    <% #<link href="" rel="stylesheet"># %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -13,6 +13,10 @@
   </head>
 
   <body>
+    <%= render partial: 'shared/navbar' %>
+    <div class="container">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
