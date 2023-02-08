@@ -28,7 +28,7 @@ Later we will take a closer look at Model of the MVC Architecture and talk about
 
 This week, we will look into controllers, routing and authentication.
 
-## [Week 5 - Views](/week_4)
+## [Week 5 - Views](/week_5)
 
 So after 4 weeks, we have our basic app ready! 🥳
 However, there is one problem. It looks 🥴. Lets fix that! We'll now style our application using [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) and look at the _View_ layer which is responsible for presenting data appropriately.
