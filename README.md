@@ -8,8 +8,8 @@ We have provided three ways of setting up a development environment,
 and [Dev Container](/setup/dev_container.md). We recommend you to choose [GitHub codespaces](/setup/github_codespaces.md)
 if you face any issues while installing ruby [locally](/setup/local_setup.md).
 
-> We recommend sticking to the versions mentioned in the Installation Guide and 
-> run commands exactly as instructed, as all assignments in this Bootcamp are 
+> We recommend sticking to the versions mentioned in the Installation Guide and
+> run commands exactly as instructed, as all assignments in this Bootcamp are
 > tested with these versions.
 
 ## [Week 1 - HTML and CSS](/week_1)
@@ -23,6 +23,15 @@ In this we will learn how to install Ruby and Rails,
 create a new Rails project and build a simple website.
 
 Later we will take a closer look at Model of the MVC Architecture and talk about databases and working with records.
+
+## [Week 4 - Controllers and Authentication](/week_4)
+
+This week, we will look into controllers, routing and authentication.
+
+## [Week 5 - Views](/week_5)
+
+So after 4 weeks, we have our basic app ready! 🥳
+However, there is one problem. It looks 🥴. Lets fix that! We'll now style our application using [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) and look at the _View_ layer which is responsible for presenting data appropriately.
 
 ## Contact
 In case of doubts related to the Bootcamp, feel free to reach out to the mentors on the [**#doubts**](https://discord.com/channels/1052463702558908416/1052467811143913552) channel on [Discord](https://discord.gg/HQKpB6XH).
