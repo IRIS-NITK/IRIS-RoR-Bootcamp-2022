@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Activities</h1>
+<%= link_to "Root", new_user_session_path %>
+<%= link_to "Stats", activities_stats_url %>
+<div id="activities">
+  <% @activities.each do |activity| %>
+    <%= render activity %>
+    <p>
+      <%= link_to "Show this activity", activity %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New activity", new_activity_path %>
