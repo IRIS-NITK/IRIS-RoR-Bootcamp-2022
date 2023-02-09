@@ -1,11 +1,8 @@
-<% if @activity.user == current_user %>
-  <h1>New activity</h1>
+<p style="color: green"><%= notice %></p>
 
-  <%= render "form", activity: @activity %>
+<%= render @activity %>
 
-  <br>
-
-  <div>
-    <%= link_to "Back to activities", activities_path %> | <%= link_to "Back to Home", root_path %>
-  </div>
-<% end %>
+<div>
+  <%= link_to "Back to activities", activities_path %>
+  <%= button_to "Destroy this activity", @activity, method: :delete %>
+</div>

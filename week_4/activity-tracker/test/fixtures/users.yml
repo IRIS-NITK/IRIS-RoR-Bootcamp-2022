@@ -10,8 +10,5 @@
 # two: {}
 # column: value
 
-one:
-  email: chris@gorails.com
-
-two:
-  email: chris2@gorails.com
+steve:
+  email: steve@example.com

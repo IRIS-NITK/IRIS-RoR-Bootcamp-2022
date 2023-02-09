@@ -1,11 +1,10 @@
 <h1>Editing activity</h1>
-<% if @activity.user == current_user %>
-  <%= render "form", activity: @activity %>
 
-  <br>
+<%= render "form", activity: @activity %>
 
-  <div>
-    <%= link_to "Show this activity", @activity %> |
-    <%= link_to "Back to activities", activities_path %>
-  </div>
-<% end %>
+<br>
+
+<div>
+  <%= link_to "Show this activity", @activity %> |
+  <%= link_to "Back to activities", activities_path %>
+</div>

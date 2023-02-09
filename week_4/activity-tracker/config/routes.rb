@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: {registrations: 'user/registrations'}
+  devise_for :users
   resources :activities do
     collection do
       get 'stats'

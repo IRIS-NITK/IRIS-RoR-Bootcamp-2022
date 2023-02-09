@@ -8,8 +8,8 @@ one:
   calories: 1
 
 two:
-  title: MyString
-  activity_type: MyString
+  title: MyString2
+  activity_type: MyString2
   start: 2023-02-01 00:17:27
   duration: 9.99
   calories: 1
