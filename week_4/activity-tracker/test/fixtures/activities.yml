@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: "Activity 1"
+  activity_type: "Cycling"
+  start: 2023-02-07 15:07:03
+  duration: 9.99
+  calories: 1
+
+two:
+  title: "Activity 2"
+  activity_type: "Running"
+  start: 2023-02-07 16:07:03
+  duration: 8.99
+  calories: 2
