@@ -1,0 +1,24 @@
+<div class="in">
+<p style="color: green"><%= notice %></p>
+
+<h1>Activities</h1>
+
+<div id="activities">
+  <% @activities.each do |activity| %>
+    <%= render activity %>
+    <p>
+      <%= link_to "Show this activity", activity %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New activity", new_activity_path %><br>
+<%= link_to "Go to Statistics", stats_activities_path %><br>
+<%= link_to "Return to Home", static_pages_index_path %>
+</div>
+<style>
+.in{ margin: auto;
+  width: 50%;
+  border: 5px dashed gray;
+  text-align: center;background: lightgray;}
+</style>
