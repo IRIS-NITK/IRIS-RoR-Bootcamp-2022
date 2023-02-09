@@ -1,10 +1,14 @@
 <h1>Editing activity</h1>
 
-<%= render "form", activity: @activity %>
+<% if current_user == current_user.activities.find(params[:id])%>
+  <p>Not Allowed Smarty Pants</p>
+<% else %>
+  <%= render "form", activity: @activity %>
 
-<br>
+  <br>
 
-<div>
+  <div>
   <%= link_to "Show this activity", @activity %> |
   <%= link_to "Back to activities", activities_path %>
-</div>
+  </div>
+<% end%>

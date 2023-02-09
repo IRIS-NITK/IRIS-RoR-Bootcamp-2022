@@ -22,7 +22,7 @@ class ActivitiesController < ApplicationController
   # GET /activities/1/edit
   def edit
     @activity = current_user.activities.find(params[:id])
-    redirect_to root_path, notice: "Not Allowed Smarty Pants" if current_user.nil?
+    redirect_to root_path, notice: "Not Allowed Smarty Pants" if current_user.activities.find(params[:id]).nil?
   end
 
   # GET /activities/stats/
