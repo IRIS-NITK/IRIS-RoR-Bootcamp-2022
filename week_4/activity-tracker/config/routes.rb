@@ -10,5 +10,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "activities#index"
-  get "/activities/stats", to: "activities#stats"
+  get "/activities/stats", to: "activities#stats", as: "activity_stats"
 end

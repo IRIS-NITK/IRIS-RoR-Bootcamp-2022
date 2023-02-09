@@ -2,7 +2,7 @@
 
 <h1>Activities</h1>
 <%= link_to "Root", new_user_session_path %>
-<%= link_to "Stats", activities_stats_url %>
+<%= link_to 'Activity Stats', activity_stats_path %>
 <div id="activities">
   <% @activities.each do |activity| %>
     <%= render activity %>
