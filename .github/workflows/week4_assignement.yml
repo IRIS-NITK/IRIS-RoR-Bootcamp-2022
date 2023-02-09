@@ -1,4 +1,4 @@
-name: 'Week 3 Model'
+name: 'Week 4 Assignment'
 
 on:
   pull_request:
@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  week3_model:
+  week4_assignment:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,11 +21,6 @@ jobs:
         with:
           working-directory: week_4/activity-tracker
           bundler-cache: true
-
-      - name: Install NPM packages
-        uses: bahmutov/npm-install@v1
-        with:
-          working-directory: week_4/activity-tracker
 
       - name: Test Controller Actions
         working-directory: week_4/activity-tracker
