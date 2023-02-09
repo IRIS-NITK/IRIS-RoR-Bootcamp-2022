@@ -37,6 +37,10 @@
   </div>
 
   <div>
+    <%= form.number_field :user_id, id: :activity_user_id, value: current_user.id, type: :hidden %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
