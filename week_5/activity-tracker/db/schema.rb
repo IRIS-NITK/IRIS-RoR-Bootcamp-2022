@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_08_180810) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_09_062925) do
   create_table "activities", force: :cascade do |t|
     t.string "title"
     t.string "activity_type"
@@ -19,6 +19,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_08_180810) do
     t.integer "calories"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_activities_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
