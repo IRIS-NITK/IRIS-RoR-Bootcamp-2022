@@ -2,7 +2,14 @@ require "test_helper"
 
 class ActivitiesControllerTest < ActionDispatch::IntegrationTest
   setup do
+    sign_in users(:steve)
     @activity = activities(:one)
+  end
+
+  test "should not get index if signed out" do
+    sign_out users(:steve)
+    get activities_url
+    assert_response :redirect
   end
 
   test "should get index" do
