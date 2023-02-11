@@ -1,6 +1,7 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>ActivityTracker</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%# <link href="" rel="stylesheet"> %>
@@ -9,10 +10,19 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "dark-mode", "data-turbo-track": "reload" %>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
     <%= javascript_importmap_tags %>
-  </head>
+</head>
+
 
   <body>
-    <%= yield %>
+    <%= render partial: 'shared/navbar' %>
+    <div class="container">
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+      <%= yield %>
+    </div>
   </body>
+
 </html>
