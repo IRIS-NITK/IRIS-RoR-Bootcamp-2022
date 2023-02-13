@@ -1,0 +1,11 @@
+<h1>Welcome To Activity Tracker</h1>
+<% if user_signed_in? %>
+  <div>Logged in as : <%= current_user.email %></div><br>
+  <%= link_to "Activities", activities_path %><br><br>
+  <%= link_to "Stats", "/activities/stats" %><br><br>
+  <%= button_to "Log out", destroy_user_session_path, method: :delete %>
+<% else %>
+  <h3>Sign In To See Activities</h3>
+  <%= link_to "Sign In", new_user_session_path %><br><br>
+  <%= link_to "Sign Up", new_user_registration_path %>
+<%end %>
