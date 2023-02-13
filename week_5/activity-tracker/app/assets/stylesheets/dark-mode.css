@@ -504,7 +504,9 @@ select {
 .card-subtitle {
     color: rgb(111, 118, 219);
 }
-
+.orange-text {
+    color: #ffa500;
+  }
 /* MODAL STYLES */
 
 .modal-body {
@@ -530,7 +532,7 @@ select {
 }
 
 .modal-dialog {
-    box-shadow: 0 0.76875rem 2.4875rem rgb(20 20 20 / 30%), 0 1.3375rem 1.70625rem rgb(20 20 20 / 30%), 0 0.55rem 0.53125rem rgb(0 0 0 / 5%), 0 0.225rem 0.4375rem rgb(20 20 20 / 30%);
+    box-shadow: 0 0.76875rem 2.4875rem rgb(20, 20, 20 / 30%), 0 1.3375rem 1.70625rem rgb(20, 20, 20 / 30%), 0 0.55rem 0.53125rem rgb(0, 0, 0 / 5%), 0 0.225rem 0.4375rem rgb(20, 20, 20 / 30%);
     border-radius: 0.25rem;
 }
 

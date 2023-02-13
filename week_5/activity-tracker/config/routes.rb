@@ -1,8 +1,17 @@
 Rails.application.routes.draw do
-  resources :activities
-  
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get 'static_pages/index'
+  get 'static_pages/about'
+  get 'about',to:"static_pages#about"
 
-  # Defines the root path route ("/")
-  root "activities#index"
+  devise_for :users
+  resources :activities do
+    collection do
+      get 'stats'
+    end
+  end
+
+  root 'static_pages#index'
+ 
+
+
 end
