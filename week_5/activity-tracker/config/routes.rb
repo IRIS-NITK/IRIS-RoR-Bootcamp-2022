@@ -9,5 +9,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  root 'static_pages#home'
+  get '/dark_mode', to: 'application#dark_mode', as: 'dark_mode'
+  get '/light_mode', to: 'application#light_mode', as: 'light_mode'
+  root 'activities#index'
+  get '/static_pages/home', to: 'static_pages#home'
 end

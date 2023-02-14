@@ -7,7 +7,7 @@
     --warning: #ffc107;
     --danger: #dc3545;
     --focus: #007bff;
-    --alternate: #8f33b1;
+    --alternate: #e9e9e9;
 
     /* Borders */
     --primary-border: #349672;
@@ -135,6 +135,10 @@ a {
     border-color: #151515;
 }
 
+.navbar-custom {
+    background-color: lightgreen;
+}
+
 /* IRIS LOGO */
 .app-header__logo {
     background: var(--primary);
@@ -156,8 +160,16 @@ a {
 }
 
 /* menu */
+
+.dropdown {
+    position: relative;
+  }
+
 .dropdown-menu {
-    background-color: #262626;
+    background-color: #e4e4e4;
+    position: absolute;
+    top: 100%;
+    left: 0;
 }
 
 .header-mobile-open .horizontal-nav-menu {
@@ -498,7 +510,7 @@ select {
 }
 
 .card-title {
-    color: var(--primary-text);
+    color: rgb(0, 0, 0);
 }
 
 .card-subtitle {
@@ -506,7 +518,7 @@ select {
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.015);
     transition: all 0.25s ease;
   }
 
@@ -541,7 +553,8 @@ select {
 }
 
 .card-title {
-    color: rgba(76, 95, 248, 0.6);
+    color: rgb(22, 22, 22);
+    text-align: center;
 }
 
 .card-subtitle {

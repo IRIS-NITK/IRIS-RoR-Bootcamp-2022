@@ -540,7 +540,8 @@ select {
 }
 
 .card-title {
-    color: rgba(76, 95, 248, 0.6);
+    color: rgb(222, 222, 222);
+    text-align: center;
 }
 
 .card-subtitle {
