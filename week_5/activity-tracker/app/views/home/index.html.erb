@@ -1,0 +1,12 @@
+<h1>Welcome To Activity Tracker</h1>
+<br>
+<% if user_signed_in? %>
+  <div>Logged in as : <%= current_user.email %></div><br>
+  <%= link_to "Activities", activities_path, class: "btn btn-primary" %><br><br>
+  <%= link_to "Stats", "/activities/stats", class: "btn btn-dark" %><br><br>
+  <%= button_to "Log out", destroy_user_session_path, method: :delete , class: "btn btn-light"%>
+<% else %>
+  <h3>Sign In To See Activities</h3><br>
+  <%= link_to "Sign In", new_user_session_path , :class => "btn btn-primary" %>
+  <%= link_to "Sign UP" , new_user_registration_path , :class => "btn btn-secondary" %>
+<%end %>
