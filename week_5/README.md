@@ -18,6 +18,13 @@ Bootstrap was used to style the views of the Activity-tracker app and the Devise
 
 ## Screenshots
 
+
+**Toggle between Dark & Light Modes with a click of a button**
+
+![Toggle](https://user-images.githubusercontent.com/98505402/218673659-01db8705-b034-43c7-be0d-22d71c6ce118.png)
+![Toggle1](https://user-images.githubusercontent.com/98505402/218673675-8e277cef-b9ac-4d26-9799-447c010ae726.png)
+
+##
 **Styled Stats Page**
 Two users whose Activities models have been associated with their User Models.
 
@@ -33,9 +40,4 @@ Two users whose Activities models have been associated with their User Models.
  **Alert Styled using Bootstrap Alerts**
 ![Aler2](https://user-images.githubusercontent.com/98505402/218673547-2bf603fd-a505-4525-8541-014ef696dcf0.png)
 ![Alert1](https://user-images.githubusercontent.com/98505402/218673637-a49743dc-6128-4d47-869c-26922c9cc49d.png)
-##
-**Toggle between Dark & Light Modes with a click of a button**
 
-![Toggle](https://user-images.githubusercontent.com/98505402/218673659-01db8705-b034-43c7-be0d-22d71c6ce118.png)
-![Toggle1](https://user-images.githubusercontent.com/98505402/218673675-8e277cef-b9ac-4d26-9799-447c010ae726.png)
-##
