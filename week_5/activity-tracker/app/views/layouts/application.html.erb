@@ -15,7 +15,49 @@
 
   <body>
     <%= render partial: 'shared/navbar' %>
-    <p class="notice"><%= notice %></p>
+    
+    <%if notice%>
+      <%if notice=='Activity was successfully destroyed.'%>
+           <div class="container" style="justify-content:right">
+            <div class="col-4">
+             <div class="card mx-4 border-solid-danger">
+               <div class="card-header bg-secondary text-center">
+                 <strong><p class="font-style"><i class="bi bi-bell-fill orange-text"></i> Activity Tracker</p></strong> 
+               </div>
+               <div class="card-body bg-danger">
+                 <strong class="font-sty"><%= notice %></strong>
+               </div>
+             </div>
+            </div>
+        </div>
+      <%elsif notice=='Activity was successfully updated.'%>
+           <div class="container" style="justify-content:right">
+            <div class="col-4">
+             <div class="card mx-4 border-solid-info">
+               <div class="card-header bg-secondary text-center">
+                 <strong><p class="font-style"><i class="bi bi-bell-fill orange-text"></i> Activity Tracker</p></strong> 
+               </div>
+               <div class="card-body bg-info">
+                 <strong class="font-sty"><%= notice %></strong>
+               </div>
+             </div>
+            </div>
+        </div>        
+      <%else%>
+        <div class="container" style="justify-content:right">
+            <div class="col-4">
+             <div class="card mx-4 border-solid-success">
+               <div class="card-header bg-secondary text-center">
+                 <strong><p class="font-style"><i class="bi bi-bell-fill orange-text"></i> Activity Tracker</p></strong> 
+               </div>
+               <div class="card-body bg-success">
+                 <strong class="font-sty"><%= notice %></strong>
+               </div>
+             </div>
+            </div>
+        </div>
+       <%end%> 
+    <%end%>
     <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>

@@ -129,6 +129,18 @@ a {
     border-bottom: none;
 }
 
+.border-solid-success{
+    border: 4px solid #1a573a;
+    }
+
+.border-solid-info{
+    border: 4px solid #0e4c66;
+    }
+
+ .border-solid-danger{
+    border: 4px solid #721326;
+    }   
+
 .header-mobile-open {
     background: #1a1a1a;
     border-color: #151515;
@@ -483,6 +495,25 @@ select {
     font-weight: bold;
 }
 
+.font-style{
+    font-family:Brush Script MT;
+    font-size: x-large;
+    font-weight: 800;
+}
+.font-st{
+    font-family:Brush Script MT;
+    font-weight: 800;
+}
+.font-sle{
+    font-family:Georgia;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.font-sty{
+    font-family: Papyrus;
+}
+
 .card-header {
     background: #212121 !important;
     color: white;
@@ -672,6 +703,7 @@ select {
     background-color: var(--danger);
     border-color: var(--danger-border);
 }
+
 
 .close {
     color: #fff;
