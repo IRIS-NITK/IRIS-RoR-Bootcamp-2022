@@ -1,0 +1,9 @@
+<div id="flash" style="text-align: center;">
+  <% flash.each do |key, value| %>
+    <div class="<%= flash_class(key.to_sym) %> alert alert-success" role="alert">
+      <% unless value == true %>
+        <%= value %>
+        <% end %>
+    </div>
+  <% end %>
+</div>
