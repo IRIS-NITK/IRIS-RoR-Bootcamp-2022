@@ -33,5 +33,8 @@ This week, we will look into controllers, routing and authentication.
 So after 4 weeks, we have our basic app ready! 🥳
 However, there is one problem. It looks 🥴. Lets fix that! We'll now style our application using [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) and look at the _View_ layer which is responsible for presenting data appropriately.
 
+## [Week 6 - Associations & Validations](/week_6)
+We have so far learnt a LOT of stuff. Starting right from ruby, to models, controllers, views, we have come so far. Yet there are many concepts that are still to be discussed, two of the most important being *Associations* and *Validations*
+
 ## Contact
 In case of doubts related to the Bootcamp, feel free to reach out to the mentors on the [**#doubts**](https://discord.com/channels/1052463702558908416/1052467811143913552) channel on [Discord](https://discord.gg/HQKpB6XH).
