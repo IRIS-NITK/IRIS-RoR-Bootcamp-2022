@@ -345,3 +345,5 @@ Which generates a list of errors with the `@article` variable.
 
 - [Active Record Validations](https://guides.rubyonrails.org/active_record_validations.html#custom-methods)
 - [Validations - Jumpstart Lab Curriculum](http://tutorials.jumpstartlab.com/topics/models/validations.html)
+
+Check out the [Assignment](./Assignment.md) for details on what to do this week!
