@@ -1,14 +1,29 @@
-<p style="color: green"><%= notice %></p>
 
-<h1>Activities</h1>
-
-<div id="activities">
-  <% @activities.each do |activity| %>
-    <%= render activity %>
-    <p>
-      <%= link_to "Show this activity", activity %>
-    </p>
-  <% end %>
+<div class="alert alert-primary" role="alert" style="margin-top:10px;">
+  <%= notice %>
 </div>
 
-<%= link_to "New activity", new_activity_path %>
+<h1 class="text-primary">
+    Activities
+    <small><%= link_to "<i class='bi bi-plus-square-fill text-primary mx-2'></i>".html_safe, new_activity_path %></small>
+</h1>
+
+<% if user_signed_in? %>
+   <div>
+   <p>Welcome <%=current_user.email%></p>
+   <%=button_to "Sign out", destroy_user_session_path, method: :delete%>
+   </div>
+<% else %>
+  <div>
+  <%= link_to "Sign in", new_user_session_path %>
+  </div>
+
+<% end %>
+
+<div id="activities" class="mt-4 card-deck">
+  <% @activities.each do |activity| %>
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <%= render activity %>
+    </div>
+  <% end %>
+</div>
