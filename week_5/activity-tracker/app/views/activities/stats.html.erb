@@ -1,0 +1,15 @@
+<br />
+<div class="container">
+  <div class="card card-sm">
+    <div class="card-header">
+      <h1 class="card-title mb-0">Activity Statistics</h1>
+    </div>
+    <div class="card-body text-center">
+      <p class="card-text">
+        <h2><i class="bi bi-clock"></i>  <%= @total_duration %><br></h2><br />
+        <h2><i class="bi bi-fire text-alternate"></i>  <%= @total_calories %></h2>
+      </p>
+      <a href="<%= new_activity_path %>" class="btn btn-primary">Burn more calories</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<% if cookies[:dark_mode]%>
+  <nav class="navbar navbar-expand-lg bg-dark">
+<% else%>
+  <nav class="navbar navbar-expand-lg bg-alternate">
+<% end%>
+  <div class="container-fluid">
+    <a class="navbar-brand mx-4 text-primary" href="/activities">GetActive</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link text-secondary" href="/activities/stats">
+            My Stats
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 margin-left: 100px;">
+        <li class="nav-item active">
+          <% if cookies[:dark_mode] %>
+            <a class="nav-link text-secondary" href="/light_mode"><i class="bi bi-sun"></i></a>
+          <% else %>
+            <a class="nav-link text-secondary" href="/dark_mode"><i class="bi bi-moon-fill"></i></a>
+          <% end %>
+        </li>
+        <li class="nav-item dropdown">
+          <a href= "/" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown">
+            <% if user_signed_in? %>
+              <i><strong><%= current_user.username %></strong></i>
+            <% else %>
+              <i><strong>Guest</strong></i>
+            <% end %>
+          </a>
+          <ul class="dropdown-menu">
+            <% if user_signed_in? %>
+              <li><a class="dropdown-item" href="/static_pages/home">Profile</a></li>
+              <li><a class="dropdown-item" href="/users/edit">Account Settings</a></li>
+              <li><%= link_to "Log Out" , destroy_user_session_path, data: { turbo_method: :delete } %></li>
+            <% else %>
+              <li><a class="dropdown-item" href="/users/sign_in">Sign In</a></li>
+              <li><a class="dropdown-item" href="/users/sign_up">Sign Up</a></li>
+            <% end %>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

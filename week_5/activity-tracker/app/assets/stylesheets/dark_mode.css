@@ -6,7 +6,7 @@
     --warning: #6d5911;
     --danger: #721326;
     --focus: #2a2732;
-    --alternate: #4c3057;
+    --alternate: #e3872b;
 
     /* Borders are a slightly darker version of the color... */
     --primary-border: #349672;
@@ -26,7 +26,7 @@
     --warning-text: #b8941d;
     --danger-text: #af1e3b;
     --focus-text: #887fa5;
-    --alternate-text: #9763af;
+    --alternate-text: #e3872b;
 
     --table-border: #424242;
     --table-hover: #1c1d38;
@@ -88,7 +88,7 @@ input {
 /* Text color */
 body {
     color: var(--text);
-    background: #000;
+    background: rgb(0, 0, 0);
 }
 
 a {
@@ -505,6 +505,11 @@ select {
     color: rgb(111, 118, 219);
 }
 
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.25s ease;
+  }
+
 /* MODAL STYLES */
 
 .modal-body {
@@ -535,7 +540,8 @@ select {
 }
 
 .card-title {
-    color: rgba(76, 95, 248, 0.6);
+    color: rgb(222, 222, 222);
+    text-align: center;
 }
 
 .card-subtitle {

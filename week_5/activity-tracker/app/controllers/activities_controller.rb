@@ -1,9 +1,12 @@
 class ActivitiesController < ApplicationController
   before_action :set_activity, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
+  before_action :correct_user
 
   # GET /activities or /activities.json
   def index
-    @activities = Activity.all
+    #@activities = Activity.all
+    @activities = current_user.activities.reload
   end
 
   # GET /activities/1 or /activities/1.json
@@ -12,16 +15,26 @@ class ActivitiesController < ApplicationController
 
   # GET /activities/new
   def new
-    @activity = Activity.new
+    #@activity = Activity.new
+    @activity = current_user.activities.build
   end
 
   # GET /activities/1/edit
   def edit
+    @activity = current_user.activities.find(params[:id])
+    redirect_to root_path, notice: "Not Allowed Smarty Pants" if current_user.activities.find(params[:id]).nil?
+  end
+
+  # GET /activities/stats/
+  def stats
+    @total_duration = current_user.activities.sum(:duration)
+    @total_calories = current_user.activities.sum(:calories)
   end
 
   # POST /activities or /activities.json
   def create
-    @activity = Activity.new(activity_params)
+    #@activity = Activity.new(activity_params)
+    @activity = current_user.activities.build(activity_params)
 
     respond_to do |format|
       if @activity.save
@@ -57,6 +70,10 @@ class ActivitiesController < ApplicationController
     end
   end
 
+  def correct_user
+    @activity = current_user.activities.find_by(id: params[:id])
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_activity
@@ -65,6 +82,6 @@ class ActivitiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def activity_params
-      params.require(:activity).permit(:title, :activity_type, :start, :duration, :calories)
+      params.require(:activity).permit(:title, :activity_type, :start, :duration, :calories, :total_calories, :total_duration, :user_id)
     end
 end

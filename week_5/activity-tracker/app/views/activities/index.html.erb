@@ -1,14 +1,12 @@
-<p style="color: green"><%= notice %></p>
+<h1 class="text-primary">
+    <i>Activities</i>
+    <small><%= link_to "<i class='bi bi-plus-square-fill text-primary mx-2'></i>".html_safe, new_activity_path %></small>
+</h1>
 
-<h1>Activities</h1>
-
-<div id="activities">
+<div id="activities" class="mt-4 card-deck">
   <% @activities.each do |activity| %>
-    <%= render activity %>
-    <p>
-      <%= link_to "Show this activity", activity %>
-    </p>
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <%= render activity %>
+    </div>
   <% end %>
 </div>
-
-<%= link_to "New activity", new_activity_path %>

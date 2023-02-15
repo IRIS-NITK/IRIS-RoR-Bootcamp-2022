@@ -3,16 +3,32 @@
   <head>
     <title>ActivityTracker</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%# <link href="" rel="stylesheet"> %>
+    <% #<link href="" rel="stylesheet"># %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "dark-mode", "data-turbo-track": "reload" %>
+    <% if cookies[:dark_mode] %>
+      <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+      <%= stylesheet_link_tag "dark_mode", "data-turbo-track": "reload" %>
+    <% else %>
+      <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+      <%= stylesheet_link_tag 'light_mode', "data-turbo-track": "reload" %>
+    <% end %>
+
     <%= javascript_importmap_tags %>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
   </head>
 
   <body>
+    <%= render partial: 'shared/navbar' %>
+    <%= render partial: 'shared/flash' %>
+    <div class="container">
+    <div class="container-fluid main-card d-flex flex-row justify-content-start align-items-start signed-in-container ml-auto mr-0 px-0">
+
+    </div>
     <%= yield %>
   </body>
 </html>
