@@ -70,7 +70,7 @@ In general, some of the most common relation terms in web development are:
 
 A `belongs_to` association indicates the model cannot exist without the
 other model. In our blogging application, an article cannot exist
-without an user, so a `belongs_to` association is appropriate. It represents a one-to-one relationship between the two models. 
+without an user, so a `belongs_to` association is appropriate.
 
 ```ruby
 class Article < ApplicationRecord
