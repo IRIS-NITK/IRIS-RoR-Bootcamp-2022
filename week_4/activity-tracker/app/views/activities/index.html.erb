@@ -1,0 +1,23 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Activities</h1>
+
+<% if user_signed_in? %>
+   <div>Logged in as: <%= current_user.email %> </div>
+   <%= link_to "Edit Account", edit_user_registration_path%>
+   <%= button_to "Log out", destroy_user_session_path, method: :delete%>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path%><br>
+  <%= link_to "Sign in", new_user_session_path %>
+<% end %>
+
+<div id="activities">
+  <% @activities.each do |activity| %>
+    <%= render activity %>
+    <p>
+      <%= link_to "Show this activity", activity %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New activity", new_activity_path %>
