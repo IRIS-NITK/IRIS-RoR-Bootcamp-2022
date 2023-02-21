@@ -1,4 +1,5 @@
 class ActivitiesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_activity, only: %i[ show edit update destroy ]
 
   # GET /activities or /activities.json
@@ -17,6 +18,12 @@ class ActivitiesController < ApplicationController
 
   # GET /activities/1/edit
   def edit
+  end
+
+  # GET /activities/stats
+  def stats
+    @total_duration = Activity.sum(:duration)
+    @total_calories = Activity.sum(:calories)
   end
 
   # POST /activities or /activities.json
@@ -60,7 +67,12 @@ class ActivitiesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_activity
-      @activity = Activity.find(params[:id])
+      if params[:id] == "stats"
+        stats 
+        render "stats"
+      else
+        @activity = Activity.find(params[:id])
+      end
     end
 
     # Only allow a list of trusted parameters through.

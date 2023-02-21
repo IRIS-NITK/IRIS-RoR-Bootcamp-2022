@@ -1,0 +1,19 @@
+<% if user_signed_in? %> 
+    <div class="container mt-5">
+        <h1 class="text-primary"> Welcome "<%= current_user.email %>" </h1>
+        <h3 class="text-secondary">
+            <%= link_to "Activities", activities_url %> <br>
+            <%= link_to "Edit Account Settings", edit_user_registration_path %>
+        </h3>
+    </div>
+    <div class= "actions">
+        <%= button_to "Log Out", destroy_user_session_path, method: :delete, class: "btn btn-primary text-dark" %>
+    </div>
+<% else %>
+    <div class="btn mt-2 btn-primary text-dark">
+        <%= link_to "Sign Up", new_user_registration_path %></br>
+    </div>
+     <div class="btn mt-2 btn-primary text-dark">
+        <%= link_to "Log In", new_user_session_path %>
+    </div>
+<% end %>
