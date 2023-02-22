@@ -10,6 +10,12 @@ class ActivitiesController < ApplicationController
   def show
   end
 
+  def stats
+    @total_duration = Activity.sum(:duration)
+    @total_calories = Activity.sum(:calories)
+  end
+
+  
   # GET /activities/new
   def new
     @activity = Activity.new

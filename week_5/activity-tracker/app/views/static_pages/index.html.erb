@@ -1,0 +1,14 @@
+<h1>Welcome to Activity Tracker App</h1><br><br>
+
+<% if user_signed_in? %>
+  <div><h3> Logged in as: <%= current_user.email %> </h3></div></br></br>
+  <a href="<%= activities_path %>" class="btn btn-primary" style="background-color: #712cf9;" >Activities</a></br></br>
+  <a href="<%= edit_user_registration_path %>" class="btn btn-primary" style="background-color: #712cf9;" >Edit Account settings</a></br></br>
+  <%= button_to "Log out", destroy_user_session_path , method: :delete %>
+<% else %>
+  <h4>New here ? , Then  -></h4>
+  <a href="<%= new_user_registration_path %>" class="btn btn-primary" style="background-color: #712cf9;" >Sign up</a></br></br>
+  <h4>Already signed up , Then -></h4>
+  <a href="<%= new_user_session_path %>" class="btn btn-primary" style="background-color: #712cf9;" >Sign in</a></br></br>
+
+<% end %>
