@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="card text-center">
+     <h1 class="orange-text font-st">Welcome to Activity Tracker!!!</h1>
+     <%if user_signed_in? %>
+      <div class="text-info font-sty">Logged in as: <%=current_user.email%></div><br><br>
+  </div>
+      <%=link_to "Edit Account Settings",edit_user_registration_path,class:"btn btn-info"%>
+      <%=link_to "Go to Activities",activities_path,class:"btn btn-success"%>
+      <%=button_to "Logout",destroy_user_session_path, method: :delete,class:"btn btn-danger" %>
+</div>
+<%else%>
+  <div class="container">
+    <br><%=link_to "Sign In",new_user_session_path,class:"btn btn-info"%><br><br>
+    <%=link_to "Sign Up",new_user_registration_path,class:"btn btn-alternate"%>
+  </div>
+<%end%>
