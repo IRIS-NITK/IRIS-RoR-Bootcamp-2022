@@ -1,0 +1,17 @@
+<div class="in"><h1>Editing activity</h1>
+
+<%= render "form", activity: @activity %>
+
+<br>
+
+<div>
+  <%= link_to "Show this activity", @activity %> |
+  <%= link_to "Back to activities", activities_path %>
+</div>
+</div>
+<style>
+.in{ margin: auto;
+  width: 50%;
+  border: 5px dashed gray;
+  text-align: center;background: lightgray;}
+</style>
