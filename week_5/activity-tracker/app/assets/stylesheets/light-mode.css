@@ -619,6 +619,11 @@ select {
     border-color: var(--alternate-border);
 }
 
+.btn-new {
+    background-color: #712cf9;
+    
+}
+
 .btn-outline-primary {
     border-color: var(--primary-border);
 }
@@ -642,6 +647,8 @@ select {
 .btn-outline-danger {
     border-color: var(--danger-border);
 }
+
+
 
 /* Bootstrap Alerts */
 

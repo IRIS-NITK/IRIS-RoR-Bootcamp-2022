@@ -12,7 +12,7 @@
             <%= link_to "<i class='bi bi-pencil-square text-secondary'></i>".html_safe, edit_activity_path(activity), class: "btn btn-sm btn-secondary" %>
           </div>
           <div class="col-4">
-            <%= button_to "<i class='bi bi-trash text-danger'></i>".html_safe, activity, method: :delete, class: "btn btn-sm btn-secondary" %>
+            <%= button_to "<i class='bi bi-trash text-danger'></i>".html_safe, activity, method: :delete, form: {data: {turbo_confirm: "Are you sure?"}} , class: "btn btn-sm btn-secondary"  %>
           </div>
         </div>
       </div>
