@@ -6,7 +6,7 @@ class CreateActivities < ActiveRecord::Migration[7.0]
       t.datetime :start
       t.decimal :duration
       t.integer :calories
-
+      t.integer :user_id, foreign_key: true
       t.timestamps
     end
   end
