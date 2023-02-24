@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     registrations: 'users/registrations',
     passwords: 'users/passwords'
   }
+  get "activities/pdf" , to: "activities#pdf"
   root "static_pages#index"
   get "about", to: "static_pages#about"
   resources :activities do

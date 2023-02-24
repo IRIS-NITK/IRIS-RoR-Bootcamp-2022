@@ -19,10 +19,13 @@
           <%= form.text_field :title, class: "form-control mt-2" %>
         </div>
 
-        <div class="form-group mb-2">
-          <%= form.label :activity_type, style: "display: block" %>
-          <%= form.text_field :activity_type, class:"form-control mt-2" %>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01" >Activity Type : </label>
+          </div>
+            <%= form.collection_select :activity_type, Type.order(:id), :name, :name %>
         </div>
+        
 
         <div class="form-group mb-2">
           <%= form.label :start, style: "display: block" %>
@@ -44,6 +47,11 @@
           </div>
         </div>
 
+        <div class="form-group mb-2">
+          <%= form.label :image, style: "display: block" %>
+          <%= form.file_field :image %>
+        </div>
+
 
         <div>
           <%= form.submit class: "btn mt-2 btn-primary text-dark"%>
@@ -53,3 +61,5 @@
     </div>
   </div>
 </div>
+
+

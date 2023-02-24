@@ -15,6 +15,26 @@ class ActivitiesController < ApplicationController
     @total_calories = Activity.where(user_id: current_user.id).sum(:calories)
   end
 
+  def pdf
+    require "prawn"
+    pdf1 = Prawn::Document.new
+    pdf1.text current_user.email,align: :center ,size: 30,style: :bold
+    pdf1.text "\nActivities\n",align: :center ,size: 25,style: :bold
+    @activities=Activity.where(user_id: current_user.id)
+    if @activities.any?
+      @activities.each do |activity|
+        pdf1.text activity.title,size: 20,style: :bold
+        act_img=StringIO.open(activity.image.download)
+        pdf1.image act_img,fit: [300,300]
+        pdf1.text activity.activity_type,size: 15
+        # pdf1.text activity.duration.to_s,size: 15
+        # pdf1.text activity.calories,size: 15
+      end
+    else
+      pdf1.text "No Activity",size: 20,style: :bold
+    end
+    send_data(pdf1.render,filename: "#{current_user.email}.pdf",type: 'application/pdf' , disposition: 'inline')
+  end
   
   # GET /activities/new
   def new
@@ -71,6 +91,6 @@ class ActivitiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def activity_params
-      params.require(:activity).permit(:title, :activity_type, :start, :duration, :calories)
+      params.require(:activity).permit(:title, :activity_type, :start, :duration, :calories, :image)
     end
 end
