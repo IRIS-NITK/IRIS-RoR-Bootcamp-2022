@@ -18,6 +18,28 @@ class ActivitiesController < ApplicationController
   # GET /activities/1/edit
   def edit
   end
+  
+  def generate_pdf
+    @activities = current_user.activities # or use any other query to fetch activities
+    respond_to do |format|
+      format.pdf do
+        pdf = Prawn::Document.new
+        pdf.text "Activities", size: 18, style: :bold, align: :center
+        @activities.each do |activity|
+          pdf.text activity.title, size: 16, style: :bold
+          pdf.text "Activity-Type: #{activity.activity_type}"
+          img = StringIO.open(activity.image.download)
+          pdf.image img, fit: [100, 100]
+          pdf.text "Start: #{activity.start}"
+          pdf.text "Duration: #{activity.duration} minutes"
+          pdf.text "Calories: #{activity.calories} minutes"
+          pdf.move_down 10
+        end
+        send_data pdf.render, filename: "activities.pdf", type: "application/pdf", disposition: "attachment"
+      end
+    end
+  end
+end
 
   # POST /activities or /activities.json
   def create
@@ -45,7 +67,7 @@ class ActivitiesController < ApplicationController
         format.json { render json: @activity.errors, status: :unprocessable_entity }
       end
     end
-  end
+  
 
   # DELETE /activities/1 or /activities/1.json
   def destroy

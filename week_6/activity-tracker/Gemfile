@@ -76,3 +76,7 @@ gem "rails-controller-testing"
 gem 'bootstrap', '~> 5.2.2'
 
 gem 'devise'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
+
+gem "prawn", "~> 2.4"
