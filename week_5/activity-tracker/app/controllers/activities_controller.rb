@@ -19,6 +19,15 @@ class ActivitiesController < ApplicationController
   def edit
   end
 
+  def stats
+    @total_duration = 0
+    @total_calories = 0
+    for i in Activity.all
+      @total_duration += i.duration
+      @total_calories += i.calories
+    end
+  end
+
   # POST /activities or /activities.json
   def create
     @activity = Activity.new(activity_params)
