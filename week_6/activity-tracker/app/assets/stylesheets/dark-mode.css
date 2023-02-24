@@ -463,6 +463,13 @@ select {
     border-radius: 0.25rem;
 }
 
+.imgf img{
+   border-radius: 50%;
+   margin-left: 50px;
+   height: 150px;
+   width: 150px;
+}
+
 .card-deck {
     display: flex;
     flex-direction: column;

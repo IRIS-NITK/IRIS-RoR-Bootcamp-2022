@@ -21,7 +21,7 @@ class ActivitiesController < ApplicationController
 
   # POST /activities or /activities.json
   def create
-    @activity = Activity.new(activity_params)
+    @activity =  current_user.activities.build(activity_params)
 
     respond_to do |format|
       if @activity.save
@@ -37,7 +37,7 @@ class ActivitiesController < ApplicationController
   # PATCH/PUT /activities/1 or /activities/1.json
   def update
     respond_to do |format|
-      if @activity.update(activity_params)
+      if @activity.update(activity_params.merge(user_id: current_user.id))
         format.html { redirect_to activity_url(@activity), notice: "Activity was successfully updated." }
         format.json { render :show, status: :ok, location: @activity }
       else
@@ -65,6 +65,6 @@ class ActivitiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def activity_params
-      params.require(:activity).permit(:title, :activity_type, :start, :duration, :calories)
+      params.require(:activity).permit(:title, :activity_type, :start, :duration, :calories, :image)
     end
 end

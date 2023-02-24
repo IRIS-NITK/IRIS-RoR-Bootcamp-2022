@@ -25,6 +25,11 @@
         </div>
 
         <div class="form-group mb-2">
+          <%= form.label :image, style: "display: block" %>
+          <%= form.file_field :image, class:"form-control mt-2" %>
+        </div>
+
+        <div class="form-group mb-2">
           <%= form.label :start, style: "display: block" %>
           <%= form.datetime_field :start, class:"form-control mt-2" %>
         </div>
