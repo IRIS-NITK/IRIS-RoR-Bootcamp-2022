@@ -88,7 +88,16 @@ input {
 /* Text color */
 body {
     color: var(--text);
-    background: #000;
+    background-image: url('background.png');
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bdy{
+    display:block;
+    justify-content: center;
+
 }
 
 a {
@@ -111,6 +120,35 @@ a {
 /* Top Bar */
 .bg-royal {
     background-image: linear-gradient(to right, #1b1b1b, #000000) !important;
+}
+
+.navbar{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    justify-content: space-between;
+
+}
+
+.list{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.profile li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 /* Title-Nav Bar */
@@ -208,15 +246,21 @@ a {
 
 .app-main__inner {
     background: #1a1a1a;
+    
 }
 
 /* content body */
 .app-inner-layout__wrapper {
     background: #1a1a1a;
+
+
 }
 
 /* HEADER */
-
+.btn{
+    font-weight: 600;
+    font-family: Garamond;
+}
 .header-btn-lg::before {
     background: #474747;
 }
@@ -443,15 +487,16 @@ select {
 
 /* CARD STYLES */
 .card {
-    background-color: #272727;
+
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background: #272727;
-    background: -webkit-linear-gradient(to bottom, #272727, #3c3c3c);
-    background: linear-gradient(to bottom, #272727, #3c3c3c);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border: 5px dashed lightblue;
 }
 
 .card-body {
-    background: #272727;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     color: white;
     position: relative;
     display: flex;
@@ -512,9 +557,9 @@ select {
     font-weight: 800;
 }
 .font-sle{
-    font-family:Georgia;
-    font-size: x-large;
-    font-weight: 800;
+    font-family:Brush Script MT;
+    font-size: 26px;
+    font-weight: 500;
 }
 
 .font-sty{

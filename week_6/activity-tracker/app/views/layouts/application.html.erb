@@ -13,13 +13,15 @@
     <%= javascript_importmap_tags %>
 
   <body>
-    
+   <div class="navb col-3">
     <%= render partial: 'shared/navbar' %>
+   </div>
+   <div class="bdy col-9">
     <%if notice%>
       <%if notice=='Activity was successfully destroyed.'%>
-           <div class="container" style="justify-content:right">
-            <div class="col-4">
-             <div class="card mx-4 border-solid-danger">
+           <div class="container" style="justify-content:center">
+            <div class=" col-sm-12 col-md-6 col-lg-4" >
+             <div class="card mx-4">
                <div class="card-header bg-secondary text-center">
                  <strong><p class="font-style"><i class="bi bi-bell-fill orange-text"></i> Activity Tracker</p></strong> 
                </div>
@@ -30,9 +32,9 @@
             </div>
         </div>
       <%elsif notice=='Activity was successfully updated.'%>
-           <div class="container" style="justify-content:right">
-            <div class="col-4">
-             <div class="card mx-4 border-solid-info">
+           <div class="container" style="justify-content:center">
+            <div class=" col-sm-12 col-md-6 col-lg-4" >
+             <div class="card mx-4">
                <div class="card-header bg-secondary text-center">
                  <strong><p class="font-style"><i class="bi bi-bell-fill orange-text"></i> Activity Tracker</p></strong> 
                </div>
@@ -43,9 +45,9 @@
             </div>
         </div>        
       <%else%>
-        <div class="container" style="justify-content:right">
-            <div class="col-4">
-             <div class="card mx-4 border-solid-success">
+        <div class="container" style="justify-content:center">
+          <div class=" col-sm-12 col-md-6 col-lg-4" >
+             <div class="card mx-4 ">
                <div class="card-header bg-secondary text-center">
                  <strong><p class="font-style"><i class="bi bi-bell-fill orange-text"></i> Activity Tracker</p></strong> 
                </div>
@@ -59,5 +61,6 @@
     <%end%>
     <p class="alert"><%= alert %></p>
     <%= yield %>
+   </div>
   </body>
 </html>
