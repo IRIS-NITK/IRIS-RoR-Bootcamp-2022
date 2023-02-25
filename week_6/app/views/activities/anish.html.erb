@@ -1,0 +1,30 @@
+<style media="screen">
+  .pdfm{
+    border:2px dashed grey;
+    margin:2em;
+    height:500px;
+    font-family: 'Permanent Marker', cursive;
+  }
+  .hi{
+    width:50%;
+    position:relative;
+    right:300px;
+  }
+</style>
+<div class="pdfm">
+<center>
+  <br>
+  <div class="hi">
+  <%= image_tag wicked_pdf_asset_base64("logo.png"),style:"60px;"%><br><br><br><br><br><br><br><br><br>
+  </div>
+  <h1><b><u>
+    THE TRACKER APP</u></b></h1><br>
+  <h3>Here is the values of total duration and total calories !!!</h3>
+  <br><br>
+<h1>The total duration value is <%= $totalduration%> </h1>
+<br>
+<h1>The total calories value is <%= $totalcalorie%> </h1>
+<br><br><br>
+<h1><b>"Calories are not the enemy. Its how we consume them that can be problematic!!!""</b></h1>
+</center>
+</div>

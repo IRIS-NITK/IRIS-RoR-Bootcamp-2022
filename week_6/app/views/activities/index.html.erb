@@ -1,0 +1,35 @@
+<%=stylesheet_link_tag 'login'%>
+<%= render 'navbar', :locals => {:user => current_user}%>
+<% if notice%>
+<div class="alert alert-success" role="alert">
+<p class="notice"><%= notice %></p>
+</div>
+<%else%>
+<%end%>
+
+<div class="boody">
+  <h1><center> My Activities</center></h1>
+  <div id="activities">
+    <% @activities.each do |activity| %>
+    <%if activity.user ===  current_user %>
+    <div class="card cardy" style="width: 18rem;">
+      <% if activity.active.attached?%>
+      <a href="/users/edit"><%= image_tag activity.active,width:"200px"%></a>
+      <% else%>
+      <a href="/users/edit"><%= image_tag 'activity1',width:"200px" %></a>
+      <%end%>
+      <div class="card-body bound">
+        <h5 class="card-title"><center> <%= activity.title%> </center></h5>
+        <p class="card-text"><b>Type :</b> <%= activity.activetype %> </p>
+        <p class="card-text"><b>Start Time :</b> <%= activity.start %> </p>
+        <p class="card-text"><b>Duration :</b> <%= activity.duration %> </p>
+        <p class="card-text"> <b>Calories :</b><%= activity.calories %> </p>
+      <center>  <a href="#" class="btn btn-primary">Show</center></a>
+      </div>
+    </div>
+      <%end%>
+  <% end %>
+</div>
+
+</div>
+<div class="buttony"> <%= link_to "New Activity",new_activity_path, class:'btn btn-primary circle'%> </div>

@@ -1,0 +1,78 @@
+      <br><br>
+<div class="row">
+  <div class="col-6">
+    <div class="card mt-4 p-4"style="border-radius:20px;">
+      <h1> <center>New Activity</center></h1><br>
+      <%= form_with(model: activity) do |form| %>
+        <% if activity.errors.any? %>
+          <div style="color: red">
+            <h2><%= pluralize(activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+
+            <ul>
+              <% activity.errors.each do |error| %>
+                <li><%= error.full_message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+      <div class="input-group mb-3">
+          <div class="input-group-prepend">
+          <%= form.label :title, class:"input-group-text", id:"inputGroup-sizing-default"%>
+            </div>
+          <%= form.text_field :title, class:"form-control" %>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+            <%= form.label :sctivetype, class:"input-group-text", id:"inputGroup-sizing-default"%>
+              </div>
+            <%= form.text_field :activetype, class:"form-control" %>
+          </div>
+
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              <%= form.label :start, class:"input-group-text", id:"inputGroup-sizing-default"%>
+                </div>
+              <%= form.datetime_field :start, class:"form-control" %>
+            </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                <%= form.label :duration, class:"input-group-text", id:"inputGroup-sizing-default"%>
+                  </div>
+                <%= form.text_field :duration, class:"form-control" %>
+              </div>
+          </div>
+
+          <div class="col">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                <%= form.label :calories, class:"input-group-text", id:"inputGroup-sizing-default"%>
+                  </div>
+                <%= form.number_field :calories, class:"form-control" %>
+              </div>
+          </div>
+        </div>
+
+        <div class="input-group mb-3">
+          <%= form.label :active ,"Activity Image",class:"input-group-text" ,for:"inputGroupFile01" %>
+          <%= form.file_field :active, class:"form-control" ,id:"inputGroupFile01" %>
+        </div>
+<div class="row">
+  <div class="col">
+    <%= link_to "Back To Activities", activities_path, class: "btn mt-2 btn-outline-warning " %>
+    </div>
+  <div class="col">
+    <%= form.submit class: "btn mt-2 btn-primary texty" %>
+  </div>
+
+</div>
+
+      <% end %>
+
+    </div>
+  </div>
+</div>

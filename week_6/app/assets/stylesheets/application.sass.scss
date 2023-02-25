@@ -1,0 +1,7 @@
+// Entry point for your Sass build
+//= require bootstrap_sb_admin_base_v2
+//= require font-awesome
+@import "font-awesome-sprockets";
+@import "font-awesome";
+*= require bootstrap_sb_admin_base_v2
+*= require font-awesome
