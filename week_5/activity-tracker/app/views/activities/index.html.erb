@@ -1,14 +1,21 @@
-<p style="color: green"><%= notice %></p>
+<% if notice %>
+ <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <%= notice %>
+  </div>
+<% end %>
 
-<h1>Activities</h1>
+<h1 class="text-primary" >Activities<small><%= link_to "<i class='bi bi-plus-square-fill text-primary mx-2'></i>".html_safe, new_activity_path %></small></h1>
 
-<div id="activities">
-  <% @activities.each do |activity| %>
-    <%= render activity %>
-    <p>
-      <%= link_to "Show this activity", activity %>
-    </p>
+<div id="activities" class="mt-4 card-deck" >
+  <% if @activities.any? %>
+    <% @activities.each do |activity| %>
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <%= render activity %>
+      </div>
+    <% end %>
+  <% else %>
+    <h2>No Activities to show</h2>
   <% end %>
 </div>
-
-<%= link_to "New activity", new_activity_path %>
+<%= link_to "Back to Home", root_path %>

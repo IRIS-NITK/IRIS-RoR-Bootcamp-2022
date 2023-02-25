@@ -1,8 +1,15 @@
 Rails.application.routes.draw do
-  resources :activities
-  
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  root "activities#index"
+  devise_for :users, controllers: {
+    sessions: 'users/sessions',
+    registrations: 'users/registrations',
+    passwords: 'users/passwords'
+  }
+  get "activities/pdf" , to: "activities#pdf"
+  root "static_pages#index"
+  get "about", to: "static_pages#about"
+  resources :activities do
+    collection do
+      get 'stats'
+    end
+  end
 end

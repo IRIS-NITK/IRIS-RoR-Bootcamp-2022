@@ -3,13 +3,45 @@ class ActivitiesController < ApplicationController
 
   # GET /activities or /activities.json
   def index
-    @activities = Activity.all
+    @activities=Activity.where(user_id: current_user.id)
   end
 
   # GET /activities/1 or /activities/1.json
   def show
   end
 
+  def stats
+    @total_duration = Activity.where(user_id: current_user.id).sum(:duration)
+    @total_calories = Activity.where(user_id: current_user.id).sum(:calories)
+  end
+
+  def pdf
+    require "prawn"
+    pdf1 = Prawn::Document.new
+    pdf1.text current_user.email,align: :center ,size: 30,style: :bold
+    pdf1.text "\nActivities\n\n",align: :center ,size: 25,style: :bold
+    @activities=Activity.where(user_id: current_user.id)
+    if @activities.any?
+      @activities.each do |activity|
+        pdf1.text "Activity Title : #{activity.title}",size: 20,style: :bold 
+        act_img=StringIO.open(activity.image.download)
+        pdf1.image act_img,fit: [300,300]
+        pdf1.text "Activity Type : #{activity.activity_type}",size: 15
+        pdf1.text "Activity Duration : #{activity.duration}",size: 15, inline_format: true
+        pdf1.text "Calories Burnt : #{activity.calories}",size: 15, inline_format: true
+        pdf1.start_new_page
+      end
+    else
+      pdf1.text "No Activity",size: 20,style: :bold
+    end
+
+    pdf1.text "User Total Statistics\n\n",align: :center ,size: 25,style: :bold
+    stats
+    pdf1.text "Total Duration : #{@total_duration}",size: 20,align: :center, inline_format: true
+    pdf1.text "Calories Burnt : #{@total_calories}",size: 20,align: :center, inline_format: true
+    send_data(pdf1.render,filename: "#{current_user.email}.pdf",type: 'application/pdf' , disposition: 'inline')
+  end
+  
   # GET /activities/new
   def new
     @activity = Activity.new
@@ -22,10 +54,10 @@ class ActivitiesController < ApplicationController
   # POST /activities or /activities.json
   def create
     @activity = Activity.new(activity_params)
-
+    @activity.user_id=current_user.id
     respond_to do |format|
       if @activity.save
-        format.html { redirect_to activity_url(@activity), notice: "Activity was successfully created." }
+        format.html { redirect_to activities_url, notice: "Activity was successfully created." }
         format.json { render :show, status: :created, location: @activity }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -52,7 +84,7 @@ class ActivitiesController < ApplicationController
     @activity.destroy
 
     respond_to do |format|
-      format.html { redirect_to activities_url, notice: "Activity was successfully destroyed." }
+      format.html { redirect_to activities_url,status: :see_other, notice: "Activity was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +97,6 @@ class ActivitiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def activity_params
-      params.require(:activity).permit(:title, :activity_type, :start, :duration, :calories)
+      params.require(:activity).permit(:title, :activity_type, :start, :duration, :calories, :image)
     end
 end
