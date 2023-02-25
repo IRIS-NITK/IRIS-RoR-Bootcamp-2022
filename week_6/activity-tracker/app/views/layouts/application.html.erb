@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ActivityTracker</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%# <link href="" rel="stylesheet"> %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "dark-mode", "data-turbo-track": "reload" %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <%= javascript_importmap_tags %>
+
+  <body>
+   <div class="navb col-3">
+    <%= render partial: 'shared/navbar' %>
+   </div>
+   <div class="bdy col-9">
+    <%if notice%>
+      <%if notice=='Activity was successfully destroyed.'%>
+           <div class="container" style="justify-content:center">
+            <div class=" col-sm-12 col-md-6 col-lg-4" >
+             <div class="card mx-4">
+               <div class="card-header bg-secondary text-center">
+                 <strong><p class="font-style"><i class="bi bi-bell-fill orange-text"></i> Activity Tracker</p></strong> 
+               </div>
+               <div class="card-body bg-danger">
+                 <strong class="font-spy"><%= notice %></strong>
+               </div>
+             </div>
+            </div>
+        </div>
+      <%elsif notice=='Activity was successfully updated.'%>
+           <div class="container" style="justify-content:center">
+            <div class=" col-sm-12 col-md-6 col-lg-4" >
+             <div class="card mx-4">
+               <div class="card-header bg-secondary text-center">
+                 <strong><p class="font-style"><i class="bi bi-bell-fill orange-text"></i> Activity Tracker</p></strong> 
+               </div>
+               <div class="card-body bg-info">
+                 <strong class="font-spy"><%= notice %></strong>
+               </div>
+             </div>
+            </div>
+        </div>        
+      <%else%>
+        <div class="container" style="justify-content:center">
+          <div class=" col-sm-12 col-md-6 col-lg-4" >
+             <div class="card mx-4 ">
+               <div class="card-header bg-secondary text-center">
+                 <strong><p class="font-style"><i class="bi bi-bell-fill orange-text"></i> Activity Tracker</p></strong> 
+               </div>
+               <div class="card-body bg-success">
+                 <strong class="font-spy"><%= notice %></strong>
+               </div>
+             </div>
+            </div>
+        </div>
+       <%end%> 
+    <%end%>
+    <p class="alert"><%= alert %></p>
+    <%= yield %>
+   </div>
+  </body>
+</html>

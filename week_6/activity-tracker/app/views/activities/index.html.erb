@@ -1,0 +1,16 @@
+<div class="container">
+  <h1 class="text-primary">
+    Activities
+    <small><%= link_to "<i class='bi bi-plus-square-fill text-primary mx-2'></i>".html_safe, new_activity_path %></small>
+  </h1>
+  <div id="activities" class="mt-4 card-deck">
+  <% @activities.each do |activity| %>
+    <div class=" col-sm-12 col-md-6 col-lg-4">
+      <%= render activity %>
+    </div>
+  <% end %>
+  </div>
+
+  <%= link_to "Download PDF", generate_pdf_user_path(format: "pdf"),class:"btn btn-success" %>
+
+</div>

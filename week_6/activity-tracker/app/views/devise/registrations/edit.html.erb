@@ -1,0 +1,60 @@
+<div class="container" style="justify-content:center;">
+  <div class=" col-sm-12 col-md-6 col-lg-4" >
+       <div class="card mt-4 p-4" style="border:3px dashed #EE82EE">
+         <h2 class="text-primary">Edit <%= resource_name.to_s.humanize %> <i class="bi bi-pencil-square orange-text"></i></h2>
+         <div class="card-body">
+            <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+              <%= render "devise/shared/error_messages", resource: resource %>
+
+            <div class="form-group mb-2">
+                <strong><%= f.label :email %> <i class="bi bi-envelope-at-fill orange-text"></i></strong>
+                <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control mt-1"  %>
+              </div><br>
+
+              <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+                <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+              <% end %>
+
+               <div class="form-group mb-2">
+                <strong><%= f.label :password %> <i class="bi bi-key-fill orange-text"></i></strong> <i>(leave blank if you don't want to change it)</i><br />
+                <%= f.password_field :password, autocomplete: "new-password", class: "form-control mt-1"  %>
+                <% if @minimum_password_length %>
+                  <br />
+                  <em><%= @minimum_password_length %> characters minimum</em>
+                <% end %>
+              </div>
+
+               <div class="form-group mb-2">
+                <strong><%= f.label :password_confirmation %> <i class="bi bi-check-circle orange-text"></i></strong>
+                <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control mt-1"  %>
+              </div>
+
+              <div class="field">
+                <strong><%= f.label :current_password %> </i></strong> <i>(we need your current password to confirm your changes)</i><br />
+                <%= f.password_field :current_password, autocomplete: "current-password" , class: "form-control mt-1" %>
+              </div>
+
+              <div class="actions">
+                <%= f.submit "Update" , class: "btn mt-2 btn-success text-light"%>
+              </div>
+            <% end %>
+         </div>
+       </div>
+     </div>
+</div>
+
+<div class="container" style="justify-content:center">
+  <div class=" col-sm-12 col-md-6 col-lg-4" >
+        <div class="card mt-4 p-4" style="border:3px dashed #00FFFF">
+              <h3 class="text-danger">Cancel my account <i class="bi bi-trash3-fill orange-text"></i></h3>
+              <div class="card-body">
+                  <p><strong>Unhappy? <i class="bi bi-emoji-frown-fill orange-text"></i></strong><%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete , class: "btn mt-2 btn-danger text-light"%></p>
+              </div>
+        </div>
+  </div>
+  <div class="container">
+    <div class=" col-sm-12 col-md-6 col-lg-4"> 
+      <%= link_to "Back", :back, class: "btn mt-2 btn-warning text-light"  %>
+    </div>
+  </div>
+</div>
