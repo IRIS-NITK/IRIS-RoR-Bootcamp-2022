@@ -1,0 +1,42 @@
+<%= form_with(model: activity) do |form| %>
+  <% if activity.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+
+      <ul>
+        <% activity.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :activity_type, style: "display: block" %>
+    <%= form.text_field :activity_type %>
+  </div>
+
+  <div>
+    <%= form.label :start, style: "display: block" %>
+    <%= form.datetime_field :start %>
+  </div>
+
+  <div>
+    <%= form.label :duration, style: "display: block" %>
+    <%= form.text_field :duration %>
+  </div>
+
+  <div>
+    <%= form.label :calories, style: "display: block" %>
+    <%= form.number_field :calories %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
