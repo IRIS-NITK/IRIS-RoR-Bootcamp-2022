@@ -2,14 +2,20 @@
   <div class="profile">
     <ul class="navbar-nav">
       <li class="nav-item active ">
-        <strong><a><i class="bi bi-person-circle font-sle"></i> </a></strong>
+
      <%if user_signed_in? %>
+      <strong><a><i class="bi bi-person-circle font-sle"></i> </a></strong>
       <div class="  font-sty"><%= current_user.email%></div><br><br>
      <%else%> 
-      <div class="user">
+     <div class="sy" style="display:flex">
+      <div class="yu" style="padding-top:3rem">
+        <strong><a><i class="bi bi-person-circle font-sle"></i> </a></strong>
+      </div>
+      <div class="user" style="display:block;justify-content:space-between">
         <a class="nav-link   font-sty" href="/users/sign_in"><p> Sign In</p></a>
         <a class="nav-link   font-sty" href="/users/sign_up"><p> Sign Up</p></a><br>
       </div>
+     </div>
      <%end%>
       </li>
     </ul>
@@ -20,13 +26,13 @@
   <div class="list">
     <ul class="navbar-nav">
       <li class="nav-item active ">
-        <strong><a class="nav-link  font-sle" href="/"><i class="bi bi-house-fill"></i> Home</a></strong>
+        <strong><a class="nav-link  font-sle" href="/"><i class="fa-solid fa-house"></i> Home</a></strong>
       </li>
     </ul>
 
     <ul class="navbar-nav">
       <li class="nav-item active ">
-        <strong><a class="nav-link  font-sle" href="/about"><i class="bi bi-info-circle-fill "></i> About</a></strong>
+        <strong><a class="nav-link  font-sle" href="/about"><i class="fa-sharp fa-solid fa-circle-info"></i> About</a></strong>
       </li>
     </ul>
 
@@ -34,17 +40,17 @@
     <%if user_signed_in? %>
     <ul class="navbar-nav">
       <li class="nav-item active ">
-        <strong><a class="nav-link  font-sle" href="/activities/stats"><i class="bi bi-bar-chart-line-fill "></i> Statistics</a></strong>
+        <strong><a class="nav-link  font-sle" href="/activities/stats"><i class="fa-solid fa-chart-simple"></i> Statistics</a></strong>
       </li>
     </ul>
     <ul class="navbar-nav">
       <li class="nav-item active ">
-        <strong><a class="nav-link  font-sle" href="/users/edit"><i class="bi bi-pencil-square"></i> Edit Account</a></strong>
+        <strong><a class="nav-link  font-sle" href="/users/edit"><i class="fa-solid fa-pen-to-square"></i> Edit Account</a></strong>
       </li>
     </ul>
     <ul class="navbar-nav">
       <li class="nav-item active ">
-        <strong><a class="nav-link  font-sle" href="/activities"><i class="bi bi-heart-pulse"></i> Activities</a></strong>
+        <strong><a class="nav-link  font-sle" href="/activities"><i class="fa-sharp fa-solid fa-person-running"></i> Activities</a></strong>
       </li>
     </ul>
     </div>

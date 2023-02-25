@@ -18,28 +18,38 @@ class ActivitiesController < ApplicationController
   # GET /activities/1/edit
   def edit
   end
+
+  def stats
+    @total_duration = Activity.sum(:duration)
+    @total_calories = Activity.sum(:calories)
+  end
   
   def generate_pdf
     @activities = current_user.activities # or use any other query to fetch activities
     respond_to do |format|
       format.pdf do
         pdf = Prawn::Document.new
-        pdf.text "Activities", size: 18, style: :bold, align: :center
+        pdf.font_size 18
+        pdf.text "Activities", style: :bold, align: :center,font_size:50 
+        pdf.move_down 10
         @activities.each do |activity|
-          pdf.text activity.title, size: 16, style: :bold
-          pdf.text "Activity-Type: #{activity.activity_type}"
+          pdf.font_size 16
+          pdf.text activity.title, style: :bold
+          pdf.text "Activity Type: #{activity.activity_type}"
+          pdf.move_down 5
           img = StringIO.open(activity.image.download)
-          pdf.image img, fit: [100, 100]
-          pdf.text "Start: #{activity.start}"
+          pdf.image img, width: 100, height: 100, position: :left
+          pdf.move_down 10
+          pdf.text "Start Time: #{activity.start.strftime('%Y-%m-%d %H:%M:%S')}"
           pdf.text "Duration: #{activity.duration} minutes"
-          pdf.text "Calories: #{activity.calories} minutes"
+          pdf.text "Calories Burned: #{activity.calories}"
           pdf.move_down 10
         end
         send_data pdf.render, filename: "activities.pdf", type: "application/pdf", disposition: "attachment"
       end
     end
   end
-end
+  
 
   # POST /activities or /activities.json
   def create
@@ -67,6 +77,7 @@ end
         format.json { render json: @activity.errors, status: :unprocessable_entity }
       end
     end
+  end
   
 
   # DELETE /activities/1 or /activities/1.json

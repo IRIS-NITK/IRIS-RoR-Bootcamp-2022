@@ -564,6 +564,8 @@ select {
 
 .font-sty{
     font-family: Papyrus;
+    color:white;
+    font-size: x-large;
 }
 
 .card-header {
@@ -573,6 +575,10 @@ select {
 
 .card-header>.nav .nav-link.active {
     color: var(--primary);
+}
+
+.navbar li i{
+    color:rgb(8, 3, 80);
 }
 
 .card-footer {
