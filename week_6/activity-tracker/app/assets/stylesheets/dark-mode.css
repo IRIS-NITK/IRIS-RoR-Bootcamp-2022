@@ -568,6 +568,12 @@ select {
     font-size: x-large;
 }
 
+.font-spy{
+    font-family: Papyrus;
+    color:white;
+    font-size:medium;
+}
+
 .card-header {
     background: #212121 !important;
     color: white;
