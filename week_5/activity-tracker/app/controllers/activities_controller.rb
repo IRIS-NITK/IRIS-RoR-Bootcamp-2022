@@ -19,20 +19,26 @@ class ActivitiesController < ApplicationController
     require "prawn"
     pdf1 = Prawn::Document.new
     pdf1.text current_user.email,align: :center ,size: 30,style: :bold
-    pdf1.text "\nActivities\n",align: :center ,size: 25,style: :bold
+    pdf1.text "\nActivities\n\n",align: :center ,size: 25,style: :bold
     @activities=Activity.where(user_id: current_user.id)
     if @activities.any?
       @activities.each do |activity|
-        pdf1.text activity.title,size: 20,style: :bold
+        pdf1.text "Activity Title : #{activity.title}",size: 20,style: :bold 
         act_img=StringIO.open(activity.image.download)
         pdf1.image act_img,fit: [300,300]
-        pdf1.text activity.activity_type,size: 15
-        # pdf1.text activity.duration.to_s,size: 15
-        # pdf1.text activity.calories,size: 15
+        pdf1.text "Activity Type : #{activity.activity_type}",size: 15
+        pdf1.text "Activity Duration : #{activity.duration}",size: 15, inline_format: true
+        pdf1.text "Calories Burnt : #{activity.calories}",size: 15, inline_format: true
+        pdf1.start_new_page
       end
     else
       pdf1.text "No Activity",size: 20,style: :bold
     end
+
+    pdf1.text "User Total Statistics\n\n",align: :center ,size: 25,style: :bold
+    stats
+    pdf1.text "Total Duration : #{@total_duration}",size: 20,align: :center, inline_format: true
+    pdf1.text "Calories Burnt : #{@total_calories}",size: 20,align: :center, inline_format: true
     send_data(pdf1.render,filename: "#{current_user.email}.pdf",type: 'application/pdf' , disposition: 'inline')
   end
   

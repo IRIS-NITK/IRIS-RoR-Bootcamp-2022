@@ -255,7 +255,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  bigdecimal (~> 1.2, >= 1.2.7)
   bootsnap
   bootstrap (~> 5.2.2)
   capybara
