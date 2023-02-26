@@ -16,13 +16,16 @@ class ActivitiesController < ApplicationController
   end
 
 def anish
+  @user=User.find(current_user.id)
 $totalduration
 $totalcalorie
+@totald=@user.totald
+@totalc=@user.totalc
 end
 
 
 def stat
-  @user=current_user
+  @user=User.find(current_user.id)
       respond_to do |format|
           format.html
           format.pdf do
@@ -39,6 +42,7 @@ end
   # GET /activities/new
   def new
     @activity = Activity.new
+    @types=Mytype.new
   end
 
   # GET /activities/1/edit
@@ -49,12 +53,15 @@ end
   def create
     @activity = Activity.new(activity_params)
     @activity.user=current_user
-    $totalcalorie=$totalcalorie+@activity.calories
-    $totalduration=$totalduration+@activity.calories
+    @user=User.find(current_user.id)
+    $totalcalorie += @activity.calories
+    $totalduration += @activity.duration
+    @user.totalc=$totalcalorie
+    @user.totald=$totalduration
     respond_to do |format|
       if @activity.save
-        format.html { redirect_to activity_url(@activity), notice: "Activity was successfully created." }
-        format.json { render :show, status: :created, location: @activity }
+        format.html { redirect_to activities_path, notice: "Activity was successfully created." }
+        format.json { render :index, status: :created, location: @activity }
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @activity.errors, status: :unprocessable_entity }

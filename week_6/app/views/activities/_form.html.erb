@@ -2,7 +2,16 @@
 <div class="row">
   <div class="col-6">
     <div class="card mt-4 p-4"style="border-radius:20px;">
-      <h1> <center>New Activity</center></h1><br>
+      <h2 class="heady"> <center>New Activity</center></h2><br>
+      <%= form_with model: types do |f|  %>
+      <div class="input-group mb-3">
+          <div class="input-group-prepend">
+          <%= f.label :man ,"Have a new Activity type?", class:"input-group-text", id:"inputGroup-sizing-default"%>
+            </div>
+          <%= f.text_field :man, class:"form-control" %>
+          <%= f.submit "Add",class:"btn btn-dark"%>
+        </div>
+       <%end%>
       <%= form_with(model: activity) do |form| %>
         <% if activity.errors.any? %>
           <div style="color: red">
@@ -22,21 +31,20 @@
             </div>
           <%= form.text_field :title, class:"form-control" %>
         </div>
+          <% options = options_from_collection_for_select(Mytype.all,'man' ,'man')%>
+                          <div class="input-group mb-3" id="course-input">
+                            <%= form.label :activetype ,"Type of Activity" ,for:"exampleInputEmail1", class:"input-group-text "%>
+                            <%= form.select(:activetype , options ,{:include_blank => 'Choose...'}, { :class => 'form-select',:id => "u-type"}) %>
+                          </div>
 
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-            <%= form.label :sctivetype, class:"input-group-text", id:"inputGroup-sizing-default"%>
-              </div>
-            <%= form.text_field :activetype, class:"form-control" %>
-          </div>
 
           <div class="input-group mb-3">
               <div class="input-group-prepend">
-              <%= form.label :start, class:"input-group-text", id:"inputGroup-sizing-default"%>
+              <%= form.label :start, "Activity Start Date & Time" , class:"input-group-text", id:"inputGroup-sizing-default"%>
                 </div>
-              <%= form.datetime_field :start, class:"form-control" %>
+              <%= form.datetime_field :start ,class:"form-control"  %>
             </div>
-
+<i class="fa fa-heart"></i>
         <div class="row">
           <div class="col">
             <div class="input-group mb-3">
@@ -66,7 +74,7 @@
     <%= link_to "Back To Activities", activities_path, class: "btn mt-2 btn-outline-warning " %>
     </div>
   <div class="col">
-    <%= form.submit class: "btn mt-2 btn-primary texty" %>
+    <%= form.submit class: "btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 texty" %>
   </div>
 
 </div>

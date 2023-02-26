@@ -1,5 +1,5 @@
 <%=stylesheet_link_tag 'login'%>
-<nav class="navbar navbar-expand-lg bg-ligh" >
+<nav class="navbar navbar-expand-lg bg-ligh gradient-custom-2 clasy" >
   <a class="navbar-brand" href="#"> <%= image_tag 'logo.png',class:'prop' %> </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -11,24 +11,35 @@
       </li>
       <li class="nav-item">
 <a href="/users/edit">
+  <%if @user.profile.attached? %>
           <%= image_tag @user.profile ,style:" vertical-align: middle;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-right:20px;
-  "%></a>
+  "%>
+<% else %>
+<%= image_tag 'logo',style:" vertical-align: middle;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin-right:20px;
+"%>
+<% end %>
+      </a>
       </li>
       <li class="nav-item" id="logout">
-        <%= link_to 'LogOut',destroy_user_session_path,method: :delete,class:"btn btn-danger" %>
+        <%= link_to 'LogOut',destroy_user_session_path,method: :delete,class:"btn btn-danger"  %>
       </li>
     </ul>
   </div>
 </nav>
 <center>
-  <div class="contain"><br>
-    <h3>The total Duration is : <%= $totalduration%></h3><br>
-    <h3>The total Duration is : <%= $totalduration%></h3>
-<%= link_to "Download", activities_stat_path(format: :pdf),class:" btn btn-primary buttona" %>
+  <div class="contain gradient-custom-2"><br>
+
+    <h3>The total Duration is : <%= $totalduration %></h3><br>
+    <h3>The total Calories is : <%= $totalcalorie %></h3>
+<%= link_to "Download", activities_stat_path(format: :pdf),class:" btn btn-dark buttona" %>
   </div>
 
 </center>

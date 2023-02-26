@@ -11,7 +11,23 @@
         <%= link_to 'Home',activities_path,class:"nav-link" %>
       </li>
       <li class="nav-item">
-<a href="/users/edit"><%= image_tag @user.profile ,style:" vertical-align: middle;width: 50px;height: 50px;border-radius: 50%;margin-right:20px;"%></a>
+<a href="/users/edit">
+  <%if @user.profile.attached? %>
+          <%= image_tag @user.profile ,style:" vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right:20px;
+  "%>
+<% else %>
+<%= image_tag 'logo',style:" vertical-align: middle;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin-right:20px;
+"%>
+<% end %>
+</a>
       </li>
       <li class="nav-item" id="logout">
         <%= link_to 'LogOut',destroy_user_session_path,method: :delete,class:"btn btn-danger" %>

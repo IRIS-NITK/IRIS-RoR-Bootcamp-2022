@@ -1,0 +1,22 @@
+<%= form_with(model: mytype) do |form| %>
+  <% if mytype.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mytype.errors.count, "error") %> prohibited this mytype from being saved:</h2>
+
+      <ul>
+        <% mytype.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :man %>
+    <%= form.text_field :man %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

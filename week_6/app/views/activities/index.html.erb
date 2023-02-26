@@ -8,15 +8,18 @@
 <%end%>
 
 <div class="boody">
-  <h1><center> My Activities</center></h1>
+<br>
+  <h2 class="heady"><center> My Activities</center></h2><br>
   <div id="activities">
+    <%$totalcalorie=0 %>
     <% @activities.each do |activity| %>
     <%if activity.user ===  current_user %>
+    <%$totalcalorie+=activity.calories %>
     <div class="card cardy" style="width: 18rem;">
       <% if activity.active.attached?%>
-      <a href="/users/edit"><%= image_tag activity.active,width:"200px"%></a>
+      <a href="/users/edit"><%= image_tag activity.active,style:"border-radius:10px;",width:"318.4px",height:"198px";%></a>
       <% else%>
-      <a href="/users/edit"><%= image_tag 'activity1',width:"200px" %></a>
+      <a href="/users/edit"><%= image_tag 'activity1',style:"border-radius:10px;",width:"318.4px", height:"198px";%></a>
       <%end%>
       <div class="card-body bound">
         <h5 class="card-title"><center> <%= activity.title%> </center></h5>
@@ -24,7 +27,7 @@
         <p class="card-text"><b>Start Time :</b> <%= activity.start %> </p>
         <p class="card-text"><b>Duration :</b> <%= activity.duration %> </p>
         <p class="card-text"> <b>Calories :</b><%= activity.calories %> </p>
-      <center>  <a href="#" class="btn btn-primary">Show</center></a>
+      <center><div class="card-footer"> <%= link_to "Show","/activities/#{activity.id}",class:"btn btn-block fa-lg gradient-custom-2 mb-3"%> </div></center>
       </div>
     </div>
       <%end%>
@@ -32,4 +35,4 @@
 </div>
 
 </div>
-<div class="buttony"> <%= link_to "New Activity",new_activity_path, class:'btn btn-primary circle'%> </div>
+<div class="buttony "> <%= link_to "<i class='fa fa-plus-circle' style='font-size: 40px;'></i>".html_safe,new_activity_path, class:'btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 circle'%> </div>

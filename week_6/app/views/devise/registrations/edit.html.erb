@@ -10,7 +10,7 @@
 
                 <div class="text-center">
 
-                  <h4 class="mt-1 mb-5 pb-1">Edit User</h4>
+                  <h2 class="mt-1 mb-5 pb-1">Edit User</h2>
                 </div>
                 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
                   <%= render "devise/shared/error_messages", resource: resource %>
@@ -59,12 +59,12 @@
 
                   <div class="text-center pt-1 mb-5 pb-1">
                       <%= link_to "Back", activities_path(resource_name),class:"btn btn-outline-danger",style:"margin-right:20px;" %>
-                    <%= f.submit "Sign up", class:"btn btn-primary btn-block fa-lg gradient-custom-2 mb-3",style:"padding:12px;" %><br>
+                    <%= f.submit "Save", class:"btn btn-primary btn-block fa-lg gradient-custom-2 mb-3",style:"padding:12px;" %><br>
                     <!-- <a class="text-muted" href="#!">Forgot password?</a> -->
+<br>
+                    <h2>Cancel my account</h2>
 
-                    <h3>Cancel my account</h3>
-
-                    <p>Unhappy? <br><%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete,class:"btn btn-danger" %></p>
+                    <p>Unhappy? <br><br><%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete,class:"btn btn-danger" %></p>
                   </div>
 
 
@@ -74,8 +74,13 @@
 
               </div>
             </div>
-            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+            <div class="col-lg-6 d-flex align-items-start gradient-custom-2">
               <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                <div class="">
+                  <center>
+                    <%= image_tag 'logo',style:"vertical-align: middle;width: 20rem;height: 20rem;border-radius: 50%;margin-right:20px; margin-bottom:20%;margin-top:10%;"%>
+                    </center>
+                </div>
                 <h4 class="mb-4">Track your daily activity with activity tracker</h4>
                 <p class="small mb-0"><ul>
                   <li>New pdf genertaion features included</li>

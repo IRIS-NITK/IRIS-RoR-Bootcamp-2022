@@ -1,0 +1,2 @@
+class Mytype < ApplicationRecord
+end

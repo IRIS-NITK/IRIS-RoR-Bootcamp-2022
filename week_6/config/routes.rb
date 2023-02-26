@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  resources :mytypes
   get 'activities/stat'
   get 'activities/anish'
   get 'statistics/stats'
   devise_for :users
   resources :activities
+  resources :activitytypes
   get '/activities/stats', to: 'activities#stats'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   devise_scope :user do

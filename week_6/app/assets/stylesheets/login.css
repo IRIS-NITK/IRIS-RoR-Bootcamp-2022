@@ -31,7 +31,7 @@ border-bottom-right-radius: .3rem;
 }
 body{
   height:auto;
-  background-color: aliceblue;
+  background-color: #fccb90;
 }
 h1{
  color: #3f5ac9;
@@ -41,9 +41,9 @@ h1{
   justify-content: center;
 }
 .nav-link{
-  background-color: white;
+  background-color:black;
   margin-right: 20px;
-  color:#3f5ac9;
+  color:white;
   border-radius: 5px;
   padding: 10px;
 }
@@ -52,7 +52,9 @@ h1{
   color:#ffffff;
 }
 .texty{
-  background-color:#3f5ac9;
+  position:relative;
+  top:5px;
+  padding:10px;
   color:#ffffff;
 }
 .texty:hover{
@@ -62,11 +64,11 @@ h1{
 .buttony{
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 80px;
 }
 .circle{
   border-radius: 50%;
-  padding: 15px;
+  padding: 50%;
 }
 .bound{
   border-radius: 20px;
@@ -74,6 +76,7 @@ h1{
 .cardy{
   min-width: 20em;
   height: auto;
+  border-radius: 10px;
 }
 
 #logout{
@@ -89,16 +92,33 @@ h1{
 }
 .contain{
   margin-top:3em;
-  border-bottom:3px solid #3f5ac9;
-  border-left:3px solid #3f5ac9;
-  border-right:3px solid #3f5ac9;
+  border-bottom:3px solid black;
+  border-left:3px solid black;
+  border-right:3px solid black;
   border-bottom-left-radius: 200px;
   border-bottom-right-radius: 200px;
-  background-color:#B4E4FF;
   margin:auto;
   width:50%;
 }
 .buttona{
    margin-bottom: 40px;
    margin-top: 20px;
+}
+
+.heady{
+  transform:scale(1.5);
+  font-family: 'Permanent Marker', cursive;
+}
+
+.classy{
+  border-bottom: 20px;
+  border-color: black;
+}
+
+.spacy{
+  position: relative;
+  top:5px;
+  margin-left:30px;
+  padding:10px;
+  margin-top:10px;
 }

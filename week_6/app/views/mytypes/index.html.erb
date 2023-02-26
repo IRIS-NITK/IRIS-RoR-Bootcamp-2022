@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mytypes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Man</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mytypes.each do |mytype| %>
+      <tr>
+        <td><%= mytype.man %></td>
+        <td><%= link_to 'Show', mytype %></td>
+        <td><%= link_to 'Edit', edit_mytype_path(mytype) %></td>
+        <td><%= link_to 'Destroy', mytype, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mytype', new_mytype_path %>

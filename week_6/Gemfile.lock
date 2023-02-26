@@ -92,8 +92,8 @@ GEM
       warden (~> 1.2.3)
     erubi (1.12.0)
     ffi (1.15.5-x64-mingw-ucrt)
-    font-awesome-sass (6.3.0)
-      sassc (~> 2.0)
+    font-awesome-sass (5.15.1)
+      sassc (>= 1.11)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -239,7 +239,7 @@ DEPENDENCIES
   cssbundling-rails
   debug
   devise
-  font-awesome-sass
+  font-awesome-sass (~> 5.15)
   importmap-rails
   jbuilder
   puma (~> 5.0)
