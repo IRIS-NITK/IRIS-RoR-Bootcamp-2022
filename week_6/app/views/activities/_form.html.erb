@@ -1,0 +1,86 @@
+      <br><br>
+<div class="row">
+  <div class="col-6">
+    <div class="card mt-4 p-4"style="border-radius:20px;">
+      <h2 class="heady"> <center>New Activity</center></h2><br>
+      <%= form_with model: types do |f|  %>
+      <div class="input-group mb-3">
+          <div class="input-group-prepend">
+          <%= f.label :man ,"Have a new Activity type?", class:"input-group-text", id:"inputGroup-sizing-default"%>
+            </div>
+          <%= f.text_field :man, class:"form-control" %>
+          <%= f.submit "Add",class:"btn btn-dark"%>
+        </div>
+       <%end%>
+      <%= form_with(model: activity) do |form| %>
+        <% if activity.errors.any? %>
+          <div style="color: red">
+            <h2><%= pluralize(activity.errors.count, "error") %> prohibited this activity from being saved:</h2>
+
+            <ul>
+              <% activity.errors.each do |error| %>
+                <li><%= error.full_message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+      <div class="input-group mb-3">
+          <div class="input-group-prepend">
+          <%= form.label :title, class:"input-group-text", id:"inputGroup-sizing-default"%>
+            </div>
+          <%= form.text_field :title, class:"form-control" %>
+        </div>
+          <% options = options_from_collection_for_select(Mytype.all,'man' ,'man')%>
+                          <div class="input-group mb-3" id="course-input">
+                            <%= form.label :activetype ,"Type of Activity" ,for:"exampleInputEmail1", class:"input-group-text "%>
+                            <%= form.select(:activetype , options ,{:include_blank => 'Choose...'}, { :class => 'form-select',:id => "u-type"}) %>
+                          </div>
+
+
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              <%= form.label :start, "Activity Start Date & Time" , class:"input-group-text", id:"inputGroup-sizing-default"%>
+                </div>
+              <%= form.datetime_field :start ,class:"form-control"  %>
+            </div>
+<i class="fa fa-heart"></i>
+        <div class="row">
+          <div class="col">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                <%= form.label :duration, class:"input-group-text", id:"inputGroup-sizing-default"%>
+                  </div>
+                <%= form.text_field :duration, class:"form-control" %>
+              </div>
+          </div>
+
+          <div class="col">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                <%= form.label :calories, class:"input-group-text", id:"inputGroup-sizing-default"%>
+                  </div>
+                <%= form.number_field :calories, class:"form-control" %>
+              </div>
+          </div>
+        </div>
+
+        <div class="input-group mb-3">
+          <%= form.label :active ,"Activity Image",class:"input-group-text" ,for:"inputGroupFile01" %>
+          <%= form.file_field :active, class:"form-control" ,id:"inputGroupFile01" %>
+        </div>
+<div class="row">
+  <div class="col">
+    <%= link_to "Back To Activities", activities_path, class: "btn mt-2 btn-outline-warning " %>
+    </div>
+  <div class="col">
+    <%= form.submit class: "btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 texty" %>
+  </div>
+
+</div>
+
+      <% end %>
+
+    </div>
+  </div>
+</div>

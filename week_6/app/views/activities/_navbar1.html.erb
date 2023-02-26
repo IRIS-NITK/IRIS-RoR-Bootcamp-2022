@@ -1,0 +1,37 @@
+<%=stylesheet_link_tag 'login'%>
+
+<nav class="navbar navbar-expand-lg bg-ligh" >
+  <a class="navbar-brand" href="#"> <%= image_tag 'logo.png',class:'prop' %> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <%= link_to 'Home',activities_path,class:"nav-link" %>
+      </li>
+      <li class="nav-item">
+<a href="/users/edit">
+  <%if @user.profile.attached? %>
+          <%= image_tag @user.profile ,style:" vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right:20px;
+  "%>
+<% else %>
+<%= image_tag 'logo',style:" vertical-align: middle;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin-right:20px;
+"%>
+<% end %>
+</a>
+      </li>
+      <li class="nav-item" id="logout">
+        <%= link_to 'LogOut',destroy_user_session_path,method: :delete,class:"btn btn-danger" %>
+      </li>
+    </ul>
+  </div>
+</nav>

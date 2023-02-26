@@ -1,0 +1,3 @@
+<%=stylesheet_link_tag 'login'%>
+<%= render 'navbar1', :locals => {:user =>@user}%>
+<%= link_to "Download", statistics_stats_path(format: :pdf) %>

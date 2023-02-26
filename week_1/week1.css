@@ -1,0 +1,53 @@
+body{
+  background-color: #8BF5FA;
+}
+
+#heading{
+  padding:0;
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Julee', cursive;
+  font-weight: bolder;
+  font-size: 50px;
+}
+#head-text{
+
+}
+
+.container{
+  padding:30px;
+ display:block;
+  background-color: #ffffff;
+
+  justify-content: center;
+  border-radius: 20px;
+  margin:auto;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top:20px;
+  margin-left: 26%;
+  margin-right: 40%;
+  width:50%;
+  height: 90rem;
+  font-family: 'Lobster Two', cursive;
+  font-size: 24px;
+}
+
+.note{
+   display:block;
+   margin: auto;
+}
+
+.question{
+  display:block;
+}
+
+hr{
+  width:50%;
+border-top: 10px dashed #8BF5FA;
+}
+
+.margin{
+  margin:10px;
+}

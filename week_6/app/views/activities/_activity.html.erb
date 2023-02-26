@@ -1,0 +1,26 @@
+<%= stylesheet_link_tag 'login'%>
+<center>
+<div class="row">
+<div class="col-6">
+<div class="card mt-4 p-4"style="border-radius:20px;">
+<h2 class="heady"> <center><%= activity.title %></center></h2><br>
+<br>
+<p><strong>Activity Type : </strong><%= activity.activetype %></p><br>
+<p><strong>Activity Start Time : </strong><%= activity.start.in_time_zone.strftime("%d %b, %Y %I:%M %p") %></p><br>
+<p><strong>Calories : </strong><%= activity.calories %></p><br>
+<p><strong>Duration : </strong><%= activity.duration %></p><br>
+
+
+
+<div class="">
+
+  <%= link_to "Back to activities", activities_path,class: "btn mt-2 btn-outline-warning"  %>
+  <%= link_to "Edit this activity", edit_activity_path(@activity) ,class: "btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 spacy" %>
+  <%= button_to "Destroy this activity", @activity, method: :delete,class:"btn btn-danger" %>
+</div>
+
+
+</div>
+</div>
+</div>
+</center>
