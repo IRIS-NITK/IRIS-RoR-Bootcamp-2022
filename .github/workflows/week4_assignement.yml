@@ -1,0 +1,30 @@
+name: 'Week 4 Assignment'
+
+on:
+  pull_request:
+    types: [synchronize, opened, reopened, edited]
+    branches:
+      - 'week4_*'
+
+  workflow_dispatch:
+
+jobs:
+  week4_assignment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          working-directory: week_4/activity-tracker
+          bundler-cache: true
+
+      - name: Test Controller Actions
+        working-directory: week_4/activity-tracker
+        run: |
+          bundle exec rails db:create
+          bundle exec rails db:migrate
+          bundle exec rails test
