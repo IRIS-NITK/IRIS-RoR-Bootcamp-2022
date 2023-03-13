@@ -1,3 +1,26 @@
+
+def is_prime num
+
+  if num <= 1 then
+      return false
+  end
+
+  s = Math.sqrt(num)
+
+  s = s.floor()
+
+#   print "sqrt of #{num} is #{s}  "
+
+  while s > 1
+      if (num % s == 0) then
+          return false
+      else 
+          s = s - 1
+      end
+  end
+  return true
+end
+
 # A prime number is a whole number greater than 1
 # that cannot be exactly divided by any whole number 
 # other than itself and 1 
@@ -14,5 +37,19 @@
 # We will raise an `ArgumentError` exception to let the caller know that
 # their function arguments were incorrect.
 def prime_numbers(n:)
-  raise NotImplementedError # TODO
+
+  if (n <= 1) then
+    raise ArgumentError
+  end
+  i = 0
+  result = []
+  
+  while (i <= n)
+      if (is_prime i) then
+          result.push(i)
+      end
+      i = i +1 
+  end
+  
+  return result
 end
