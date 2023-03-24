@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+body{
+    background-color: #272727;
+    color: #14A76C;
+}
+#frm{
+    padding: 10px;
+    padding-left: 0;
+    border: 3px solid red;
+}
+.name label input{
+    margin-left: 260px;
+    margin-bottom: 10px;
+    height: 30px;
+    border-radius: 20px;
+    width: 200px;
+    background-color: rgb(255, 55, 0);
+    
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:white;
+    opacity: 1; /* Firefox */
+  }
+.email label input{
+    margin-left: 208px;
+    height: 30px;
+    border-radius: 20px;
+    width: 200px;
+    background-color: rgb(255, 55, 0);
+}
+.rd input{
+    display: inline-block;
+    margin-left: 390px;
+}
+.rd{
+    display: flex;
+    flex-direction: column;
+}
+#radbtn{
+    margin:20px;
+    margin-left:0;
+}
+.cb{
+    display: flex;
+    flex-direction: column;
+}
+.cb input{
+    display: inline-block;
+    margin-left: 390px;
+}
+#desc{
+    margin: 10px;
+}
+ #drp{
+    display: flex;
+    margin: 20px;
+    margin-left: 0;
+
+ }
+ #drp select{
+    display: flex;
+    margin-left: 175px;
+    height: 30px;
+    border-radius: 20px;
+    width: 200px; 
+    background-color: rgb(255, 55, 0);
+    color:aliceblue;
+ }
+ #submit {
+    height: 40px;
+    border-radius: 20px;
+    color:aliceblue;
+    background-color:darkslateblue;
+ }
+ #erase{
+    background-color: darkslateblue;
+    height: 40px;
+    border-radius: 20px;
+    color:white;
+ }
+ 
